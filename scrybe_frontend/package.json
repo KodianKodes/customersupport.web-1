@@ -4,11 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "eslint **/*.js **/*.jsx && vite",
-    "build": "eslint **/*.js **/*.jsx && vite build",
+    "dev": "vite",
+    "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint **/*.js **/*.jsx",
-    "lint:fix": "eslint --fix **/*.js **/*.jsx"
+    "lint:fix": "eslint --fix **/*.js **/*.jsx",
+    "prepare": "cd .. && husky install scrybe_frontend/.husky"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -29,6 +30,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.31.10",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.2",
     "prettier": "^2.7.1",
     "vite": "^3.2.3"
   }
