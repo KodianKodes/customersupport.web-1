@@ -8,7 +8,8 @@
         "react-app",
         "react-app/jest",
         "airbnb",
-        "airbnb/hooks"
+        "airbnb/hooks",
+        "plugin:prettier/recommended"
     ],
     "overrides": [
     ],
@@ -17,7 +18,8 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "prettier"
     ],
     "rules": {
         "import/no-extraneous-dependencies": ["error", {"devDependencies": true}]
