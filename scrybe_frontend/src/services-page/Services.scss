@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@mixin btn {
+    font-family: 'Kanit', sans-serif;
+    background: #006CFF;
+    padding: 15px 20px;
+    color: #fff;
+    border: 0;
+    border-radius: 3px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+    width: 180px;
+    font-size: 18px;
+}
+
+@mixin btnTrans {
+    font-family: 'Kanit', sans-serif;
+    padding: 15px 20px;
+    background: transparent;
+    color: #006CFF;
+    border: 1px solid #006CFF;
+    border-radius: 3px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 180px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+@mixin container {
+    width: 80%;
+    margin: auto;
+}
+
+@mixin heading {
+    color: #1A1818;
+    font-weight: 800;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+
+.hero-section {
+    background: url(./assets/hero-bg.png);
+    background-size: cover;
+    padding: 7rem 0;
+    font-family: 'Kanit', sans-serif;
+
+    .container {
+        @include container;
+    }
+
+    .hero-flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .text-cont {
+        width: 50%;
+        h1 {
+            color: #1A1818;
+            font-weight: 700;
+            font-size: 55px;
+            margin-bottom: 30px;
+        }
+    
+        p {
+            color: #1A1818;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+    
+        button {
+            @include btn;
+        }
+    }
+
+    .img-cont {
+        width: 50%;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.offer-section {
+    margin: 14rem 0;
+
+    .container {
+        @include container;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    h1 {
+        @include heading;
+        text-align: center;
+    }
+
+    p {
+        color: #1A1818;
+        font-size: 35px;
+        text-align: center;
+        width: 70%;
+        line-height: 1.7;
+        margin: auto;
+    }
+
+    button {
+        @include btn;
+        text-align: center;
+        margin: 30px auto 0 auto;
+    }
+}
+
+.we-can-section {
+    background: #E6F0FF;
+    padding: 7rem 0;
+
+    .container {
+        @include container;
+
+        .wecan-flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    
+        .wecan-txt {
+            width: 50%;
+    
+            h1 {
+                @include heading;
+            }
+    
+            li {
+                font-size: 27px;
+                line-height: 1.6;
+                font-weight: 300;
+            }
+    
+            .list {
+                margin-bottom: 30px;
+            }
+        }
+    
+        .wecan-img {
+            width: 50%;
+
+            img {
+                width: 50%
+            }
+        }
+    }
+}
+
+.transcription-section, .sentiment-section, .report-section {
+    .container {
+        @include container;
+
+        .trans-flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12rem 0;
+    
+            .trans-txt {
+                h1 {
+                    @include heading;
+                }
+    
+                .check-container {
+                    span {
+                        display: flex;
+                        align-items: center;
+                        gap: 2rem;
+                        margin: 40px 0;
+    
+                        img {
+                            width: 20px;
+                        }
+    
+                        p {
+                            font-size: 20px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+    
+                button {
+                    @include btnTrans;
+                }
+            }
+        }
+        .line {
+            border-bottom: 1px solid #868686;
+            width: 100%;
+        }
+    }
+}
+
+.sentiment-section {
+    .trans-flex {
+        flex-direction: row-reverse;
+    }
+}
+
+.article-section {
+    padding: 6rem 0 20rem 0;
+    
+    .container {
+        @include container;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2.5rem;
+
+        p {
+            color: #1A1818;
+            font-weight: 300;
+            font-size: 25px;
+            text-align: center;
+            width: 70%;
+            margin: auto;
+        }
+
+        button {
+            @include btn;
+        }
+    }
+}
