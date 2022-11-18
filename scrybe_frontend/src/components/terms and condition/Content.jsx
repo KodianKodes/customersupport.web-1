@@ -1,23 +1,26 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
+import styles from "./content.module.scss";
 
 function Content() {
   return (
-    <div>
-      <p>
-        <span>Update : </span>
-        <span> 15th November,2022</span>
+    <div className={styles.container}>
+      <p className={styles.update}>
+        <span className={styles.headings}>Update : </span>{" "}
+        <span className={styles.paragraphs}> 15th November,2022</span>
       </p>
-      <h3>Company Overview</h3>
-      <p>
+      <h3 className={styles.headings}>Company Overview</h3>
+      <p className={styles.paragraphs}>
         SCRYBE is an AI powered tool, tailored for customer success and
         satisfaction. It delivers two core functions
         <br />• Transcription of call recordings between agents and customers.
         <br />• Analyse transcription to give sentiment score on the
         conversation (Positive, Neutral, Negative)
       </p>
-      <h3>Services</h3>
-      <p>The following services are offered to you by Scrybe:</p>
+      <h3 className={styles.headings}>Services</h3>
+      <p className={styles.paragraphs}>
+        The following services are offered to you by Scrybe:
+      </p>
       <ul>
         <li>Sentimental Analysis</li>
         <li>Multiple Language Support</li>
@@ -27,8 +30,8 @@ function Content() {
         <li>Social Media Analytics</li>
       </ul>
 
-      <h3>Access</h3>
-      <p>
+      <h3 className={styles.headings}>Access</h3>
+      <p className={styles.paragraphs}>
         These Terms govern the temporary provision of access to and use of the
         website, the Services provided thereon, including without limitation the
         Services, the automatic transcribing process, the online editing
@@ -41,26 +44,26 @@ function Content() {
         intent of such specific terms conflicts with the Terms, such specific
         terms will take precedence over the Terms.
       </p>
-      <p>
+      <p className={styles.paragraphs}>
         In its sole discretion, Scrybe maintains the right to update, alter,
         remove, or suspend the content of any section of the website or any
         services offered thereon without prior notice.
       </p>
-      <p>
+      <p className={styles.paragraphs}>
         If any functionality of the website or Service is interrupted or
         discontinued for any reason other than what has been previously agreed
         upon directly with the User, Scrybe disclaims all obligation in
         connection therewith.
       </p>
-      <p>
+      <p className={styles.paragraphs}>
         Scrybe is under no commitment to update any of the material on its
         website. Scrybe maintains the right, at its sole discretion, to restrict
         or terminate access to all or a portion of the website or the Service
         with or without notice.
       </p>
 
-      <h3>Copyright Notice</h3>
-      <p>
+      <h3 className={styles.headings}>Copyright Notice</h3>
+      <p className={styles.paragraphs}>
         The website content and services are owned by Scrybe or utilized under
         license from third-party copyright owners, and are protected by
         copyright and other intellectual property rights. Unless otherwise
@@ -72,28 +75,28 @@ function Content() {
         must be maintained.
       </p>
 
-      <h3>Licence to Use Website</h3>
-      <p>
+      <h3 className={styles.headings}>Licence to Use Website</h3>
+      <p className={styles.paragraphs}>
         You may non-exclusively upload audio files, modify, distribute, and
         export them using the website and the data and materials included
         within. Except for audio recordings you have uploaded yourself to your
         Scrybe account:
       </p>
-      <p>
+      <p className={styles.paragraphs}>
         Without our prior written authorization, you may not use this website or
         any of the content on it for any business endeavors, including
         reproduction, duplication, sale, resale, access, or other uses;
       </p>
-      <p>
+      <p className={styles.paragraphs}>
         You are not permitted to replicate or store any content from this
         website in any public or private electronic retrieval system, including
         republication on another website;
       </p>
-      <p>
+      <p className={styles.paragraphs}>
         You are not permitted to utilize any images, graphics, audio, or video
         clips without the associated text.
       </p>
-      <p>
+      <p className={styles.paragraphs}>
         We thus offer you a license to access and use the website and any
         associated software solely in accordance with the terms of such licence.
         Except to the extent that we are required to permit this by applicable
@@ -112,8 +115,8 @@ function Content() {
         and conditions.
       </p>
 
-      <h3>Limitations of Liability</h3>
-      <p>
+      <h3 className={styles.headings}>Limitations of Liability</h3>
+      <p className={styles.paragraphs}>
         You agree that it would be irrational to hold us accountable in relation
         to this website and the material on this website as the information on
         this website is supplied without charge. Although every care has been
@@ -130,7 +133,7 @@ function Content() {
         guaranteed to be free of viruses or other dangerous components by
         Scrybe.
       </p>
-      <p>
+      <p className={styles.paragraphs}>
         Scrybe will not be liable for any direct, indirect, consequential,
         punitive, special, or incidental damages (including, without limitation,
         damages for loss of business, contract, revenue, data, information, or
@@ -146,8 +149,8 @@ function Content() {
         applicable law.
       </p>
 
-      <h3>Links to this Website</h3>
-      <p>
+      <h3 className={styles.headings}>Links to this Website</h3>
+      <p className={styles.paragraphs}>
         You may not build a link to any page of this website without our prior
         written permission. If you make a link to a page on this website, you do
         so at your own risk, and the exclusions and restrictions set out in
@@ -155,8 +158,8 @@ function Content() {
         to it.
       </p>
 
-      <h3>Links to other Website</h3>
-      <p>
+      <h3 className={styles.headings}>Links to other Website</h3>
+      <p className={styles.paragraphs}>
         The website may occasionally carry links to other third-party websites
         that are not within Scrybe's control. These links are provided to give
         further information and are not intended to imply that Scrybe supports
@@ -168,8 +171,8 @@ function Content() {
         you use them at your own risk.
       </p>
 
-      <h3>Submissions</h3>
-      <p>
+      <h3 className={styles.headings}>Submissions</h3>
+      <p className={styles.paragraphs}>
         You acknowledge and agree that any information, images, comments, or
         data of any kind that you send to the website via email or another
         method does not violate anyone's right to privacy or other fundamental
@@ -192,8 +195,10 @@ function Content() {
         rights or privacy rights.
       </p>
 
-      <h3>Disclosure of Confidential Information</h3>
-      <p>
+      <h3 className={styles.headings}>
+        Disclosure of Confidential Information
+      </h3>
+      <p className={styles.paragraphs}>
         In connection with providing the Service, it may be necessary or
         desirable for you or Scrybe to disclose to the other certain non-public
         Confidential Information. For purposes of these Terms, ‘Confidential
@@ -207,29 +212,29 @@ function Content() {
         without the express, written prior consent of the disclosing Party, with
         the exception of the following:
       </p>
-      <p>
+      <p className={styles.paragraphs}>
         Information that was previously known to or in the knowledge of the
         receiving Party at the time of disclosure and was not obtained, directly
         or indirectly, from the disclosing Party is information that the
         receiving Party can prove by prior record.
       </p>
-      <p>
+      <p className={styles.paragraphs}>
         Information that is already public knowledge at the time of disclosure
         or later becomes public knowledge due to publishing or another method,
         other than the receiving Party violating this Agreement.
       </p>
-      <p>
+      <p className={styles.paragraphs}>
         Information that the receiving Party learns from a third party,
         provided, however, that this third party did not learn the information
         from the disclosing Party directly or indirectly while under a
         confidentiality duty to the disclosing Party.
       </p>
-      <p>
+      <p className={styles.paragraphs}>
         Information that the receiving Party can prove was autonomously created
         by their staff members or outside contractors who were not in touch with
         and were not aware of the Confidential Information's contents.
       </p>
-      <p>
+      <p className={styles.paragraphs}>
         If required to do so by a court, administrative agency, or other
         tribunal of competent jurisdiction, the receiving Party may disclose
         Confidential Information; provided, however, that in such a case, the
@@ -244,7 +249,7 @@ function Content() {
         court of law through protective orders, filings under seal, and other
         suitable means.
       </p>
-      <p>
+      <p className={styles.paragraphs}>
         The receiving Party must only use the confidential information to
         provide, enhance, or create new services in connection with the service.
         Only the receiving Party's officers, employees, agents, service
@@ -252,7 +257,7 @@ function Content() {
         terms that are at least as strict as these Terms, will be given access
         to confidential information.
       </p>
-      <p>
+      <p className={styles.paragraphs}>
         The receiving Party shall take all appropriate efforts to ensure that
         the Confidential information isn't divulged or duplicated for the use of
         any third party, including, but not restricted to, those steps taken to
@@ -262,7 +267,7 @@ function Content() {
         officers, employees, and agents (as pertinent) who have access to the
         Confidential Information from disclosing or duplicating the Confidential
       </p>
-      <p>
+      <p className={styles.paragraphs}>
         The receiving Party must promptly return all materials and documents,
         along with any data or other media (including computer data and
         electronic information), to the disclosing Party upon written request.
@@ -270,19 +275,19 @@ function Content() {
         Confidential Information and provide a certificate of destruction upon
         request from the disclosing Party.
       </p>
-      <p>
+      <p className={styles.paragraphs}>
         Scrybe processes data on website visitors and information received in
         line with the Statement. By using the website, you agree to such
         processing and guarantee that any user data you give is correct.
       </p>
-      <p>
+      <p className={styles.paragraphs}>
         Scrybe processes data on website visitors and information received in
         line with the Statement. By using the website, you agree to such
         processing and guarantee that any user data you give is correct.
       </p>
 
-      <h3>Restricted Access</h3>
-      <p>
+      <h3 className={styles.headings}>Restricted Access</h3>
+      <p className={styles.paragraphs}>
         Certain portions of our website are restricted. We retain the right, at
         our discretion, to limit access to specific portions of our website, or
         even our whole website. If we give you a user ID and password to access
@@ -294,22 +299,22 @@ function Content() {
         your user ID and password at our sole discretion.
       </p>
 
-      <h3>Entire Agreement</h3>
-      <p>
+      <h3 className={styles.headings}>Entire Agreement</h3>
+      <p className={styles.paragraphs}>
         This site information replaces any prior agreements with regard to your
         use of this website and represents the full understanding between you
         and us regarding your use of our website.
       </p>
 
-      <h3>Law and Jurisdiction</h3>
-      <p>
+      <h3 className={styles.headings}>Law and Jurisdiction</h3>
+      <p className={styles.paragraphs}>
         Any legal issues arising from this notice shall be controlled by and
         construed in accordance with the laws of Nigeria, and the Nigerian
         courts shall have exclusive jurisdiction over such matters.
       </p>
 
-      <h3>Contacting Us</h3>
-      <p>
+      <h3 className={styles.headings}>Contacting Us</h3>
+      <p className={styles.paragraphs}>
         If you have any questions about these Terms or the Statement, don't
         hesitate to email us at (info@scrybe.co.za).
       </p>
