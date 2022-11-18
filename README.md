@@ -4,7 +4,8 @@
 
 ## Current Setup (This project uses:)
 
-- Sass + CSS modules for styling
+- Vitest + React testing-library
+- Sass + CSS modules
 - Eslint
 - Prettier
 - Husky precommits
@@ -19,6 +20,8 @@
 - When you're done working on your feature make a PR only to the dev branch (not staging or main)
 
 ## Before committing
+
+If you try committing and get an error from Git:
 
 - Ensure you run `npm run lint` and fix all errors before trying to commit (husky will prevent you from committing otherwise).
 - You can run `npm run lint:fix` to try to automatically fix the simpler errors.
