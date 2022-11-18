@@ -1,13 +1,15 @@
 import React from "react";
 import "./App.scss";
+import { Routes, Route } from "react-router-dom";
+import Dummy from "./components/Dummy";
 import UploadedRecordings from "./components/UploadRecordings";
 
 function App() {
   return (
-    <div className="App" data-testid="app-container">
-      {/* uploaded recordings component */}
-      <UploadedRecordings />
-    </div>
+    <Routes>
+      <Route path="/" element={<Dummy />} />
+      <Route path="/uploaded-recordings" element={<UploadedRecordings />} />
+    </Routes>
   );
 }
 
