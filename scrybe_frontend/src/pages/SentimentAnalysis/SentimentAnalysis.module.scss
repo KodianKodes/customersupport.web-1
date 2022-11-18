@@ -48,5 +48,137 @@
 
   .aside__container {
     flex: 0.15 1 pix-rem(322);
+    display: flex;
+    flex-direction: column;
+    gap: pix-rem(24);
+
+    .inner__container {
+      width: 100%;
+      padding: pix-rem(16);
+      display: flex;
+      gap: pix-rem(16);
+      background-color: white;
+      border-radius: pix-rem(4);
+    }
+
+    .audio__file {
+      font-size: pix-rem(16);
+      font-weight: 300;
+
+      .audio__icon__container {
+        width: pix-rem(52);
+        height: pix-rem(52);
+      }
+
+      .audio__text {
+        margin-right: auto;
+        text-align: left;
+
+        .audio__name {
+          color: #313131;
+        }
+
+        .audio__size {
+          color: #828282;
+        }
+      }
+    }
+
+    .overall__sentiment {
+      flex-direction: column;
+      .title {
+        color: #1d1d1d;
+        font-size: pix-rem(20);
+        font-weight: 400;
+      }
+
+      .sentiment__chart {
+        margin-left: auto;
+        margin-right: auto;
+        width: pix-rem(200);
+        height: pix-rem(200);
+
+        img {
+          object-fit: contain;
+          width: 100%;
+        }
+      }
+
+      .sentiment__chart__legend {
+        margin: pix-rem(6) 0;
+
+        .chart__legend__item {
+          font-weight: 300;
+          font-size: pix-rem(14);
+          color: #535353;
+          display: flex;
+          align-items: center;
+          gap: pix-rem(8);
+
+          .item__icon {
+            width: pix-rem(12);
+            height: pix-rem(12);
+            border-radius: 50%;
+          }
+
+          .positive {
+            background-color: #76c86f;
+          }
+
+          .neutral {
+            background-color: #ffce54;
+          }
+
+          .negative {
+            background-color: #ff7589;
+          }
+        }
+      }
+    }
+
+    .verdict {
+      flex-direction: column;
+      font-size: pix-rem(16);
+      font-weight: 300;
+      gap: pix-rem(24);
+
+      .verdict__item {
+        display: flex;
+        flex-direction: column;
+        gap: pix-rem(24);
+        .verdict__title {
+          color: #454545;
+        }
+
+        .verdict__bar {
+          width: 80%;
+          font-size: pix-rem(12);
+          line-height: pix-rem(16);
+          height: pix-rem(16);
+          border: 0.5px solid #8ab1c6;
+          border-radius: 1em;
+          position: relative;
+
+          .inner__bar {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            border-radius: 1em;
+            background-color: #8ab1c6;
+            mix-blend-mode: multiply;
+          }
+
+          .bar__text {
+            text-align: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
   }
 }
