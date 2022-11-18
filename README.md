@@ -2,8 +2,9 @@
 
 ![Scrybe Logo](/scrybe_frontend/src/assets/scrybe_logo_with_text.svg)
 
-## Current Setup
+## Current Setup (This project uses:)
 
+- Sass + CSS modules for styling
 - Eslint
 - Prettier
 - Husky precommits
