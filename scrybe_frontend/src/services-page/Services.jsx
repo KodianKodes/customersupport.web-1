@@ -46,7 +46,7 @@ function Services() {
               <img src={weCan} alt="wecan" />
             </div>
             <div className="wecan-txt">
-              <h1>What We Can Do For You</h1>
+              <h1>Here Is What We Can Do For You</h1>
               <li className="list">
                 An AI-based customer support attendance that automatically
                 transcribes and analyzes recorded conversations.
