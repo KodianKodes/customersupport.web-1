@@ -1,5 +1,3 @@
-@use './styles/reset';
-
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
 
@@ -10,4 +8,7 @@
   -webkit-text-size-adjust: 100%;
 }
 
-
+* {
+  padding: 0;
+  margin: 0;
+}
