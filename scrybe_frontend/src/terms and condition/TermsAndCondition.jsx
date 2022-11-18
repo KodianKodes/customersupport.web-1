@@ -3,7 +3,7 @@ import React from "react";
 function TermsAndCondition() {
   return (
     <div>
-      <h1>sdjbkkbf</h1>
+      <h1>Terms And Condition</h1>
     </div>
   );
 }
