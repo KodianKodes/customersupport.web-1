@@ -96,28 +96,30 @@ td {
   .uploaded-header h1 {
     font-size: 16px;
   }
-  .uploaded-header .est-time-left {
-    display: none;
+  .uploaded-header {
+    h2 {
+      display: none !important;
+    }
   }
 
   .uploaded-table {
     border: 0;
-    max-width: 200px;
+    // max-width: 200px;
+    th,
+    td {
+      font-size: 14px;
+      padding: 10px 3px;
+    }
   }
 
-  .uploaded-table tbody tr {
-    margin-bottom: 10px;
-    display: block;
-    border-bottom: 1px solid #a9a9a9;
+  .uploaded-table-row th:nth-child(7) {
+    display: none;
   }
 
-  .uploaded-table tbody tr td::before {
-    content: attr(data-label);
-    float: left;
-    font-weight: bold;
-  }
-
-  .uploaded-table tbody tr td:last-child {
-    border-bottom: 0;
+  .uploaded-table tbody {
+    .uploaded-table-body-cell-img,
+    .delete-icon {
+      display: none;
+    }
   }
 }

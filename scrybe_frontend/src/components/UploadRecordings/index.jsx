@@ -138,7 +138,11 @@ function UploadedRecordings() {
                   </strong>
                 </td>
                 <td className={styles["uploaded-table-body-cell delete-btn"]}>
-                  <img src={deleteIcon} alt="delete-icon " />
+                  <img
+                    src={deleteIcon}
+                    alt="delete-icon "
+                    className={styles["delete-icon"]}
+                  />
                 </td>
               </tr>
             ))}
