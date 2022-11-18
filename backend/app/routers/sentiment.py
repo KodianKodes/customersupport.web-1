@@ -9,7 +9,7 @@ def sentiment(transcript):
         overall_sentiment = "Negative"
     elif sentiment['pos'] > sentiment['neg']:
         overall_sentiment = "Positive"
-    else:
+    elif sentiment['neg'] == sentiment['pos']:
         overall_sentiment = "Neutral"
     sentiment = { "positivity_score": sentiment['pos'], 
             "negativity_score": sentiment['neg'], 
