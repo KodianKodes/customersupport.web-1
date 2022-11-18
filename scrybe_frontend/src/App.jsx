@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./App.scss";
 
 import Industry from "./Pages/indsutry/industry";
@@ -9,7 +10,6 @@ function App() {
     <div className="App" data-testid="app-container">
       <Industry />
       <IndustryArticle />
-
     </div>
   );
 }

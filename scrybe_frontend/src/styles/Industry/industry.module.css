@@ -89,11 +89,14 @@ h2 {
     padding: 2% 0 4%;
 }
 
+.postDetails p {
+    width: 90%;
+}
+
 p {
     font-size: 2rem;
     font-weight: 300;
     display: inline-block;
-    width: 90%;
     line-height: 2.6rem;
 }
 

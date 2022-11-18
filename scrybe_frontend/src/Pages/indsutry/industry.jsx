@@ -28,7 +28,11 @@ function Industry() {
           </h4>
           <h3>Why you should embrace Emotional AI - Analytics insights</h3>
           <p>
-            We often feel that emotions have no place in business but it is thecore of what drives it. Humans are emotional and humans build andmakeup businesses. They&apos;re part of who we are, and it&apos;s important to be able to harness their potential. Emotions have a significant impact on business and your company&apos;s success
+            We often feel that emotions have no place in business but it is
+            thecore of what drives it. Humans are emotional and humans build
+            andmakeup businesses. They&apos;re part of who we are, and it&apos;s
+            important to be able to harness their potential. Emotions have a
+            significant impact on business and your company&apos;s success
           </p>
         </div>
       </div>
