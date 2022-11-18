@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+@mixin btn {
+    font-family: 'Kanit', sans-serif;
+    background: #006CFF;
+    padding: 15px 20px;
+    color: #fff;
+    border: 0;
+    border-radius: 3px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+    width: 180px;
+    font-size: 18px;
+}
+
+@mixin btnTrans {
+    font-family: 'Kanit', sans-serif;
+    padding: 15px 20px;
+    background: transparent;
+    color: #006CFF;
+    border: 1px solid #006CFF;
+    border-radius: 3px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 180px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+@mixin container {
+    width: 90%;
+    margin: auto;
+}
+
+@mixin flexItem($justifyContent, $direction) {
+    display: flex;
+    align-items: center;
+    flex-direction: $direction;
+    justify-content: $justifyContent;
+}
+
+.content-section {
+    padding: 10rem 0;
+    .container {
+        @include container;
+    
+        .flex-items {
+            @include flexItem(space-between, row);
+    
+            .txt-item {
+                width: 45%;
+    
+                h1 {
+                    color: #005584;
+                    font-size: 40px;
+                    line-height: 1.7;
+                    font-weight: 600;
+                    margin-bottom: 30px;
+                }
+    
+                p {
+                    font-size: 20px;
+                    color: #3F3F3F;
+                    font-weight: 300;
+                }
+    
+                .btns {
+                    display: flex;
+                    align-items: center;
+                    gap: 4rem;
+                    margin-top: 30px;
+    
+                    .filled {
+                        @include btn
+                    }
+        
+                    .transparent {
+                        @include btnTrans;
+                    }
+                }
+            }
+    
+            .img-item {
+                width: 50%;
+    
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.why-scrybe {
+    .container {
+        @include container;
+        padding: 0 0 10rem 0;
+
+        h1 {
+            color: #005584;
+            font-weight: 600;
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 20px;
+            color: #3F3F3F;
+            font-weight: 300;
+            text-align: center;
+            width: 50%;
+            margin: auto;
+        }
+
+        .card-container {
+            @include flexItem(space-around, row);
+            margin-top: 3rem;
+
+            .card {
+                width: 20%;
+                border: 1px solid #B0D1FF;
+                filter: drop-shadow(2px 2px 10px #C5C5C514);
+                padding: 40px 20px;
+                border-radius: 7px;
+                @include flexItem(center, column);
+
+                img {
+                    width: 100px;
+                }
+
+                p {
+                    color: #005584;
+                    font-size: 16px;
+                    line-height: 1.6;
+                    width: 100%;
+                    margin-top: 30px;
+                }
+            }
+
+        }
+    }
+}
+
+.buss-section {
+    .container {
+        @include container;
+
+        .buss-flex {
+            @include flexItem(space-between, row);
+
+            .buss-txt {
+                width: 50%;
+                h1 {
+                    color: #005584;
+                    margin: 0 0 30px 0;
+                    font-size: 30px;
+                    line-height: 1.8;
+                }
+
+                p {
+                    color: #3F3F3F;
+                    font-size: 20px;
+                    line-height: 1.7;
+                    margin-bottom: 30px;
+                }
+
+                h4 {
+                    font-size: 25px;
+                    font-weight: 600;
+                    color: #006CFF;
+                }
+            }
+
+            .buss-img  {
+                width: 50%;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
