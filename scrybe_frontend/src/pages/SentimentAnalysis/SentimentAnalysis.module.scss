@@ -1,0 +1,52 @@
+@import "../../assets/styles/utilities/functionsANDmedia";
+
+.page__container {
+  padding: pix-rem(32);
+  display: flex;
+  gap: pix-rem(32);
+  background-color: #f9f9f9;
+
+  .main__container {
+    padding: pix-rem(16);
+    background-color: white;
+    flex: 1 1 pix-rem(734);
+    display: flex;
+    flex-direction: column;
+    gap: pix-rem(24);
+    border-radius: pix-rem(4);
+
+    &__top {
+      display: flex;
+      align-items: center;
+      gap: pix-rem(24);
+
+      &__arrow__icon__container {
+        width: pix-rem(24);
+        height: pix-rem(24);
+        cursor: pointer;
+
+        &__image {
+          object-fit: contain;
+          width: 100%;
+        }
+      }
+
+      &__title {
+        font-weight: 500;
+        font-size: pix-rem(20);
+        color: #3f3f3f;
+      }
+    }
+
+    .analysis__cards {
+      display: flex;
+      flex-direction: column;
+      padding: 0 pix-rem(48);
+      gap: pix-rem(40);
+    }
+  }
+
+  .aside__container {
+    flex: 0.15 1 pix-rem(322);
+  }
+}
