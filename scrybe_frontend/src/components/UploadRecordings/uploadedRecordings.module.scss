@@ -90,6 +90,16 @@ td {
 }
 
 @media screen and (max-width: 768px) {
+  .uploaded-recordings {
+    padding: 1rem;
+  }
+  .uploaded-header h1 {
+    font-size: 16px;
+  }
+  .uploaded-header .est-time-left {
+    display: none;
+  }
+
   .uploaded-table {
     border: 0;
     max-width: 200px;
