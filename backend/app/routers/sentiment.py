@@ -1,4 +1,3 @@
-from fastapi import FastAPI
 from nltk.sentiment import SentimentIntensityAnalyzer
 from nltk.tokenize import word_tokenize
 
