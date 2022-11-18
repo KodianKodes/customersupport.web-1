@@ -1,0 +1,17 @@
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 30px;
+  .mainWrapper {
+    width: 1160px;
+    height: 944px;
+    background-color: green;
+    padding: 40px;
+    .topDetailsDiv {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+  }
+}

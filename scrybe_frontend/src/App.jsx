@@ -2,7 +2,7 @@ import React from "react";
 import "./App.scss";
 import { Routes, Route } from "react-router-dom";
 import Dummy from "./components/Dummy";
-import AgentReport from "./pages/agent-report/";
+import AgentReport from "./pages/agent-report";
 
 function App() {
   return (
