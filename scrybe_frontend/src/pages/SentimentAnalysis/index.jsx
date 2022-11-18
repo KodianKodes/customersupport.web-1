@@ -3,9 +3,44 @@ import styles from "./SentimentAnalysis.module.scss";
 import arrowIcon from "./icons/arrow_back.svg";
 import audioIcon from "./icons/audio_icon.svg";
 import pieChart from "./icons/pie_chart.svg";
+import downloadIcon from "./icons/download.svg";
+import dropdownIcon from "./icons/dropdown.svg";
+import shareIcon from "./icons/share.svg";
 import AnalysisCard from "../../components/AnalysisCard";
 
 function SentimentAnalysis() {
+  const positiveTags = [
+    "brave",
+    "good",
+    "happy",
+    "great",
+    "Nice",
+    "happy",
+    "thanks",
+    "good",
+    "excited",
+    "brave",
+    "easy",
+    "lovely",
+    "excited",
+  ];
+
+  const negativeTags = [
+    "fear",
+    "bad",
+    "sad",
+    "lost",
+    "confused",
+    "sad",
+    "rude",
+    "fear",
+    "rude",
+    "difficult",
+    "ugly",
+    "bad",
+    "criticism",
+  ];
+
   return (
     <div className={styles.page__container}>
       <main className={styles.main__container}>
@@ -87,6 +122,34 @@ function SentimentAnalysis() {
             <div className={styles.verdict__title}>Verdict: </div>
             <div className={styles.final__verdict}>Customer is Satisfied</div>
           </div>
+          <div className={styles.verdict__download}>
+            <button type="button" className={styles.download__button}>
+              <img src={downloadIcon} alt="download icon" />
+              Download
+              <div className={styles.dropdown__container}>
+                <img src={dropdownIcon} alt="drop down" />
+              </div>
+            </button>
+            <button type="button" className={styles.share__button}>
+              <img src={shareIcon} alt="share icon" />
+            </button>
+          </div>
+        </div>
+        <div className={`${styles.tags} ${styles.inner__container}`}>
+          <div className={styles.title}>Positive phrase tags</div>
+          <ul className={styles.tag__items}>
+            {positiveTags.map((tag) => {
+              return <li key={new Date().getTime()}>{tag}</li>;
+            })}
+          </ul>
+        </div>
+        <div className={`${styles.tags} ${styles.inner__container}`}>
+          <div className={styles.title}>Positive phrase tags</div>
+          <ul className={styles.tag__items}>
+            {negativeTags.map((tag) => {
+              return <li key={new Date().getTime()}>{tag}</li>;
+            })}
+          </ul>
         </div>
       </aside>
     </div>
