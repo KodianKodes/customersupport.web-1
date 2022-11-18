@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function industryCard() {
-  return (
-    <div>
-      
-    </div>
-  )
+  return <div />;
 }
 
-export default industryCard
+export default industryCard;

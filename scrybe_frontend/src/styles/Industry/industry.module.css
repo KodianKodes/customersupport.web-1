@@ -35,6 +35,7 @@
 }
 
 .card {
+    display: block;
     width: 98%;
     margin: 7% auto;
     display: flex;
@@ -69,11 +70,7 @@
     object-fit: cover;
 }
 
-.titleCard h2 {
-    font-weight: 500;
-}
-
-.postDetails h2 {
+h2 {
     font-size: 2rem;
     line-height: 2.6rem;
     text-transform: uppercase;
@@ -92,7 +89,7 @@
     padding: 2% 0 4%;
 }
 
-.postDetails p {
+p {
     font-size: 2rem;
     font-weight: 300;
     display: inline-block;
@@ -100,15 +97,70 @@
     line-height: 2.6rem;
 }
 
-.postDetails h4 {
+h4 {
     font-size: 2rem;
     font-weight: 300;
     color: #434342;
 }
 
-.postDetails h4 span {
+h4 span {
     font-size: 2rem;
     color: #434342;
     font-weight: 600;
     margin-right: 10px;
 }
+
+.mainContent {
+    max-width: 121.6rem;
+    margin: 0 auto;
+}
+
+.articleBanner {
+    display: flex;
+}
+
+.articleDetails h3 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 3.3rem;
+    color: #434342;
+    /* padding: 2% 0 4%; */
+}
+
+.articleDetails {
+    flex: 40%;
+}
+
+.articleDetails h2 {
+    padding: 6% 0 1%;
+}
+
+.articleDetails h3 {
+    padding-bottom: 2%;
+}
+
+.articleBody p {
+    padding-bottom: 2%;
+}
+.articleBody a {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 2.6rem;
+    color: rgb(0, 106, 255);
+    text-decoration: none;
+}
+
+p.bold  {
+    font-weight: 700;
+}
+
+.articleBody ul {
+    padding-left: 30px;
+}
+
+.articleBody ul li {
+    font-size: 2rem;
+    font-weight: 300;
+    
+}
+

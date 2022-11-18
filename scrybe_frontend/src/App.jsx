@@ -1,17 +1,15 @@
 import React from "react";
 import "./App.scss";
-import scrybeLogo from "./assets/scrybe_logo_with_text.svg";
 
-import Industry from './Pages/indsutry/industry'
+import Industry from "./Pages/indsutry/industry";
+import IndustryArticle from "./Pages/indsutry/industryArticle";
 
 function App() {
   return (
     <div className="App" data-testid="app-container">
-     
-       <Industry/>
+      <Industry />
+      <IndustryArticle />
 
-
-     
     </div>
   );
 }
