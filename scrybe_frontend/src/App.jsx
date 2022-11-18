@@ -4,7 +4,7 @@ import scrybeLogo from "./assets/scrybe_logo_with_text.svg";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" data-testid="app-container">
       <div
         style={{
           width: "100vw",
