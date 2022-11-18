@@ -2,9 +2,7 @@
 from sqlalchemy import Boolean, Column, ForeignKey, Integer, String, DateTime, Enum
 from sqlalchemy.orm import relationship
 
-from .db import Base
-
-
+from db import Base
 
 class User(Base):
     __tablename__ = "users"
