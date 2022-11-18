@@ -7,7 +7,7 @@ from database.db import SessionLocal, engine
 models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
-List = []
+# List = []
 # Dependency
 def get_db():
     db = SessionLocal()
