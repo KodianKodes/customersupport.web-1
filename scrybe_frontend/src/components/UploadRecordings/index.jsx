@@ -15,23 +15,65 @@ const recordings = [
   },
   {
     id: 2,
-    fileName: "Shullamite Audio Recording. mp3",
+    fileName: "Shullamite Audio Recording.mp3",
     length: "05:23",
     size: "3.4 MB",
     date: "13/11/22 (5:22 PM)",
-    status: "Successuf",
+    status: "Processing",
   },
   {
     id: 3,
-    fileName: "Bright Audio Recording. mp3",
+    fileName: "Bright Audio Recording.mp3",
     length: "05:23",
-    size: "4.4 MB",
+    size: "6.8 MB",
+    date: "13/11/22 (5:22 PM)",
+    status: "Successful",
+  },
+  {
+    id: 4,
+    fileName: "Sim Sim Audio Recording.mp3",
+    length: "05:23",
+    size: "6.8 MB",
+    date: "13/11/22 (5:22 PM)",
+    status: "Successful",
+  },
+
+  {
+    id: 5,
+    fileName: "Alice Audio Recording.mp3",
+    length: "05:23",
+    size: "8.6 MB",
     date: "13/11/22 (5:22 PM)",
     status: "Failed",
+  },
+  {
+    id: 6,
+    fileName: "Alice Audio Recording. mp3",
+    length: "05:23",
+    size: "5.4 MB",
+    date: "13/11/22 (5:22 PM)",
+    status: "Failed",
+  },
+  {
+    id: 7,
+    fileName: "Valerie Audio Recording. mp3",
+    length: "05:23",
+    size: "9.8 MB",
+    date: "13/11/22 (5:22 PM)",
+    status: "Successful",
+  },
+  {
+    id: 8,
+    fileName: "David Audio Recording. mp3",
+    length: "05:23",
+    size: "6.8 MB",
+    date: "13/11/22 (5:22 PM)",
+    status: "Successful",
   },
 ];
 function UploadedRecordings() {
   const timeLeft = 20;
+
   return (
     <div className={styles["uploaded-recordings"]}>
       <div className={styles["uploaded-header"]}>
@@ -46,21 +88,18 @@ function UploadedRecordings() {
         <table className={styles["uploaded-table"]}>
           <thead className={styles["uploaded-table-header"]}>
             <tr className={styles["uploaded-table-row"]}>
-              <th className={styles["table-header-cells"]} />
-              <th className={styles["table-header-cells"]}>File Name</th>
-              <th className={styles["table-header-cells"]}>Length</th>
-              <th className={styles["table-header-cells"]}>Size</th>
-              <th className={styles["table-header-cells"]}>Date</th>
-              <th className={styles["table-header-cells"]}>Status</th>
-              <th className={styles["table-header-cells"]} />
+              <th />
+              <th>File Name</th>
+              <th>Length</th>
+              <th>Size</th>
+              <th>Date</th>
+              <th>Status</th>
+              <th />
             </tr>
           </thead>
           <tbody className={styles["uploaded-table-body"]}>
             {recordings.map((recording) => (
-              <tr
-                className={styles["uploaded-table-body-row"]}
-                key={recording.id}
-              >
+              <tr key={recording.id}>
                 <td className={styles["uploaded-table-body-checkbox-img-wrap"]}>
                   <input
                     type="checkbox"
@@ -74,20 +113,29 @@ function UploadedRecordings() {
                     className={styles["uploaded-table-body-cell-img"]}
                   />
                 </td>
-                <td className={styles["uploaded-table-body-cell"]}>
-                  {recording.fileName}
-                </td>
-                <td className={styles["uploaded-table-body-cell"]}>
-                  {recording.length}
-                </td>
-                <td className={styles["uploaded-table-body-cell"]}>
-                  {recording.size}
-                </td>
-                <td className={styles["uploaded-table-body-cell"]}>
-                  {recording.date}
-                </td>
-                <td className={styles["uploaded-table-body-cell"]}>
-                  {recording.status}
+                <td>{recording.fileName}</td>
+                <td>{recording.length}</td>
+                <td>{recording.size}</td>
+                <td>{recording.date}</td>
+                <td>
+                  <strong
+                    style={{
+                      color:
+                        // eslint-disable-next-line no-nested-ternary
+                        recording.status === "Processing"
+                          ? "#FFB800"
+                          : recording.status === "Successful"
+                          ? "#3bb031"
+                          : "#ff291b",
+                    }}
+                  >
+                    {recording.status}{" "}
+                    {recording.status === "Failed" && (
+                      <a href="!" className={styles.retry}>
+                        retry
+                      </a>
+                    )}
+                  </strong>
                 </td>
                 <td className={styles["uploaded-table-body-cell delete-btn"]}>
                   <img src={deleteIcon} alt="delete-icon " />
