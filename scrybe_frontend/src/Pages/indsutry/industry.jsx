@@ -1,0 +1,39 @@
+import React from 'react'
+import { Link, Route, Routes } from 'react-router-dom';
+
+import styles from '../../styles/Industry/industry.module.css'
+import Image from '../../assets/Industry/industryImage.png'
+
+function Industry() {
+  return (
+    <div className={styles.container}>
+      <div className={styles.navbar}>
+        <img src="" alt="" />
+      </div>
+      <div className={styles.banner}>
+      <h1>Industry</h1>
+        <p>Industry-related news and insights for enterprises building 
+            features and products with state-of-the-art AI models.</p>
+      </div>
+      
+      <div className={styles.card}>
+        <div className={styles.titleCard}>
+            
+           <img src={Image} alt="" />
+        </div>
+        <div className={styles.postDetails}>
+            <h2>Industry</h2>
+            <h4><span>Munaike</span>Wednesday 18th Nov. 2022 </h4>
+            <h3>Why you should embrace Emotional AI - Analytics insights</h3>
+            <p>We often feel that emotions have no place in business but it is the core of what drives it. 
+              Humans are emotional and humans build and makeup businesses.
+              They're part of who we are, and it's important to be able to harness their potential. 
+              Emotions have a significant impact on business and your company's success</p>
+        </div>
+
+      </div>
+    </div>
+  )
+}
+
+export default Industry
