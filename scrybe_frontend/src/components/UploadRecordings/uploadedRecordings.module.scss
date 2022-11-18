@@ -1,0 +1,117 @@
+.uploaded-recordings {
+  padding: 2rem;
+  background: #f9f9f9;
+}
+.uploaded-header {
+  display: flex;
+  justify-content: space-between;
+
+  h1,
+  h2 {
+    font-family: "Kanit";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+.est-time-left-num {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #006cff;
+}
+
+.uploaded-table-wrap {
+  background: #ffffff;
+}
+
+// .uploaded-table {
+//   margin-top: 1rem;
+//   width: 100%;
+//   border-collapse: collapse;
+//   border-spacing: 0;
+
+//   .uploaded-table-header {
+//     padding: 1rem;
+
+//     border-bottom: 1px solid #a9a9a9;
+//     .uploaded-table-row {
+//       display: flex;
+//       justify-content: space-between;
+//       .table-header-cells {
+//         font-family: "Inter";
+//         font-style: normal;
+//         font-weight: 700;
+//         font-size: 16px;
+//         line-height: 120%;
+
+//         color: #706f6f;
+//       }
+//     }
+//   }
+//   .uploaded-table-body {
+//     padding: 1rem 1rem 1rem 2rem;
+//     // display: flex;
+//     .uploaded-table-body-row {
+//       display: flex;
+//       justify-content: space-between;
+//       align-items: center;
+//       padding: 1rem;
+//       text-align: justify;
+//       margin: 0 1rem;
+//       .uploaded-table-body-cell-img {
+//         width: 40px;
+//         margin-right: 4rem;
+//         img {
+//           width: 100%;
+//         }
+//       }
+//       .uploaded-table-body-cell {
+//         border: 1px solid #a9a9a9;
+//         margin-right: 5rem;
+//         text-align: left;
+//         font-family: "Kanit";
+//         font-style: normal;
+//         font-weight: 300;
+//         font-size: 16px;
+//         line-height: 24px;
+//         padding: 1rem;
+//         // width: 200px;
+//         height: max-content;
+//         // background: red;
+
+//         color: #535353;
+//       }
+//     }
+//   }
+// }
+
+//second table styles
+.uploaded-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  // font-size: 0.9em;
+  // font-family: sans-serif;
+  // min-width: 400px;
+  width: 100%;
+  background: #ffffff;
+}
+
+.uploaded-table thead {
+  text-align: left;
+  border-bottom: 1px solid #a9a9a9;
+}
+
+.uploaded-table thead tr {
+  text-align: left;
+}
+
+.uploaded-table th,
+td {
+  padding: 15px 15px;
+}
+
+.uploaded-table-body-checkbox-img-wrap{
+  display: flex;
+}
