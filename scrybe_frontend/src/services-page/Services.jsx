@@ -69,15 +69,15 @@ function Services() {
               <div className="check-container">
                 <span>
                   <img src={check} alt="checkmark" />
-                  <p>Convert recorded calls into readable text</p>
+                  <p>Time Stamp</p>
                 </span>
                 <span>
                   <img src={check} alt="checkmark" />
-                  <p>Professional-grade accuracy</p>
+                  <p>Convert recorded calls into readable tex</p>
                 </span>
                 <span>
                   <img src={check} alt="checkmark" />
-                  <p>Built with diversity and inclusion in mind</p>
+                  <p> Built with diversity and inclusion in mind</p>
                 </span>
               </div>
               <button type="button">
@@ -130,7 +130,7 @@ function Services() {
                 <span>
                   <img src={check} alt="checkmark" />
                   <p>
-                    Reports on customers’ engagement and call agents’
+                    Reports on customers’ engagement and call agent’s
                     efficeiency.
                   </p>
                 </span>
