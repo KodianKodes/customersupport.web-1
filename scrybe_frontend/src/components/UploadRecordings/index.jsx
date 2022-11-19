@@ -1,7 +1,11 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/control-has-associated-label */
-import React, { useState } from "react";
+import Box from "@mui/material/Box";
+import Modal from "@mui/material/Modal";
+import React, { useEffect, useState } from "react";
+import closeModalIcon from "./imgs/close-icon.svg";
 import deleteIcon from "./imgs/delete-icon.svg";
 import soundwave from "./imgs/soundwave.svg";
 import styles from "./uploadedRecordings.module.scss";
@@ -13,7 +17,7 @@ const recordings = [
     length: "05:23",
     size: "4.2 MB",
     date: "13/11/22 (5:22 PM)",
-    status: "Processing",
+    status: "Successful",
   },
   {
     id: 2,
@@ -21,7 +25,7 @@ const recordings = [
     length: "05:23",
     size: "3.4 MB",
     date: "13/11/22 (5:22 PM)",
-    status: "Processing",
+    status: "Successful",
   },
   {
     id: 3,
@@ -73,9 +77,24 @@ const recordings = [
     status: "Successful",
   },
 ];
+
+const modalStyle = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: 400,
+  bgcolor: "background.paper",
+  boxShadow: 24,
+  p: 2,
+};
+
 function UploadedRecordings() {
   const [allRecordings, setAllRecordings] = useState(recordings);
   const [recordCheckedList, setRecordCheckedList] = useState([]);
+  const [openModal, setOpenModal] = useState(false);
+  const handleOpen = () => setOpenModal(true);
+  const handleClose = () => setOpenModal(false);
   const timeLeft = 20;
 
   const getChecked = (e) => {
@@ -94,6 +113,7 @@ function UploadedRecordings() {
     );
     setAllRecordings(newRecordings);
     setRecordCheckedList([]);
+    handleClose();
   };
 
   const deleteRecording = (id) => {
@@ -101,12 +121,56 @@ function UploadedRecordings() {
     setAllRecordings(newRecordings);
   };
 
+  // returns true if all recordings dont have the Processing status
+  const allRecordingsProcessed = () => {
+    const allProcessed = allRecordings.every(
+      (item) => item.status !== "Processing"
+    );
+    return allProcessed;
+  };
+
+  useEffect(() => {
+    allRecordingsProcessed();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [allRecordings]);
+
   return (
     <div
       className={`${styles.uploaded_recordings} ${
         allRecordings.length < 1 && styles.no_items_found
       }`}
     >
+      <Modal
+        open={openModal}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={modalStyle} className={styles.modalbox}>
+          <div className={styles.close_modal_icon} onClick={handleClose}>
+            <img src={closeModalIcon} alt="close modal icon" />
+          </div>
+          <div className={styles.delete_files_options_wrap}>
+            <p>Delete file(s)?</p>
+            <div className={styles.delete_files_btn_options}>
+              <button
+                type="button"
+                className={styles.cancel_delete}
+                onClick={handleClose}
+              >
+                Cancel
+              </button>
+              <button
+                type="button"
+                className={styles.confirm_delete}
+                onClick={deleteBulkRecordings}
+              >
+                Delete
+              </button>
+            </div>
+          </div>
+        </Box>
+      </Modal>
       <div className={styles.uploaded_header}>
         <h1>Transcription Status </h1>
         <h2 className={styles.est_time_left}>
@@ -191,14 +255,14 @@ function UploadedRecordings() {
               name=""
               id=""
               className={styles.bulkselect}
-              onChange={deleteBulkRecordings}
+              onChange={handleOpen}
             >
               <option value="">
                 {recordCheckedList.length > 0
                   ? `${recordCheckedList.length} Files Selected`
                   : " Bulk Actions"}
               </option>
-              <option value="">Delete</option>
+              {allRecordings.length > 2 && <option value="">Delete</option>}
             </select>
           </div>
           <div className={styles.calbackurl_wrap}>
@@ -208,7 +272,13 @@ function UploadedRecordings() {
             </p>
           </div>
         </div>
-        <div className={`${styles.view_resultbtn} ${styles.disabled}`}>
+        <div
+          className={`${styles.view_resultbtn} ${
+            allRecordingsProcessed === true
+              ? styles.processed
+              : styles.processing
+          }`}
+        >
           View Result
         </div>
       </div>

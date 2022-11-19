@@ -2,6 +2,69 @@
   padding: 2rem;
   background: #f9f9f9;
 }
+.modalbox {
+  position: relative;
+  border: none !important;
+  height: 241px !important;
+  outline: none !important;
+  .close_modal_icon {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #000;
+  }
+  .delete_files_options_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 3rem;
+    p {
+      font-family: "Kanit";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 26px;
+      text-align: center;
+      color: #000000;
+    }
+    .delete_files_btn_options {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2rem;
+      .cancel_delete,
+      .confirm_delete {
+        width: 112px;
+        height: 56px;
+        padding: 16px 32px;
+        border-radius: 4px;
+        font-family: "Kanit";
+        border: none;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        margin-right: 1rem;
+        outline: none;
+        cursor: pointer;
+      }
+      .cancel_delete {
+        color: #00a4ff;
+        background: transparent;
+      }
+      .confirm_delete {
+        color: #ffffff;
+        background: #f44336;
+      }
+    }
+  }
+}
 .uploaded_header {
   display: flex;
   justify-content: space-between;
@@ -25,6 +88,7 @@
 .uploaded_table_wrap {
   background: #ffffff;
   margin-top: 1rem;
+  overflow-x: auto;
 }
 
 .uploaded_table {
@@ -155,11 +219,11 @@
     color: #c5c5c5;
     border: none;
   }
-  .disabled {
+  .processing {
     background: #ececec;
     cursor: not-allowed;
   }
-  .active {
+  .processed {
     background: #006cff;
     cursor: pointer;
   }
