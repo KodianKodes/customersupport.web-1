@@ -25,10 +25,7 @@ function Hero() {
             >
               Request a Demo
             </a>
-            <a
-              href="https://www.w3schools.com/react/react_css.asp"
-              className={styles.ctaStarter}
-            >
+            <a href="/transcriptions" className={styles.ctaStarter}>
               Get Started
             </a>
           </div>
