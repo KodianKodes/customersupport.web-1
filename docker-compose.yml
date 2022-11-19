@@ -12,10 +12,6 @@ services:
     backend:
         image: vicdam/scrybebackend:latest
         container_name: backend
-        command: python manage.py runserver 0.0.0.0:8008
+        command: uvicorn --host 0.0.0.0 --port 5000 main:app
         ports:
-            - "8008:8008"
-networks:
-  default:
-  name:
-  external:
+            - "5000:5000"

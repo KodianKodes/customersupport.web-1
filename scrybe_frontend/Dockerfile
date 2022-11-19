@@ -1,5 +1,5 @@
 # pull the official base image
-FROM node:current-alpine
+FROM node:current-alpine as build
 
 # set work directory
 WORKDIR /scrybe_frontend
@@ -12,4 +12,11 @@ RUN npm install
 COPY . .
 
 EXPOSE 3000
-CMD ["npm", "run", "dev"]
+
+RUN npm run build
+
+FROM nginx:1.19
+
+COPY ./nginx/nginx.conf etc/nginx/nginx.conf
+
+COPY --from=build /scrybe_frontend/dist /usr/share/nginx/html
