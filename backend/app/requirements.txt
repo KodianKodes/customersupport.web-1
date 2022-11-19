@@ -3,3 +3,5 @@ uvicorn==0.12.2
 python-multipart
 nltk
 sqlalchemy
+banana-dev==4.0.0
+python-dotenv
