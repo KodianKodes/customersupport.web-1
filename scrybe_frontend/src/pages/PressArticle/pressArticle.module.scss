@@ -139,7 +139,7 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
         font-size: .6rem;
         color: #313131;
         font-weight: 400;
-        font-style: light;
+        font-style: normal;
         fill: solid;
         line-height: 1rem;
     }
@@ -147,5 +147,92 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
     .article__details .arrowleft {
         width: .7rem;
         margin-left: .2em;
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    // Styling of the section one
+
+    .first__section {
+        margin-top: 3em;
+
+        .first__heading {
+            width: 65%;
+        }
+
+        .first__heading .first__head {
+            font-size: 1.3rem;
+        }
+    }
+
+
+    // Styling of the section two
+
+    .second__section {
+
+        .desktop__text {
+            display: inherit;
+            white-space: none;
+        }
+
+        .second__flex {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .left__container {
+            width: 60%;
+            margin-top: 1em;
+        }
+
+        .right__container {
+            width: 30%;
+            border: 1px solid #eeee;
+            padding: 2em 0 0 .8em;
+        }
+
+        .left__container .left__hero {
+            text-align: unset;
+        }
+
+        .left__hero .hero__icon {
+            width: 100%;
+        }
+
+        hr {
+            visibility: none;
+        }
+
+        // Styling of the right container of section two
+
+        .desktop__view {
+            display: inline-block;
+            margin-bottom: .5em;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .article__container {
+            margin-bottom: .5em;
+        }
+
+        .right__heading {
+            margin-bottom: 1em;
+        }
+
+        .right__heading .right__head {
+            font-size: .9rem;
+        }
+
+        .article__heading .article__head {
+            font-size: .8rem;
+        }
+
+        .article__details .read__more {
+            font-size: .6.5rem;
+            font-weight: 300;
+        }
     }
 }
