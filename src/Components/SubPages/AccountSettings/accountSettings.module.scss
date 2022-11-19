@@ -1,0 +1,179 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+::placeholder {
+	font-size: 0.875rem;
+	font-weight: 300;
+	font-family: "Kanit", sans-serif;
+}
+
+.nav {
+	padding: 0 1rem;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	margin: 1.1875rem 1rem 1.9375rem 0;
+	a {
+		display: flex;
+		background-color: #e6f0ff;
+		border-radius: 8px;
+		padding: 0.7rem;
+
+		img {
+			width: 100%;
+		}
+	}
+	.redirect {
+		display: flex;
+		flex: 1;
+
+		h1 {
+			width: 88%;
+			text-align: center;
+			font-size: 1.25rem;
+			font-weight: 300;
+		}
+
+		p {
+			display: none;
+			width: 100%;
+			text-align: center;
+		}
+	}
+}
+.wrapper {
+	padding: 0 1rem;
+
+	.header {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+		h2 {
+			font-size: 1.5rem;
+			font-weight: 600;
+		}
+		p {
+			font-size: 1.25rem;
+		}
+	}
+
+	form {
+		margin-top: 1rem;
+		margin-bottom: 3rem;
+
+		.formGroup {
+			display: flex;
+			flex-direction: column;
+			gap: 0.25rem;
+			margin-block: 1.5rem;
+		}
+
+		label {
+			font-size: 0.75rem;
+		}
+
+		input {
+			border: 1px solid #c5c5c5;
+			border-radius: 4px;
+			padding: 1rem;
+			width: 100%;
+		}
+
+		button {
+			padding: 0.75rem 2rem;
+			border: none;
+			background-color: #006cff;
+			border-radius: 4px;
+			color: white;
+			font-family: "Kanit", sans-serif;
+			font-size: 0.875rem;
+			font-weight: 500;
+		}
+	}
+
+	.apps {
+		h2 {
+			font-size: 1.25rem;
+			font-weight: 600;
+			margin-bottom: 0.875rem;
+		}
+		.app {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 1rem;
+			padding: 1.5rem 1rem;
+			background-color: #fffdeb;
+
+			h3 {
+				font-size: 1.25rem;
+				font-weight: 700;
+			}
+
+			p {
+				font-size: 0.7rem;
+			}
+
+			a {
+				text-decoration: none;
+				color: #006cff;
+				font-size: 0.875rem;
+				font-weight: 500;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.nav {
+		a {
+			display: none;
+		}
+
+		.redirect {
+			width: 100%;
+			h1 {
+				display: none;
+			}
+
+			p,
+			a {
+				display: block;
+				font-size: 0.875rem;
+				font-weight: 300;
+			}
+
+			a {
+				font-weight: 600;
+				color: #006cff;
+				display: inline-flex;
+				background-color: transparent;
+				padding: 0.75rem 0;
+				text-decoration: none;
+			}
+		}
+	}
+	.wrapper {
+		width: 100%;
+	}
+
+	.formSubmit {
+		flex-direction: column;
+	}
+
+	.formSubmit a {
+		text-align: center;
+	}
+}
+@media (min-width: 1024px) {
+	.wrapper {
+		width: 100%;
+		margin-right: 4.5rem;
+	}
+
+	.formGroup {
+		width: 100%;
+	}
+}
