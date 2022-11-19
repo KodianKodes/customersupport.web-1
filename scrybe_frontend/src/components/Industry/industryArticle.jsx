@@ -4,7 +4,14 @@ import Image from "../../assets/Industry/industryImage.png";
 
 function industryArticle() {
   return (
-    <div className={styles.mainContent}>
+    <div className={styles.container}>
+      <div className={styles.banner}>
+        <h1>Industry</h1>
+        <p>
+          Industry-related news and insights for enterprises building features
+          and products with state-of-the-art AI models.
+        </p>
+      </div>
       <div className={styles.articleBanner}>
         <div className={styles.articleDetails}>
           <h3>Why you should embrace Emotional AI - Analytics insights</h3>
