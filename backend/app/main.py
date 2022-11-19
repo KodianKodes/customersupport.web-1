@@ -1,7 +1,14 @@
-from fastapi import Depends, FastAPI, UploadFile, File
+from fastapi import Depends, FastAPI, UploadFile, File, status, HTTPException
 from routers.sentiment import sentiment
 from routers.transcribe import transcribe_file
 import models
+from jwt import (
+    main_login
+)
+from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+
+from db import Base, engine, SessionLocal
+from sqlalchemy.orm import Session
 
 description = """
 Scrybe API helps you analyse sentiments in your customer support calls
@@ -13,6 +20,17 @@ tags_metadata = [
         "description": "Analyse audio calls for sentiment.",
     },
 ]
+
+# create the database.
+Base.metadata.create_all(engine)
+
+# database. 
+def get_session():
+    session = SessionLocal()
+    try:
+        yield session
+    finally:
+        session.close()
 
 app = FastAPI(
     title="Scrybe API",
@@ -41,3 +59,9 @@ async def analyse(file: UploadFile=File(...)):
     transcript = transcribe_file(file.filename)
     sentiment_result = sentiment(transcript)
     return {"transcript": transcript, "sentiment_result": sentiment_result}
+
+# create the endpoint
+@app.post('/login', summary = "create access token for logged in user")
+async def login(form_data: OAuth2PasswordRequestForm = Depends(), session: Session = Depends(get_session)):
+    # return token once the user has been successfully authenticated, or it returns an error.
+    return await main_login(form_data, session)
