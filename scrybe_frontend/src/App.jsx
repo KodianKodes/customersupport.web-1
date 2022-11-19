@@ -9,8 +9,19 @@ import Careers from "./pages/Careers";
 import DummyPage from "./pages/DummyPage";
 import LandingPage from "./pages/landing-page-a";
 import PageB from "./pages/Landing-page-b";
+
 import JobVacancy from "./pages/Careers/Components/JobVacancy";
 import NotHiring from "./pages/Careers/Components/NotHiring";
+
+import UploadedRecordings from "./components/UploadRecordings";
+
+
+
+import NavBar from "./components/navBar";
+
+import Services from "./pages/services-page/Services";
+import Solutions from "./pages/solutions-page/Solutions";
+
 
 function App() {
   return (
