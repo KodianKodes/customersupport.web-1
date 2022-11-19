@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import DummyPage from "./pages/DummyPage";
 import LandingPage from "./pages/landing-page-a";
 import PageB from "./pages/Landing-page-b";
-import About from "./pages/AboutUs/About";
+import About from "./pages/AboutUs";
 
 function App() {
   return (
@@ -60,7 +60,7 @@ function App() {
         element={<DummyPage someText="solutions and services" />}
       />
       {/* about us */}
-      <Route path="/about-us" element={<DummyPage someText="about us" />} />
+      <Route path="/about-us" element={<About someText="about us" />} />
       {/* events */}
       <Route path="/events" element={<DummyPage someText="events" />} />
       {/* agent report */}
@@ -105,11 +105,7 @@ function App() {
       <Route path="/blog" element={<DummyPage someText="blog" />} />
       <Route path="/homeB" element={<PageB />} />
 
-        {/* about us*/}
-     <Route
-     path="/about"
-     element={<About someText="about us" />}
-   />
+   
     </Routes>
    
   );
