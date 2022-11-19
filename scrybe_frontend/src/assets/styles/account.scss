@@ -8,11 +8,15 @@
   position: fixed;
   width: 100vw;
   height: 100vh;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(17px);
+}
+
+.account_add-agent__div.active {
+  display: flex;
 }
 
 .account_add-agent-modal__div {
@@ -339,18 +343,21 @@
         line-height: pix-rem(24);
       }
       > {
-        span {
+        button {
+          background-color: unset;
+          border: unset;
+          cursor: pointer;
           color: $blue-500;
           font-weight: 300;
-          font-size: pix-rem(9.25);
-          line-height: pix-rem(13.22);
+          font-size: pix-rem(14);
+          line-height: pix-rem(20);
           display: flex;
-          gap: pix-rem(10.64);
+          gap: pix-rem(14);
           align-items: center;
 
           img {
             display: inline;
-            width: pix-rem(10.57);
+            width: pix-rem(16);
           }
         }
       }

@@ -1,13 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../assets/styles/account.scss";
 import profileImage from "../../assets/images/profile-image.png";
 import chevronLeft from "../../assets/icons/chevron-left.svg";
 import plus from "../../assets/icons/plus.svg";
 
 function Account() {
+  const [accountModalIsActive, setAccountModalIsActive] = useState(false);
+  const toggleAccountModal = () => {
+    setAccountModalIsActive((current) => !current);
+  };
+
   return (
     <>
-      <div className="account_add-agent__div">
+      <div
+        className={
+          accountModalIsActive
+            ? "active account_add-agent__div"
+            : "account_add-agent__div"
+        }
+      >
         <div className="account_add-agent-modal__div">
           <h2>Add new agent</h2>
           <p>Input the following information to add a new agent to your team</p>
@@ -41,6 +52,7 @@ function Account() {
                   id="submit-btn"
                   value="Submit"
                   name="submit-btn"
+                  onClick={toggleAccountModal}
                 />
               </label>
               <label htmlFor="submit-btn">
@@ -49,6 +61,7 @@ function Account() {
                   id="cancel-btn"
                   value="Cancel"
                   name="cancel-btn"
+                  onClick={toggleAccountModal}
                 />
               </label>
             </div>
@@ -101,13 +114,13 @@ function Account() {
             <div className="account_agents__div">
               <span>
                 <p>Agents</p>
-                <span>
-                  Add new
+                <button type="button" onClick={toggleAccountModal}>
+                  <span>Add new</span>
                   <span>
                     <img src={plus} alt="plus icon" />
                   </span>
                   &nbsp;
-                </span>
+                </button>
               </span>
               <div>
                 <ul>
