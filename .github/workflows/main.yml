@@ -30,9 +30,10 @@ jobs:
         id: date
         run: echo "::set-output name=date::$(date +'%Y-%m-%d--%M-%S')"
       
-      - name: check drectory
+      - name: docker build, tag and push
         run: |
-          ls
+          docker build -t vicdam/scrybefrontend:latest .
+          docker push
 
 
   
