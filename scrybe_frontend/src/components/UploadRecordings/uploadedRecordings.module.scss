@@ -2,6 +2,11 @@
   padding: 2rem;
   background: #f9f9f9;
 }
+
+.no_items_found .uploaded_table_wrap {
+  height: 100vh;
+}
+
 .modalbox {
   position: relative;
   border: none !important;
@@ -88,7 +93,10 @@
 .uploaded_table_wrap {
   background: #ffffff;
   margin-top: 1rem;
+  width: 100%;
   overflow-x: auto;
+  // overflow-y: hidden;
+  height: fit-content;
 }
 
 .uploaded_table {
@@ -96,17 +104,32 @@
   margin: 25px 0;
   width: 100%;
   background: #ffffff;
-  .notfound_wrap {
-    margin: 3rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    transform: translateX(70%);
-    -webkit-transform: translateX(70%);
-    -moz-transform: translateX(70%);
-    -ms-transform: translateX(70%);
-    -o-transform: translateX(70%);
+  position: relative;
+}
+.not_found_wrap {
+  margin: 3rem 0;
+  display: grid;
+  place-items: center;
+  place-content: center;
+  position: absolute;
+  // justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  img {
+    // width: 100%;
+    // height: 100%;
+    // position: absolute;
+    margin-bottom: 2rem;
+  }
+  p {
+    font-family: "Kanit";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    /* identical to box height, or 130% */
+
+    color: #000000;
   }
 }
 
@@ -284,11 +307,12 @@
 @media screen and (max-width: 768px) {
   //responsive styles for the table
   .uploaded_recordings {
-    padding: 1rem;
+    padding: 1rem 0;
     width: 100%;
   }
   .uploaded_header h1 {
     font-size: 16px;
+    margin-left: 1rem;
   }
   .uploaded_header {
     h2 {
@@ -300,23 +324,16 @@
     border: 0;
     th,
     td {
-      font-size: 14px;
-      padding: 10px 3px;
-    }
-    .notfound_wrap {
-      width: 150px;
-      // display: none;
-      transform: translateX(0%);
-      -webkit-transform: translateX(0%);
-      -moz-transform: translateX(0%);
-      -ms-transform: translateX(0%);
-      -o-transform: translateX(0%);
-      img {
-        width: 100%;
-      }
+      font-size: 10px;
+      padding: 10px 5px !important;
     }
   }
 
+  .not_found_wrap {
+    img {
+      width: 100%;
+    }
+  }
   .uploaded_table-row th:nth-child(7) {
     display: none;
   }
@@ -388,5 +405,9 @@
         padding: 0 2rem 0 1rem;
       }
     }
+  }
+
+  .modalbox {
+    width: 300px !important;
   }
 }
