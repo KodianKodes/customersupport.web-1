@@ -12,17 +12,15 @@ jobs:
     # if: github.event.pull_request.merged == true
 
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: scrybe_frontend
+
 
     steps:
-
-      - name: change directory
-        run: cd scrybe_frontend
           
       - name: Check out the repo
         uses: actions/checkout@v3
+
+      - name: change directory
+        run: cd scrybe_frontend        
       
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
@@ -59,11 +57,11 @@ jobs:
 
     steps:
 
-      - name: change directory
-        run: cd backend/app
-
       - name: Check out the repo
         uses: actions/checkout@v3
+
+      - name: change directory
+        run: cd backend/app        
             
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
