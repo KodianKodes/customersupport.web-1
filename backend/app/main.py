@@ -1,6 +1,14 @@
-from fastapi import Depends, FastAPI, UploadFile, Request
+from fastapi import Depends, FastAPI, Request, UploadFile, File, status, HTTPException
 from routers.sentiment import sentiment
+from routers.transcribe import transcribe_file
 import models
+# from jwt import (
+#     main_login
+# )
+# from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+
+# from db import Base, engine, SessionLocal
+# from sqlalchemy.orm import Session
 
 # Email verification imports
 from models import User
@@ -15,14 +23,21 @@ Scrybe API helps you analyse sentiments in your customer support calls
 
 tags_metadata = [
     {
-        "name": "uploa",
+        "name": "upload",
         "description": "Analyse audio calls for sentiment.",
     },
-    {
-        "name": "users",
-        "description": "Operations with users. The **login** logic is also here.",
-    },
 ]
+
+# create the database.
+# Base.metadata.create_all(engine)
+
+# database.
+def get_session():
+    session = SessionLocal()
+    try:
+        yield session
+    finally:
+        session.close()
 
 app = FastAPI(
     title="Scrybe API",
@@ -34,14 +49,24 @@ app = FastAPI(
 
 @app.get("/")
 async def ping():
-    return {"message": "Scrybe Upp"}
+    return {"message": "Scrybe Up"}
 
 
 @app.post("/upload", tags=['analyse'])
-async def analyse(files: UploadFile):
-    transcript = transcribe(file)
+async def analyse(file: UploadFile=File(...)):
+    try:
+        contents = file.file.read()
+        with open(file.filename, 'wb') as f:
+            f.write(contents)
+    except Exception:
+        return {"error": "There was an error uploading the file"}
+    finally:
+        file.file.close()
+
+    transcript = transcribe_file(file.filename)
     sentiment_result = sentiment(transcript)
     return {"transcript": transcript, "sentiment_result": sentiment_result}
+
 
 # Email verification processes
 
@@ -72,3 +97,9 @@ async def email_verification(request: Request, token: str):
         return{
             "status" : "ok",
             "data" : f"Hello {user.username}, your account has been successfully verified"}
+
+# # create the endpoint
+# @app.post('/login', summary = "create access token for logged in user")
+# async def login(form_data: OAuth2PasswordRequestForm = Depends(), session: Session = Depends(get_session)):
+#     # return token once the user has been successfully authenticated, or it returns an error.
+#     return await main_login(form_data, session)
