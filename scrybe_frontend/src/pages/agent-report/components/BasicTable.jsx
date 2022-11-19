@@ -54,13 +54,19 @@ export default function BasicTable() {
   ];
   return (
     <TableContainer component={Paper} className={styles.plainTable}>
-      <Table sx={{ minWidth: 650 }} aria-label="simple table">
+      <Table sx={{ minWidth: 300 }} aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell>Name </TableCell>
-            <TableCell align="right">Length</TableCell>
-            <TableCell align="right">Size</TableCell>
-            <TableCell align="right">Uploaded</TableCell>
+            <TableCell style={{ color: "#6A6A6A" }}>Name </TableCell>
+            <TableCell align="right" style={{ color: "#6A6A6A" }}>
+              Length
+            </TableCell>
+            <TableCell align="right" style={{ color: "#6A6A6A" }}>
+              Size
+            </TableCell>
+            <TableCell align="right" style={{ color: "#6A6A6A" }}>
+              Uploaded
+            </TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -70,50 +76,27 @@ export default function BasicTable() {
               sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
             >
               <TableCell component="th" scope="row">
-                <div style={{ display: "flex" }}>
-                  <div
-                    style={{
-                      height: "50",
-                      width: "50",
-                      backgroundColor: "#F1FAFA",
-                      borderRadius: "50%",
-                      display: "flex",
-                      alignItems: "center",
-                      padding: "8px",
-                      marginRight: "15px",
-                    }}
-                  >
-                    <img
-                      src={Icon}
-                      alt="icon"
-                      style={{ height: "35", width: "35" }}
-                    />
+                <div style={{ display: "flex", alignItems: "center" }}>
+                  <div className={styles.nameImg}>
+                    <img src={Icon} alt="icon" className={styles.img} />
                   </div>
                   <div>
-                    <p
-                      style={{
-                        fontSize: "16px",
-                        color: "gray-400",
-                        fontStyle: "inherit",
-                      }}
-                    >
-                      {row.name.title}
-                    </p>
-                    <p
-                      style={{
-                        fontSize: "14px",
-                        color: "gray-400",
-                        fontStyle: "inherit",
-                      }}
-                    >
+                    <p className={styles.tableTitle}>{row.name.title}</p>
+                    <p className={styles.tableDescription}>
                       {row.name.description}
                     </p>
                   </div>
                 </div>
               </TableCell>
-              <TableCell align="right">{row.length}</TableCell>
-              <TableCell align="right">{row.size}</TableCell>
-              <TableCell align="right">{row.uploaded}</TableCell>
+              <TableCell align="right" style={{ color: "#6A6A6A" }}>
+                {row.length}
+              </TableCell>
+              <TableCell align="right" style={{ color: "#6A6A6A" }}>
+                {row.size}
+              </TableCell>
+              <TableCell align="right" style={{ color: "#6A6A6A" }}>
+                {row.uploaded}
+              </TableCell>
             </TableRow>
           ))}
         </TableBody>

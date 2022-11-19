@@ -1,7 +1,7 @@
 import React from "react";
 import AgentDetails from "./components/AgentDetails";
 import AgentRecordings from "./components/AgentRecordings";
-import Chart from "./components/Chart";
+import Charts from "./components/Chart";
 import styles from "./styles/AgentReport.module.scss";
 
 function AgentReport() {
@@ -9,7 +9,7 @@ function AgentReport() {
     <div className={styles.container}>
       <div className={styles.mainWrapper}>
         <div className={styles.topDetailsDiv}>
-          <Chart />
+          <Charts />
           <AgentDetails />
         </div>
         <AgentRecordings />

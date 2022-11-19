@@ -5,14 +5,16 @@ import styles from "../styles/AgentDetails.module.scss";
 function AgentDetails() {
   return (
     <div className={styles.agentDetails}>
-      <p className={styles.firstp}>Agent performance report</p>
-      <p className={styles.secondp}>Name: Delphine</p>
+      <p className={styles.firstp}>Agent Performance Report</p>
+      <p className={styles.secondp}>Name: Delphine Ogbonna</p>
       <p className={styles.secondp}>Email: chinyeredelphine@yahoo.com</p>
-      <DetailsRow title="Total calls" number="50" />
-      <DetailsRow title="Positive" number="30 (60%)" />
-      <DetailsRow title="Neutral" number="13 (30%)" />
-      <DetailsRow title="Negative" number="5 (10%)" />
-      <DetailsRow title="Average Score - 10" number="8" />
+      <div className={styles.details}>
+        <DetailsRow title="Total calls" number="50" />
+        <DetailsRow title="Positive" number="30 (60%)" />
+        <DetailsRow title="Neutral" number="13 (30%)" />
+        <DetailsRow title="Negative" number="5 (10%)" />
+        <DetailsRow title="Average Score - 10" number="8" />
+      </div>
     </div>
   );
 }

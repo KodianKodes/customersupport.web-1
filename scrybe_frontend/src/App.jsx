@@ -9,9 +9,8 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Dummy />} />
-      <Route path="/agent-report" element={<AgentReport />} />
       {/* landing page */}
-      <Route path="/" element={<DummyPage />} />
+      {/* <Route path="/" element={<DummyPage />} /> */}
       {/* agent report */}
       <Route path="/agent-report" element={<AgentReport />} />
       {/* sentiment analysis */}

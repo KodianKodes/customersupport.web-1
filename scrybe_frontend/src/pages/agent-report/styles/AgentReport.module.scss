@@ -2,9 +2,13 @@
 
 .container {
   height: 100%;
-  width: 100vw;
+  width: 100%;
   background-color: #f9f9f9;
-  padding: 5px;
+  // padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   @include mixins.sm {
     height: 100%;
     width: 100%;
@@ -12,9 +16,10 @@
     padding: 25px;
   }
   .mainWrapper {
-    width: 90%;
+    margin: 0px auto;
+    width: 100%;
     background-color: #ececec;
-    padding: 5px;
+    padding: 1em 1em;
     @include mixins.sm {
       max-width: 1160px;
       height: 90%;
@@ -25,7 +30,7 @@
       display: flex;
       flex-direction: column-reverse;
       justify-content: space-between;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       @include mixins.sm {
         display: flex;
         flex-direction: row;

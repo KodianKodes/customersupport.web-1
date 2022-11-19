@@ -17,8 +17,10 @@
     "@emotion/styled": "^11.10.5",
     "@mui/material": "^5.10.14",
     "@mui/x-data-grid": "^5.17.12",
+    "apexcharts": "^3.36.3",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
+    "react-apexcharts": "^1.4.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.3",
     "sass": "^1.56.1"
