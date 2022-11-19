@@ -7,7 +7,6 @@ from models import User
 from tortoise.signals import post_save
 from tortoise.contrib.fastapi import register_tortoise
 from typing import List, Optional, Type
-from tortoise import BaseDBAsyncClient
 from emails import send_email, verify_token
 
 description = """

@@ -66,8 +66,7 @@ async def verify_token(token: str):
     try:
         payload = jwt.decode(token, config_credentials['SECRET'], algorithms=['HS256'])
         user = await User.get(id = payload.get("id"))
-    except Exception as e:
-        print(e)
+    except:
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Invalid or expired token",
