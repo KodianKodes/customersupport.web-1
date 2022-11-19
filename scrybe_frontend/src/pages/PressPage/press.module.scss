@@ -53,3 +53,70 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
         line-height: 1.25rem;
     }
 }
+
+// Styling of the section two
+
+.section__two {
+    background: url('~/public/myAssets/pressHero.png') no-repeat;
+}
+
+
+// Styling of the section three
+
+.section__three {
+
+    .three__top {
+        margin: 1em 0;
+    }
+
+    .three__heading {
+        font-size: .7rem;
+        color: #313131;
+        font-weight: 600;
+        font-style: bold;
+        fill: solid;
+        line-height: 1.2rem;
+    }
+
+    .three__bottom {
+        width: 65%;
+        margin: 0 auto;
+    }
+
+    .three__bottom .three__flex {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1em;
+    }
+
+    .three__each {
+        text-align: center;
+    }
+
+    .three__each .three__sep {
+        border-bottom: 1px solid #cccc;
+        border-bottom-width: 1px thick;
+    }
+
+    .three__each .three__head, .three__sep .three__head {
+        font-size: .8rem;
+        color: #313131;
+        font-weight: 600;
+        font-style: bold;
+        fill: solid;
+        line-height: 1.2rem;
+    }
+
+    .three__sep .three__head {
+        margin-left: .2em;
+    }
+
+    .three__each .three__text, .three__sep .three__text {
+        font-size: .6rem;
+        color: #313131;
+        font-weight: 300;
+        font-style: light;
+        fill: solid;
+        line-height: 1.2rem;
+    }
+}

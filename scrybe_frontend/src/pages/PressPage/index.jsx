@@ -1,13 +1,12 @@
 import React from "react";
-import styles from "../PressPage/press.module.scss";
+import styles from "./press.module.scss";
 import pressCardone from "../myAssets/pressCardone.png";
 import pressCardtwo from "../myAssets/pressCardtwo.png";
 import pressCardthree from "../myAssets/pressCardthree.png";
 import pressSmcardOne from "../myAssets/pressSmcardOne.png";
 import pressSmcardTwo from "../myAssets/pressSmcardTwo.png";
 import headDot from "../myAssets/headDot.png";
-import arrow__left from "../myAssets/arrow__left.png";
-
+import arrowLeft from "../myAssets/arrow__left.png";
 
 const index = () => {
   return (
@@ -30,12 +29,12 @@ const index = () => {
         </div>
       </section>
       <section className={styles.section__two}>
-        <div className={styles.sect__container}></div>
+        <div className={styles.sect__container} />
       </section>
       <section className={styles.section__three}>
         <div className={styles.sect__container}>
-          <div className={styles.sect__three - top}>
-            <p>
+          <div className={styles.three__top}>
+            <p className={styles.three__heading}>
               An AI powered tool tailored for customers success and satisfaction
             </p>
           </div>
@@ -60,7 +59,7 @@ const index = () => {
                 <p className={styles.three__text}>in Abuja Nigeria</p>
               </div>
             </div>
-            <div className={styles.three__each}>
+            <div className={styles.three__sep}>
               <p className={styles.three__head}>Get in touch</p>
               <p className={styles.three__text}>info@scrybe.co.za</p>
             </div>
@@ -138,7 +137,7 @@ const index = () => {
                   Read more
                 </a>
                 <span>
-                  <img src={arrow__left} alt="Arrow action to another" />
+                  <img src={arrowLeft} alt="Arrow action to another" />
                 </span>
               </div>
             </div>
@@ -165,7 +164,7 @@ const index = () => {
                   Read more
                 </a>
                 <span>
-                  <img src={arrow__left} alt="Arrow action to another" />
+                  <img src={arrowLeft} alt="Arrow action to another" />
                 </span>
               </div>
             </div>

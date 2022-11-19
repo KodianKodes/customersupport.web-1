@@ -44,4 +44,55 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
   font-style: light;
   fill: solid;
   line-height: 1.25rem;
+}
+
+.section__two {
+  background: url("~/public/myAssets/pressHero.png") no-repeat;
+}
+
+.section__three .three__top {
+  margin: 1em 0;
+}
+.section__three .three__heading {
+  font-size: 0.7rem;
+  color: #313131;
+  font-weight: 600;
+  font-style: bold;
+  fill: solid;
+  line-height: 1.2rem;
+}
+.section__three .three__bottom {
+  width: 65%;
+  margin: 0 auto;
+}
+.section__three .three__bottom .three__flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+.section__three .three__each {
+  text-align: center;
+}
+.section__three .three__each .three__sep {
+  border-bottom: 1px solid rgba(204, 204, 204, 0.8);
+  border-bottom-width: 1px thick;
+}
+.section__three .three__each .three__head, .section__three .three__sep .three__head {
+  font-size: 0.8rem;
+  color: #313131;
+  font-weight: 600;
+  font-style: bold;
+  fill: solid;
+  line-height: 1.2rem;
+}
+.section__three .three__sep .three__head {
+  margin-left: 0.2em;
+}
+.section__three .three__each .three__text, .section__three .three__sep .three__text {
+  font-size: 0.6rem;
+  color: #313131;
+  font-weight: 300;
+  font-style: light;
+  fill: solid;
+  line-height: 1.2rem;
 }/*# sourceMappingURL=press.module.css.map */
