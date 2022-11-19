@@ -7,7 +7,7 @@ WORKDIR /backend/app
 # set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
-ENv PORT=5000
+ENV PORT=5000
 
 # copy requirements.txt so it can be cached if changes are made to sourcefile but requirements dont change.
 COPY requirements.txt ./
@@ -17,7 +17,7 @@ COPY requirements.txt ./
 RUN pip install --upgrade pip 
 RUN pip install -r requirements.txt
 
-#Copy Project
+#Copy Projects
 COPY . .
 
 EXPOSE 5000
