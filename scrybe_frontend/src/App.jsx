@@ -1,25 +1,15 @@
 import React from "react";
+import { Route, Routes } from "react-router-dom";
 import "./App.scss";
-import scrybeLogo from "./assets/scrybe_logo_with_text.svg";
+import Dummy from "./components/Dummy";
+import UploadedRecordings from "./components/UploadRecordings";
 
 function App() {
   return (
-    <div className="App" data-testid="app-container">
-      <div
-        style={{
-          width: "100vw",
-          height: "80vh",
-          display: "grid",
-          placeItems: "center",
-        }}
-      >
-        <img
-          src={scrybeLogo}
-          alt="scrybeLogo"
-          style={{ objectFit: "contain", width: "100%" }}
-        />
-      </div>
-    </div>
+    <Routes>
+      <Route path="/" element={<Dummy />} />
+      <Route exact path="/uploaded-recordings" element={<UploadedRecordings />} />
+    </Routes>
   );
 }
 
