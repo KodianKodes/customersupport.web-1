@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ApexCharts from "react-apexcharts";
+import Chart from "react-apexcharts";
 import styles from "../styles/Chart.module.scss";
 
 function Charts() {
@@ -7,7 +7,7 @@ function Charts() {
     series: [
       {
         name: "Positive",
-        data: [44, 55, 57, 56, 61, 58, 63],
+        data: [80, 55, 57, 56, 61, 58, 63],
       },
       {
         name: "Neutral",
@@ -59,7 +59,7 @@ function Charts() {
   return (
     <div className={styles.chartContainer}>
       <div className={styles.chartWrap}>
-        <ApexCharts
+        <Chart
           options={options.options}
           series={options.series}
           type="bar"
