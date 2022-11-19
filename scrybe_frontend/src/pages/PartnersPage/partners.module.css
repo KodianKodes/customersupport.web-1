@@ -335,8 +335,8 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
   width: 100%;
   font-weight: 500;
   border: none;
-  border-radius: 0.3rem;
-  padding: 0.8em 0.8em;
+  border-radius: 0.2rem;
+  padding: 0.6em 0.7em;
   background: #006CFF;
   color: #FFFFFF;
   font-size: 0.7rem;
@@ -353,8 +353,9 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
   background: #E6F0FF;
   border: 1px solid #006CFF;
   font-weight: 500;
-  border-radius: 0.3rem;
-  padding: 0.8em 0.8em;
+  border-radius: 0.2rem;
+  border-width: thin;
+  padding: 0.6em 0.7em;
   color: #006CFF;
   font-size: 0.7rem;
   line-height: 1.5rem;
@@ -469,5 +470,50 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
   .input__btn {
     width: 60%;
     margin: 1em auto 0;
+  }
+  /* Styling of the fifth bottom section */
+  .fifth__btm .fifth__content {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .fifth__right, .fifth__left {
+    width: 30%;
+  }
+  .fifth__left .fifth__heading {
+    width: 100%;
+    text-align: unset;
+    margin-bottom: 1em;
+  }
+  .fifth__heading .fifth__head {
+    font-size: 0.9rem;
+    line-height: 1rem;
+  }
+  .fifth__subhead {
+    width: 75%;
+    margin: unset;
+    margin-bottom: 1em;
+  }
+  .fifth__subhead .fifth__subtext {
+    font-size: 0.6rem;
+    color: #000000;
+    line-height: 1rem;
+  }
+  .fifth__action {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+  }
+  .fifth__btn {
+    width: 42%;
+    margin: 0;
+  }
+  .fifth__secondbtn {
+    margin-top: 0;
+    width: 52%;
   }
 }/*# sourceMappingURL=partners.module.css.map */

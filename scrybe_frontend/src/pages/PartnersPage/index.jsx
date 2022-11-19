@@ -342,43 +342,30 @@ const index = () => {
             </div>
           </div>
           <div className={styles.fifth__btm}>
-            {/* fifth__sect - btm */}
             <div className={styles.fifth__content}>
-              {/* fifth__btm - content */}
               <div className={styles.fifth__right}>
-                {/* fifth__btm - right */}
                 <img src={footIcon} alt="Icon before the footer" />
               </div>
               <div className={styles.fifth__left}>
-                {/* fifth__btm - left */}
                 <div className={styles.fifth__heading}>
-                  {/* fifth__left - heading */}
                   <h5 className={styles.fifth__head}>
-                    {/* fifth__left - head */}
                     Getting Started is Easy
                   </h5>
                 </div>
                 <div className={styles.fifth__subhead}>
-                  {/* fifth__left - subhead */}
                   <p className={styles.fifth__subtext}>
-                    {/* fifth__left - subtext */}
                     We are confident that you will get the best value from our
                     products
                   </p>
                 </div>
                 <div className={styles.fifth__action}>
-                  {/* fifth__sect - action */}
                   <div className={styles.fifth__btn}>
-                    {/* fifth__btn - first */}
                     <button type="button" className={styles.btn__act}>
-                      {/* btn__act - first */}
                       Try for Free
                     </button>
                   </div>
                   <div className={styles.fifth__secondbtn}>
-                    {/* fifth__btn - second */}
                     <button type="submit" className={styles.btn__secondact}>
-                      {/* btn__act - second */}
                       Schedule a Demo
                     </button>
                   </div>
