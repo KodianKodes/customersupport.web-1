@@ -453,17 +453,20 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
     .third__section {
         border-top-right-radius: 0;
         padding: 3em 0 2em;
-        margin-bottom: 3em;
+        margin: 7em 0 7em;
+        position: relative;
     }
 
     .third__flex {
         display: flex;
         justify-content: space-between;
+        position: relative;
     }
 
     .third__left {
         display: block;
         width: 40%;
+        margin-top: -7em;
     }
 
     .third__right {
