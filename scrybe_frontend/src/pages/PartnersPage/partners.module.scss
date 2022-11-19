@@ -22,4 +22,74 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
     margin: 0 auto;
 }
 
+/* Styling of the first section */
+
+.first__heading {
+  margin: 1em 0;
+}
+
+.first__head {
+  font-size: 2rem;
+  color: #3F3F3F;
+  font-weight: 700;
+  font-style: bold;
+  fill: solid;
+  line-height: 2.5rem;
+}
+
+.first__subhead {
+  margin-bottom: 1em;
+}
+
+.first__left .first__subtext {
+  font-size: .8rem;
+  color: #3F3F3F;
+  font-weight: 300;
+  font-style: light;
+  fill: solid;
+  line-height: 1.25rem;
+}
+
+.first__subtext .first__inline {
+  font-size: .9rem;
+  color: #006CFF;
+  font-weight: 300;
+  font-style: light;
+  fill: solid;
+  line-height: 1.25rem;
+}
+
+.first__input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.5em;
+}
+
+.first__input .first__field {
+  padding: .8em .8em;
+  margin-bottom: 1em;
+  outline: none;
+  border: 1px solid #cccc;
+  border-radius: .2rem;
+  font-size: .7rem;
+  color: #e2e2e2;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1rem;
+}
+
+.first__input .first__botton {
+  padding: .8em .8em;
+  margin-bottom: 1em;
+  background: #006CFF;
+  outline: none;
+  border: none;
+  border-radius: .2rem;
+  font-size: .7rem;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-style: medium;
+  line-height: 1rem;
+}
+
 
