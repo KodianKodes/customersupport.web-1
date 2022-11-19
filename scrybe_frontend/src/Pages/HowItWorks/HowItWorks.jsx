@@ -89,10 +89,10 @@ function HowItWorks() {
         </div>
       </section>
       <section className={styles.links}>
-        <Link to="/" className={`${styles.linkBtn} ${styles.white}`}>
+        <Link to="/FAQs" className={`${styles.linkBtn} ${styles.white}`}>
           FAQs
         </Link>
-        <Link to="/" className={`${styles.linkBtn} ${styles.blue}`}>
+        <Link to="/try" className={`${styles.linkBtn} ${styles.blue}`}>
           Try for Free
         </Link>
       </section>
