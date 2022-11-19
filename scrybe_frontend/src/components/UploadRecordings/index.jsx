@@ -108,10 +108,6 @@ function UploadedRecordings() {
     setRecordCheckedList(checkedList);
   };
 
-  useLayoutEffect(() => {
-    document.title = "Uploaded Recordings";
-  }, []);
-
   const deleteBulkRecordings = () => {
     const newRecordings = allRecordings.filter(
       (item) => !recordCheckedList.includes(item.id.toString())
@@ -138,6 +134,8 @@ function UploadedRecordings() {
     allRecordingsProcessed();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [allRecordings]);
+
+  useLayoutEffect(() => { document.title = "Uploaded Recordings"; }, []);
 
   return (
     <div
