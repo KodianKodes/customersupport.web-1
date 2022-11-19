@@ -21,7 +21,7 @@ function DataProtectionRights() {
           <li><h1> To stop selling your personal information. We don’t sell or rent your personal information to any third parties for any purpose. We do not sell your personal information for monetary consideration. However, under some circumstances, a transfer of personal information to a third party, or within our family of companies, without monetary consideration may be considered a “sale” under Nigeria law. You are the only owner of your Personal Data and can request disclosure or deletion at any time.</h1></li>
         </ol>
         <p>If you submit a request to stop selling your personal information, we will stop making such transfers. Please note, if you ask us to delete or stop selling your data, it may impact your experience with us, and you may not be able to participate in certain programs or membership services which require the usage of your personal information to function. But in no circumstances, we will discriminate against you for exercising your rights.</p>
-        <p>To exercise your Nigeria data protection rights described above, please send your request(s) by email: info@scrybe.com.</p>
+        <p>To exercise your Nigeria data protection rights described above, please send your request(s) by email: <a href="#"> info@scrybe.com.</a></p>
         <p>Your data protection rights, described above, are covered by the NDPR, short for the Nigerian Data Protection Regulation. To find out more, visit the official Nigerian Data Protection Regulation website. The NDPR took effect on 17/11/2020.</p>
     </div>
   )

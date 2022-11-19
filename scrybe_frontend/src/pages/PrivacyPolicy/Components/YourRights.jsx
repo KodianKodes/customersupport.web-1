@@ -15,7 +15,7 @@ function YourRights() {
             <li> You have a right to lodge a complaint about the handling of your personal information with the National Information Technology Development Agency (NITDA).</li>
             <li> You have the right to ask us not to process your Personal Data for marketing purposes. We will usually inform you (before collecting your data) if we intend to use your data for such purposes or if we intend to disclose your Personal Data to any third party for such purposes.</li>
         </ol>
-        <p>NITDA’s website has a wealth of useful information in respect of your rights over your personal data. If you wish to exercise your rights, you may write to us at info@scrybe.com.</p>
+        <p>NITDA’s website has a wealth of useful information in respect of your rights over your personal data. If you wish to exercise your rights, you may write to us at <a href="#"> info@scrybe.com. </a></p>
     </div>
   )
 }

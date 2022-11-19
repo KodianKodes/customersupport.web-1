@@ -7,7 +7,7 @@ import './Style/main.scss'
 function Careers() {
   return (
     <div>
-        <NotHiring />
+        <JobVacancy />
     </div>
   )
 }

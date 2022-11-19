@@ -30,12 +30,12 @@ function DataCollected() {
             <p>Cookies are files with a small amount of data which may include an anonymous unique identifier. Cookies are sent to your browser from a website and stored on your device. Other tracking technologies are also used such as beacons, tags and scripts to collect and track information and to improve and analyze our Service.</p>
             <p>You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Service</p>
             <p>Examples of Cookies we use:</p>
-            <div>
-                <p>1. Session Cookies: We use Session Cookies to operate our Service.</p>
-                <p>2. Preference Cookies: We use Preference Cookies to remember your preferences and various settings.</p>
-                <p>3. Security Cookies: We use Security Cookies for security purposes.</p>
-                <p>4. Advertising Cookies: Advertising Cookies are used to serve you with advertisements that may be relevant to you and your interests.</p>
-            </div>
+            <ol>
+                <li> Session Cookies: We use Session Cookies to operate our Service.</li>
+                <li> Preference Cookies: We use Preference Cookies to remember your preferences and various settings.</li>
+                <li> Security Cookies: We use Security Cookies for security purposes.</li>
+                <li> Advertising Cookies: Advertising Cookies are used to serve you with advertisements that may be relevant to you and your interests.</li>
+            </ol>
         </div>
         <div>
             <h1>Other Data</h1>

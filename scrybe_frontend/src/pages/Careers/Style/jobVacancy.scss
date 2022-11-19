@@ -21,14 +21,16 @@
         .job-title {
             display: flex;
             margin: 15px 0;
+            align-items: center;
             
             button {
                 margin-left: 20px;
                 background: #006CFF;
-                padding: 4px 8px;
+                padding: 8px 25px;
                 color: white;
                 border: none;
                 border-radius: 2px;
+                cursor: pointer;
             }
         }
     

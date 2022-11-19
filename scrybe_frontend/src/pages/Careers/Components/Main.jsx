@@ -1,6 +1,4 @@
 import image2 from '../Assets/image-2.jpg'
-import elipse1 from '../Assets/Ellipse1.png'
-import elipse2 from '../Assets/Ellipse2.png'
 import Banner from './Banner'
 
 function Main() {
@@ -15,10 +13,6 @@ function Main() {
                 <button className='careers-button'>Learn More</button>
             </div>
             <div className='img-container'>
-                {/* <div className="ellipse">
-                    <img className='ellipse1' src={elipse1} alt="" />
-                    <img className='ellipse2' src={elipse2} alt="" />
-                </div> */}
                 <img className='careers-img' src={image2} alt="" />
             </div>
         </div>
