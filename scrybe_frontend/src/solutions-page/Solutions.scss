@@ -105,7 +105,6 @@
 .why-scrybe {
     .container {
         @include container;
-        padding: 0 0 6rem 0;
 
         h1 {
             color: #005584;
@@ -156,11 +155,53 @@
 }
 
 .buss-section {
-    padding: 8rem 0;
+    padding: 7rem 0;
     .container {
         @include container;
 
-        .buss-flex {
+        .buss-flex{
+            @include flexItem(space-between, row);
+
+            .buss-txt {
+                width: 50%;
+                h1 {
+                    color: #005584;
+                    margin: 0 0 30px 0;
+                    font-size: 30px;
+                    line-height: 1.9;
+                }
+
+                p {
+                    color: #3F3F3F;
+                    font-size: 20px;
+                    line-height: 1.8;
+                    margin-bottom: 30px;
+                }
+
+                h4 {
+                    font-size: 25px;
+                    font-weight: 600;
+                    color: #006CFF;
+                }
+            }
+
+            .buss-img  {
+                width: 40%;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.monitor-section {
+    padding: 7rem 0;
+    .container {
+        @include container;
+
+        .monitor-flex{
             @include flexItem(space-between, row);
 
             .buss-txt {
@@ -175,7 +216,7 @@
                 p {
                     color: #3F3F3F;
                     font-size: 20px;
-                    line-height: 1.7;
+                    line-height: 1.9;
                     margin-bottom: 30px;
                 }
 
@@ -202,7 +243,7 @@
 
     .upload-container {
         background: url(./assets/blur-bg.png);
-        background-size: 100%;
+        background-size: cover;
         background-repeat: no-repeat;
         padding: 4rem;
 
@@ -241,7 +282,7 @@
 
     .setblur-container {
         background: url(./assets/set-blur.png);
-        background-size: 100%;
+        background-size: cover;
         background-repeat: no-repeat;
         padding: 4rem;
 
@@ -342,4 +383,62 @@
             }
         }
     }
+
+    .buss-section {
+        .container {
+
+            .buss-flex {
+                @include flexItem(space-between, column);
+                row-gap: 4rem;
+    
+                .buss-txt, .buss-img {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .monitor-section {
+        .container {
+            .monitor-flex {
+                @include flexItem(space-between, column-reverse );
+                row-gap: 4rem;
+
+                .buss-txt, .buss-img {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .container {
+        .setblur-container {
+            .cont {
+                h1 {
+                    font-size: 30px;
+                }
+
+                h4 {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .container {
+        .upload-container {
+            .cont {
+                h1 {
+                    font-size: 30px;
+                }
+
+                h4 {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
 }
+

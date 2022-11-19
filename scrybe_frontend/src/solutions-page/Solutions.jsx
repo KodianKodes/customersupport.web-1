@@ -104,9 +104,9 @@ function Solutions() {
         </div>
       </div>
 
-      <div className="buss-section">
+      <div className="monitor-section">
         <div className="container">
-          <div className="buss-flex">
+          <div className="monitor-flex">
             <div className="buss-img">
               <img src={monitor} alt="upload" />
             </div>
@@ -148,9 +148,9 @@ function Solutions() {
         </div>
       </div>
 
-      <div className="buss-section">
+      <div className="monitor-section">
         <div className="container">
-          <div className="buss-flex">
+          <div className="monitor-flex">
             <div className="buss-img">
               <img src={dashboard} alt="dashboard" />
             </div>
@@ -179,9 +179,9 @@ function Solutions() {
         </div>
       </div>
 
-      <div className="buss-section">
+      <div className="monitor-section">
         <div className="container">
-          <div className="buss-flex">
+          <div className="monitor-flex">
             <div className="buss-img">
               <img src={sentiment} alt="sentiment" />
             </div>
@@ -234,7 +234,6 @@ function Solutions() {
             <img src={hulu} alt="hulu-logo" />
             <img src={happy} alt="hapy-scribelogo" />
             <img src={google} alt="google-logo" />
-            {/* <div className="flex-comp"></div> */}
           </div>
         </div>
       </div>
