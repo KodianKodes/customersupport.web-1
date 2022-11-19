@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./SentimentAnalysis.module.scss";
 import arrowIcon from "./icons/arrow_back.svg";
+import blueArrowIcon from "./icons/blue_arrow.svg";
 import pieChart from "./icons/pie_chart.svg";
 import downloadIcon from "./icons/download.svg";
 import dropdownIcon from "./icons/dropdown.svg";
@@ -43,7 +44,15 @@ function SentimentAnalysis() {
 
   return (
     <div className={styles.page__container}>
-      <div className={styles.audio__mobile} />
+      <div className={styles.audio__mobile}>
+        <AudioCard />
+      </div>
+      <div className={styles.sentiment__tab__opener}>
+        Overall sentiment
+        <div className={styles.arrow__container}>
+          <img src={blueArrowIcon} alt="arrow icon" />
+        </div>
+      </div>
       <main className={styles.main__container}>
         <span className={styles.main__container__top}>
           <div className={styles.main__container__top__arrow__icon__container}>
@@ -132,15 +141,23 @@ function SentimentAnalysis() {
           <div className={styles.title}>Positive phrase tags</div>
           <ul className={styles.tag__items}>
             {positiveTags.map((tag) => {
-              return <li key={new Date().getTime()}>{tag}</li>;
+              return (
+                <li key={String(Math.random()) + String(new Date().getTime())}>
+                  {tag}
+                </li>
+              );
             })}
           </ul>
         </div>
         <div className={`${styles.tags} ${styles.inner__container}`}>
-          <div className={styles.title}>Positive phrase tags</div>
+          <div className={styles.title}>Negative phrase tags</div>
           <ul className={styles.tag__items}>
             {negativeTags.map((tag) => {
-              return <li key={new Date().getTime()}>{tag}</li>;
+              return (
+                <li key={String(Math.random()) + String(new Date().getTime())}>
+                  {tag}
+                </li>
+              );
             })}
           </ul>
         </div>

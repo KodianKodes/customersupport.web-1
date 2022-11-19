@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.scss";
 import { Routes, Route } from "react-router-dom";
-import Dummy from "./components/Dummy";
 import SentimentAnalysis from "./pages/SentimentAnalysis";
 import DummyPage from "./pages/DummyPage";
 import LandingPage from "./pages/landing-page-a";
@@ -10,15 +9,10 @@ import PageB from "./pages/Landing-page-b";
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Dummy />} />
-      <Route path="/sentiment-analysis" element={<SentimentAnalysis />} />
       {/* landing page */}
       <Route path="/" element={<LandingPage />} />
       {/* sentiment analysis */}
-      <Route
-        path="/sentiment-analysis"
-        element={<DummyPage someText="sentiment-analysis" />}
-      />
+      <Route path="/sentiment-analysis" element={<SentimentAnalysis />} />
       {/* transcriptions */}
       <Route
         path="/transicriptions"
