@@ -1,11 +1,16 @@
 import React from "react";
 import "./App.scss";
-import scrybeLogo from "./assets/scrybe_logo_with_text.svg";
+// import PartnerPage from "../src/pages/PartnersPage";
+import PressPage from "../src/pages/PressPage"
+// import scrybeLogo from "./assets/scrybe_logo_with_text.svg";
 
 function App() {
   return (
     <div className="App" data-testid="app-container">
-      <div
+      {/* <PartnerPage /> */}
+      <PressPage />
+
+      {/* <div
         style={{
           width: "100vw",
           height: "80vh",
@@ -18,7 +23,7 @@ function App() {
           alt="scrybeLogo"
           style={{ objectFit: "contain", width: "100%" }}
         />
-      </div>
+      </div> */}
     </div>
   );
 }
