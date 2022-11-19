@@ -40,17 +40,19 @@ jobs:
           cd ../backend/app
           docker build -t vicdam/scrybebackend:latest .
           docker push vicdam/scrybebackend:latest             
+      
+      - name: docker build, tag and push
+        run: |
+          cd ../..
+
 
       - name: Pull from GitHub
         uses: appleboy/ssh-action@master
         with:
           HOST: ${{ secrets.HOST }}
           USERNAME: ${{ secrets.USERNAME }}
-          KEY: ${{ secrets.KEY}}
+          KEY: ${{ secrets.KEY }}
           script: |
-            ls
-            cd ~
-            ls
             docker-compose up -d .             
             
 
