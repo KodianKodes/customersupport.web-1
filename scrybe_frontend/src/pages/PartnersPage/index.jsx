@@ -291,7 +291,7 @@ const index = () => {
                       </label>
                     </div>
                   </div>
-                  <div className={styles.input__flex}>
+                  <div>
                     <label
                       htmlFor="customer__address"
                       className={styles.label__name}
