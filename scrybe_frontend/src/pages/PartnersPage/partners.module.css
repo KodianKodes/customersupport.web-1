@@ -399,4 +399,15 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
     margin-bottom: 2.5em;
     width: 100%;
   }
+  /* Styling of the second section */
+  .second__content {
+    width: 80%;
+    margin: 4em auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2em;
+  }
+  .second__content .second__each {
+    width: 23%;
+  }
 }/*# sourceMappingURL=partners.module.css.map */
