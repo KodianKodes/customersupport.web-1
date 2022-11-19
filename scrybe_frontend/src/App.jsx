@@ -6,6 +6,7 @@ import { FAQs, TermsOfService } from "./pages";
 import LandingPage from "./pages/landing-page-a";
 import PageB from "./pages/Landing-page-b";
 import NavBar from "./components/navBar";
+import UploadedRecordings from "./components/UploadRecordings";
 
 function App() {
   return (
@@ -112,6 +113,11 @@ function App() {
         <Route path="/homeB" element={<PageB />} />
         <Route path="faq" element={<FAQs />} />
         <Route path="faq" element={<TermsOfService />} />
+
+
+
+        {/* uploaded recordings page */}
+        <Route path="/uploaded-recordings" element={<UploadedRecordings />} />
       </Routes>
     </>
   );
