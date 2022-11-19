@@ -10,8 +10,10 @@ import UploadedRecordings from "./components/UploadRecordings";
 
 function App() {
   return (
-    <Routes>
-      {/* landing page */}
+    <>
+      <NavBar />
+      <Routes>
+        {/* landing page */}
         {/* landing page */}
         <Route path="/" element={<LandingPage />} />
         {/* sentiment analysis */}
@@ -112,12 +114,10 @@ function App() {
         <Route path="/homeB" element={<PageB />} />
         <Route path="faq" element={<FAQs />} />
         <Route path="faq" element={<TermsOfService />} />
-
-
-
-        {/* uploaded recordings page */}
+        {/* uploaded recordings */}
         <Route path="/uploaded-recordings" element={<UploadedRecordings />} />
       </Routes>
+    </>
   );
 }
 export default App;
