@@ -4,8 +4,6 @@ import { Routes, Route } from "react-router-dom";
 import Dummy from "./components/Dummy";
 import AgentReport from "./pages/agent-report";
 import DummyPage from "./pages/DummyPage";
-import AgentReport from "./pages/agent-report";
-
 
 function App() {
   return (
