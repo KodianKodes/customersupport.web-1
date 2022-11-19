@@ -11,7 +11,7 @@
         
         img {
             width: 100%;
-            opacity: 1;
+            filter: brightness(50%);
         }
 
         .problem-solvers-container {
@@ -70,40 +70,40 @@
     }
 
     .careers {
+        padding: 40px 10%;
         display: flex;
         flex-direction: column;
-        padding: 0 10%;
-
+        gap: 30px;
         h1 {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 11px;
+            letter-spacing: -0.02em;
             margin: 20px 0;
         }
-
         p {
-            margin: 15px 0;
+            font-size: 12px;
+        }
+
+        .text-container {
+            .careers-button {
+                background: #006CFF;
+                border: none;
+                padding: 7px 5px;
+                border-radius: 2px;
+                margin-top: 10px;
+                color: white;
+            }
         }
 
         .img-container {
-            display: flex;
-
+                        
             .careers-img {
-                width: 70%;
+                width: 100%;
                 z-index: 100;
-                position: relative;
-                left: 10%;
+                filter: brightness(50%);
             }
 
-           .ellipse {
-             position: absolute;
-
-             img {
-                position: relative;
-
-                .ellipse2 {
-                    right: 10%;
-                }
-             }
-
-           }
         }
     }
 
@@ -196,7 +196,7 @@
         .problem-solvers {
             .problem-solvers-container {
                 h1 {
-                    font-size: 64px;
+                    font-size: 50px;
                     margin-bottom: 50px;
                 }
 
@@ -206,6 +206,27 @@
                         padding: 12px 3px;
                     }
                 }
+            }
+        }
+
+        .careers {
+            margin-top: 100px;
+            flex-direction: row;
+            align-items: center;
+            gap: 40px;
+            h1 {
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 11px;
+                letter-spacing: -0.02em;
+                margin: 20px 0;
+            }
+            p {
+                font-size: 17px;
+            }
+
+            .img-container {
+                width: 100%;
             }
         }
 

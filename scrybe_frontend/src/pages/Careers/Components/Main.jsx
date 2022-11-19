@@ -8,16 +8,17 @@ function Main() {
     <div className="main-container">
         <Bannre />
         <div className='careers'>
-            <div>
+            <div className='text-container'>
                 <h1>Careers at scrybe</h1>
                 <p>We’re committed to hiring and supporting the growth of all Scrybers. We’re focused, ambitious, and we care about our work and each other. We believe the future is ours to create.</p>
-                <p> Explore remote-friendly, flexible opportunities and join our mission to make work life simpler, more pleasant and more productive.</p>
+                <p> Explore remotefriendly, flexible opportunities and join our mission to make work life simpler, more pleasant and more productive.</p>
+                <button className='careers-button'>Learn More</button>
             </div>
             <div className='img-container'>
-                <div className="ellipse">
+                {/* <div className="ellipse">
                     <img className='ellipse1' src={elipse1} alt="" />
                     <img className='ellipse2' src={elipse2} alt="" />
-                </div>
+                </div> */}
                 <img className='careers-img' src={image2} alt="" />
             </div>
         </div>

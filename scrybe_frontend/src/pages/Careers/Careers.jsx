@@ -1,6 +1,6 @@
 import React from 'react'
 import Main from './Components/Main'
-import './Style/careers.scss'
+import './Style/main.scss'
 
 function Careers() {
   return (
