@@ -3,8 +3,8 @@ import "./App.scss";
 import { Routes, Route } from "react-router-dom";
 
 import Dummy from "./components/Dummy";
-import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
-import Careers from "./pages/Careers/Careers";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Careers from "./pages/Careers";
 
 import DummyPage from "./pages/DummyPage";
 import LandingPage from "./pages/landing-page-a";
