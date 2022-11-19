@@ -3,7 +3,6 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import React, { useState } from "react";
 import deleteIcon from "./imgs/delete-icon.svg";
-import notfound from "./imgs/notfound.svg";
 import soundwave from "./imgs/soundwave.svg";
 import styles from "./uploadedRecordings.module.scss";
 // dummy recordings
@@ -89,20 +88,25 @@ function UploadedRecordings() {
     setRecordCheckedList(checkedList);
   };
 
-  const deleteRecordings = () => {
+  const deleteBulkRecordings = () => {
     const newRecordings = allRecordings.filter(
-      (id) => !recordCheckedList.includes(id)
+      (item) => !recordCheckedList.includes(item.id.toString())
     );
     setAllRecordings(newRecordings);
+    setRecordCheckedList([]);
   };
 
-  const deleteRecordings2 = (id) => {
+  const deleteRecording = (id) => {
     const newRecordings = allRecordings.filter((item) => item.id !== id);
     setAllRecordings(newRecordings);
   };
 
   return (
-    <div className={styles.uploaded_recordings}>
+    <div
+      className={`${styles.uploaded_recordings} ${
+        allRecordings.length < 1 && styles.no_items_found
+      }`}
+    >
       <div className={styles.uploaded_header}>
         <h1>Transcription Status </h1>
         <h2 className={styles.est_time_left}>
@@ -124,84 +128,77 @@ function UploadedRecordings() {
             </tr>
           </thead>
           <tbody className={styles.uploaded_table_body}>
-            {allRecordings.length > 0 ? (
-              allRecordings.map((recording) => (
-                <tr key={recording.id}>
-                  <td className={styles.uploaded_table_body_checkbox_img_wrap}>
-                    <input
-                      type="checkbox"
-                      value={recording.id}
-                      name="checkbox"
-                      onChange={getChecked}
-                      id="checkbox"
-                      className={styles.uploaded_table_body_checkbox}
-                    />
-                    <img
-                      src={soundwave}
-                      alt="soundwave-icon"
-                      className={styles.uploaded_table_body_cell_img}
-                    />
-                  </td>
-                  <td>{recording.fileName}</td>
-                  <td>{recording.length}</td>
-                  <td>{recording.size}</td>
-                  <td>{recording.date}</td>
-                  <td>
-                    <strong
-                      style={{
-                        color:
-                          // eslint-disable-next-line no-nested-ternary
-                          recording.status === "Processing"
-                            ? "#FFB800"
-                            : recording.status === "Successful"
-                            ? "#3bb031"
-                            : "#ff291b",
-                      }}
-                    >
-                      {recording.status}{" "}
-                      {recording.status === "Failed" && (
-                        <a href="!" className={styles.retry}>
-                          retry
-                        </a>
-                      )}
-                    </strong>
-                  </td>
-                  <td
-                    className={styles["uploaded-table-body-cell delete-btn"]}
-                    onClick={() => deleteRecordings2(recording.id)}
+            {allRecordings.map((recording) => (
+              <tr key={recording.id}>
+                <td className={styles.uploaded_table_body_checkbox_img_wrap}>
+                  <input
+                    type="checkbox"
+                    value={recording.id}
+                    name="checkbox"
+                    onChange={getChecked}
+                    id="checkbox"
+                    className={styles.uploaded_table_body_checkbox}
+                  />
+                  <img
+                    src={soundwave}
+                    alt="soundwave-icon"
+                    className={styles.uploaded_table_body_cell_img}
+                  />
+                </td>
+                <td>{recording.fileName}</td>
+                <td>{recording.length}</td>
+                <td>{recording.size}</td>
+                <td>{recording.date}</td>
+                <td>
+                  <strong
+                    style={{
+                      color:
+                        // eslint-disable-next-line no-nested-ternary
+                        recording.status === "Processing"
+                          ? "#FFB800"
+                          : recording.status === "Successful"
+                          ? "#3bb031"
+                          : "#ff291b",
+                    }}
                   >
-                    <img
-                      src={deleteIcon}
-                      alt="delete-icon "
-                      className={styles.delete_icon}
-                    />
-                  </td>
-                </tr>
-              ))
-            ) : (
-              <div className={styles.notfound_wrap}>
-                <img
-                  src={notfound}
-                  alt="not found"
-                  className={styles.notfound}
-                />
-              </div>
-            )}
+                    {recording.status}{" "}
+                    {recording.status === "Failed" && (
+                      <a href="!" className={styles.retry}>
+                        retry
+                      </a>
+                    )}
+                  </strong>
+                </td>
+                <td
+                  className={styles["uploaded-table-body-cell delete-btn"]}
+                  onClick={() => deleteRecording(recording.id)}
+                >
+                  <img
+                    src={deleteIcon}
+                    alt="delete-icon "
+                    className={styles.delete_icon}
+                  />
+                </td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
       <div className={styles.uploaded_recordings_options}>
         <div className={styles.bulkbtn_calbackurl_wrap}>
           <div className={styles.bulkselect_wrap}>
-            <select name="" id="" className={styles.bulkselect}>
+            <select
+              name=""
+              id=""
+              className={styles.bulkselect}
+              onChange={deleteBulkRecordings}
+            >
               <option value="">
                 {recordCheckedList.length > 0
                   ? `${recordCheckedList.length} Files Selected`
                   : " Bulk Actions"}
               </option>
-              <option value="" onClick={deleteRecordings}>
-                Delete
-              </option>
+              <option value="">Delete</option>
             </select>
           </div>
           <div className={styles.calbackurl_wrap}>

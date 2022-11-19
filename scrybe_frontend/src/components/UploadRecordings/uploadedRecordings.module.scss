@@ -239,6 +239,18 @@
       font-size: 14px;
       padding: 10px 3px;
     }
+    .notfound_wrap {
+      width: 150px;
+      // display: none;
+      transform: translateX(0%);
+      -webkit-transform: translateX(0%);
+      -moz-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+      -o-transform: translateX(0%);
+      img {
+        width: 100%;
+      }
+    }
   }
 
   .uploaded_table-row th:nth-child(7) {
