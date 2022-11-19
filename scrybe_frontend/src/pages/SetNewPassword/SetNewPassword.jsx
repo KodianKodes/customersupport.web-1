@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import '../../../src/App.css'
-
-import SignInOutResetHeader from "../../components/SignInOutResetHeader";
+import "../../App.css";
 
 function SetNewPassword() {
   const {
@@ -29,65 +27,63 @@ function SetNewPassword() {
 
   const isValid = password && password2;
   return (
-    <>
-      <main className="signup-wrapper">
-        <div className="signup">
-          <div className="first signin other-than-signup">
-            <h1>Set new password</h1>
-            <h3>Your new password must be different from the previous one</h3>
-            <form onSubmit={handleSubmit(onSubmit)}>
-              <label htmlFor="password">
-                Password
-                <input
-                  type="password"
-                  name="password"
-                  id="password"
-                  placeholder="Password at least 8 characters"
-                  className={`${errors.password && "error-input"} `}
-                  // eslint-disable-next-line
-                  {...register("password", {
-                    required: "Password is required",
-                    minLength: {
-                      value: 8,
-                      message: "Password must be at least 8 characters",
-                    },
-                  })}
-                />
-              </label>
-              <p className="error-msg">{errors.password?.message}</p>
-
-              <label htmlFor="password2">
-                Password
-                <input
-                  type="password"
-                  name="password2"
-                  id="password2"
-                  placeholder="Confirm Password"
-                  className={`${errors.password && "error-input"} `}
-                  // eslint-disable-next-line
-                  {...register("password2", {
-                    required: "Password is required",
-                    minLength: {
-                      value: 8,
-                      message: "Password inputted did not match",
-                    },
-                  })}
-                />
-              </label>
-              <p className="error-msg">{errors.password2?.message}</p>
+    <main className="signup-wrapper">
+      <div className="signup">
+        <div className="first signin other-than-signup">
+          <h1>Set new password</h1>
+          <h3>Your new password must be different from the previous one</h3>
+          <form onSubmit={handleSubmit(onSubmit)}>
+            <label htmlFor="password">
+              Password
               <input
-                type="submit"
-                value="Reset password"
-                className={`${isValid && "submit-valid"}`}
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password at least 8 characters"
+                className={`${errors.password && "error-input"} `}
+                // eslint-disable-next-line
+                  {...register("password", {
+                  required: "Password is required",
+                  minLength: {
+                    value: 8,
+                    message: "Password must be at least 8 characters",
+                  },
+                })}
               />
-            </form>
-          </div>
-          <div className="second">
-            <img src="img/reset-pw.png" alt="" />
-          </div>
+            </label>
+            <p className="error-msg">{errors.password?.message}</p>
+
+            <label htmlFor="password2">
+              Password
+              <input
+                type="password"
+                name="password2"
+                id="password2"
+                placeholder="Confirm Password"
+                className={`${errors.password && "error-input"} `}
+                // eslint-disable-next-line
+                  {...register("password2", {
+                  required: "Password is required",
+                  minLength: {
+                    value: 8,
+                    message: "Password inputted did not match",
+                  },
+                })}
+              />
+            </label>
+            <p className="error-msg">{errors.password2?.message}</p>
+            <input
+              type="submit"
+              value="Reset password"
+              className={`${isValid && "submit-valid"}`}
+            />
+          </form>
         </div>
-      </main>
-    </>
+        <div className="second">
+          <img src="img/reset-pw.png" alt="" />
+        </div>
+      </div>
+    </main>
   );
 }
 
