@@ -4,6 +4,10 @@ import toneWave from "../assets/tone_wave.svg";
 import chevron from "../assets/chevron_right.svg";
 import analysis from "../assets/analytics.svg";
 import leaderboard from "../assets/leaderboard.svg";
+// import agent from "../assets/agent.png";
+import agent1 from "../assets/agent1.png";
+import agent2 from "../assets/agent2.png";
+import agent3 from "../assets/agent3.png";
 
 function DashboardOverview() {
   return (
@@ -99,19 +103,26 @@ function DashboardOverview() {
 
           <div className={styles.agents}>
             <div>
-              <h2>Agent 7</h2>
+              <h2>
+                <img src={agent1} alt="agent" /> Agent 7
+              </h2>
               <h2>
                 93% <span>P</span>
               </h2>
-            </div>{" "}
+            </div>
             <div>
-              <h2>Agent 7</h2>
+              <h2>
+                <img src={agent2} alt="agent" />
+                Agent 7
+              </h2>
               <h2>
                 93% <span>P</span>
               </h2>
-            </div>{" "}
+            </div>
             <div>
-              <h2>Agent 7</h2>
+              <h2>
+                <img src={agent3} alt="agent" /> Agent 7
+              </h2>
               <h2>
                 93% <span>P</span>
               </h2>
@@ -139,10 +150,7 @@ function DashboardOverview() {
             </td>
             <td>
               <span>Recording mp3</span>
-              <span className={styles.bold_td}>
-                {" "}
-                Inactive recharge card
-              </span>{" "}
+              <span className={styles.bold_td}> Inactive recharge card</span>
             </td>
             <td>4 mins</td>
             <td>50mb</td>
