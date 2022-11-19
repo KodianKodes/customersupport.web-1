@@ -1,17 +1,19 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
 import "./App.scss";
-import { FAQs, TermsOfService } from "./pages";
+import { Routes, Route } from "react-router-dom";
+import SentimentAnalysis from "./pages/SentimentAnalysis";
 import DummyPage from "./pages/DummyPage";
+import TranscribePage from "./pages/TranscribePage/TranscribePage";
+import { FAQs, TermsOfService } from "./pages";
 import LandingPage from "./pages/landing-page-a";
 import PageB from "./pages/Landing-page-b";
-import SentimentAnalysis from "./pages/SentimentAnalysis";
-import TranscribePage from "./pages/TranscribePage/TranscribePage";
+import NavBar from "./components/navBar";
+import TermsAndCondition from "./pages/TermsAndCondition/TermsOfService";
 
-import UploadedRecordings from "./components/UploadRecordings";
 import Services from "./pages/services-page/Services";
 import Solutions from "./pages/solutions-page/Solutions";
-import NavBar from "./components/navBar";
+import DashboardOverview from "./pages/DashboardOverview";
+import UploadedRecordings from "./components/UploadRecordings";
 
 function App() {
   return (
@@ -74,10 +76,7 @@ function App() {
         {/* upload pages */}
         <Route path="/upload" element={<DummyPage someText="upload pages" />} />
         {/* dashboard */}
-        <Route
-          path="/dashboard"
-          element={<DummyPage someText="dashboard overview" />}
-        />
+        <Route path="/dashboard" element={<DashboardOverview />} />
         {/* accounts */}
         <Route path="/accounts" element={<DummyPage someText="accounts" />} />
         {/* industry */}
@@ -97,7 +96,7 @@ function App() {
         {/* terms and conditions */}
         <Route
           path="/terms"
-          element={<DummyPage someText="terms and conditions" />}
+          element={<TermsAndCondition someText="terms and conditions" />}
         />
         {/* terms of service */}
         <Route
@@ -109,6 +108,7 @@ function App() {
         <Route path="/homeB" element={<PageB />} />
         <Route path="faq" element={<FAQs />} />
         <Route path="faq" element={<TermsOfService />} />
+        {/* uploaded recordings */}
         <Route path="/uploaded-recordings" element={<UploadedRecordings />} />
       </Routes>
     </>
