@@ -1,3 +1,6 @@
+@use "./reset.scss";
+@use "./functions.scss" as *;
+
 :root {
   font-family: "Kanit", sans-serif;
 
@@ -6,6 +9,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+section {
+  padding-inline: pix-rem(16);
+}
+
+.container {
+  width: min(100%, pix-rem(1264));
+  margin-inline: auto;
 }
 
 * {
