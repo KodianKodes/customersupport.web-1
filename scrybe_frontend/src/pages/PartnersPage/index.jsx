@@ -19,27 +19,22 @@ const index = () => {
         <div className={styles.sect__container}>
           <div className={styles.first__flex}>
             <div className={styles.first__right}>
-              {/* first__sect - right */}
               <img src={heroIcon} alt="Hero icon of the page" />
             </div>
             <div className={styles.first__left}>
-              {/* first__sect - left */}
               <div className={styles.first__heading}>
                 <h1 className={styles.first__head}>
-                  {/* first__sect - head */}
                   Grow with us, Become a Partner
                 </h1>
               </div>
               <div className={styles.first__subhead}>
                 <p className={styles.first__subtext}>
-                  {/* first__sect - subtext */}
                   Once you become a partner, we recognize you officially as a
                   VIP User of Srcybe with added features and benefits.
                   Let&apos;s work together. Join our community of partners to
                   grow your business and solve the problems of others.
                   <span className={styles.first__inline}>
                     <a href="/" className={styles.first__inline}>
-                      {/* first__inline - text */}
                       Learn more
                     </a>
                   </span>
@@ -68,7 +63,6 @@ const index = () => {
       <section className={styles.second__sect}>
         <div className={styles.sect__container}>
           <div className={styles.second__content}>
-            {/* second__sect - content */}
             <div className={styles.second__each}>
               <img src={google} alt="google-icon" />
             </div>
@@ -88,37 +82,26 @@ const index = () => {
         <div className={styles.sect__container}>
           <div className={styles.third__flex}>
             <div className={styles.third__left}>
-              {/* third__sect - left */}
               <img src={layoutIcon} alt="Layout three section hero icon" />
             </div>
             <div className={styles.third__right}>
-              {/* third__sect - right */}
               <div className={styles.third__heading}>
                 <h2 className={styles.third__head}>
                   Why Join Our Partner Program
                 </h2>
               </div>
               <div className={styles.third__content}>
-                {/* third__bottom - content */}
                 <div className={styles.third__btm}>
                   <div className={styles.btm__left}>
-                    {/* third__btm - left */}
                     <div className={styles.btm__icon}>
-                      {/* third__btm - icon */}
                       <img src={oneIcon} alt="Layout three section hero icon" />
                     </div>
                     <div />
                   </div>
                   <div className={styles.btm__right}>
-                    {/* third__btm - right */}
-                    <h4 className={styles.btm__head}>
-                      {/* third__btm - head */}
-                      Service Offering
-                    </h4>
+                    <h4 className={styles.btm__head}>Service Offering</h4>
                     <div className={styles.btm__subhead}>
-                      {/* third__btm - subhead */}
                       <p className={styles.btm__subtext}>
-                        {/* third__btm - subtext */}
                         Increase the value of your customer service, get VIP
                         access to the most intelligent tool to help your
                         business grow
@@ -231,7 +214,6 @@ const index = () => {
               <form className={styles.form__container}>
                 <div className={styles.input__overall}>
                   <div className={styles.input__content}>
-                    {/* input__content - flex */}
                     <div className={styles.input__flex}>
                       <label
                         htmlFor="company__name"
