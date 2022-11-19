@@ -3,10 +3,138 @@
 @import "./reset";
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
 
+.account_add-agent__div {
+  z-index: 999;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(17px);
+}
+
+.account_add-agent-modal__div {
+  display: flex;
+  flex-direction: column;
+  background-color: $neutral-100;
+  padding: pix-rem(24);
+  border-radius: pix-rem(16);
+  gap: pix-rem(16);
+  width: clamp(pix-rem(320), calc(100vw - pix-rem(32)), pix-rem(930));
+
+  h2 {
+    color: $text;
+    font-weight: 700;
+    font-size: pix-rem(24);
+    line-height: pix-rem(32);
+  }
+  p {
+    font-weight: 300;
+    font-size: pix-rem(16);
+    line-height: pix-rem(24);
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: pix-rem(16);
+    color: $grey-400;
+
+    label {
+      display: flex;
+      flex-direction: column;
+      gap: pix-rem(4);
+    }
+    label[for="consent-to-email"] {
+      flex-direction: row;
+    }
+    label[for="consent-to-email"]>span {
+      color: $text;
+    }
+    input {
+      height: pix-rem(52);
+      padding: pix-rem(16);
+      border: pix-rem(1) solid $blue-500;
+      border-radius: pix-rem(4);
+    }
+    input:focus-visible {
+      outline: none;
+    }
+    input[type="checkbox"] {
+      appearance: none;
+      align-self: flex-start;
+      height: pix-rem(16);
+      width: pix-rem(16);
+      padding: 0;
+      border: 1px solid $grey-100;
+      border-radius: pix-rem(4.8);
+      overflow: hidden;
+    }
+    input[type="checkbox"]:checked {
+      border: none;
+      height: pix-rem(17);
+      width: pix-rem(17);
+      position: relative;
+    }
+    input[type="checkbox"]:checked::before {
+      content: url("../icons/checkmark.svg");
+      width: fit-content;
+      height: fit-content;
+      position: absolute;
+      margin: 0;
+    }
+    input[name="submit-btn"] {
+      border: none;
+      border-radius: pix-rem(4);
+      background-color: $blue-500;
+      color: $neutral-100;
+      font-weight: 500;
+      font-size: pix-rem(14);
+      line-height: pix-rem(24);
+    }
+    input[name="cancel-btn"] {
+      border: none;
+      background-color: transparent;
+    }
+    span {
+      font-weight: 400;
+      font-size: pix-rem(12);
+      line-height: pix-rem(16);
+    }
+    div:first-of-type {
+      height: pix-rem(8);
+    }
+    div:last-of-type {
+      display: flex;
+      flex-direction: column;
+      gap: pix-rem(16);
+    }
+
+    @include easyMediaQueries("min-width:1024px") {
+      div:first-of-type {
+        height: pix-rem(16);
+      }
+      div:last-of-type {
+        flex-direction: row;
+
+        input[name="submit-btn"] {
+          padding: pix-rem(16) pix-rem(32);
+        }
+      }
+    }
+  }
+
+  @include easyMediaQueries("min-width:1024px") {
+    padding: pix-rem(40) pix-rem(60);
+  }
+}
+
 .account {
   font-family: "Kanit", sans-serif;
-  width: calc(100% - pix-rem(32));
-  margin: pix-rem(85) auto pix-rem(36) auto;
+  // background-color: $grey-50;
+  width: 100%;
+  padding: pix-rem(85) pix-rem(16) pix-rem(36) pix-rem(16);
   display: flex;
   flex-direction: column;
   gap: pix-rem(40);
@@ -120,7 +248,7 @@
         }
         div:first-of-type {
           min-height: pix-rem(144);
-          background-color: $blue-50;
+          background-color: $grey-10;
           border: pix-rem(0.329741) solid $grey-50;
           border-radius: pix-rem(2.63793);
           padding: pix-rem(16);
