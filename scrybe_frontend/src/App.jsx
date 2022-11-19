@@ -8,6 +8,7 @@ import { FAQs, TermsOfService } from "./pages";
 import LandingPage from "./pages/landing-page-a";
 import PageB from "./pages/Landing-page-b";
 import NavBar from "./components/navBar";
+import TermsAndCondition from "./pages/TermsAndCondition/TermsOfService";
 
 import Services from "./pages/services-page/Services";
 import Solutions from "./pages/solutions-page/Solutions";
@@ -96,7 +97,7 @@ function App() {
         {/* terms and conditions */}
         <Route
           path="/terms"
-          element={<DummyPage someText="terms and conditions" />}
+          element={<TermsAndCondition someText="terms and conditions" />}
         />
         {/* terms of service */}
         <Route
