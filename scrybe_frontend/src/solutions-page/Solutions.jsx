@@ -7,6 +7,8 @@ import transcribeIcon from "./assets/transcribe-icon.svg";
 import sentimentsIcon from "./assets/sentiment-icon.svg";
 import uploadImg from "./assets/upload-img.png";
 import monitor from "./assets/monitor.png";
+import dashboard from "./assets/dashboard.png";
+import sentiment from "./assets/sentiments.png";
 
 function Solutions() {
   return (
@@ -120,6 +122,76 @@ function Solutions() {
                 Ascertain the efficiency of your customer support with generated
                 activity data.
               </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="container">
+        <div className="upload-container">
+          <div className="cont">
+            <h4>Ready to improve your customer support efficiency?</h4>
+            <h1>
+              <span>Upload.</span>
+              Transcribe.
+              <span>Analyze.</span>
+            </h1>
+            <button type="button">Try for Free</button>
+          </div>
+        </div>
+      </div>
+
+      <div className="buss-section">
+        <div className="container">
+          <div className="buss-flex">
+            <div className="buss-img">
+              <img src={dashboard} alt="dashboard" />
+            </div>
+            <div className="buss-txt">
+              <h1>
+                The need for precise analytics data is ever-growing; quickly
+                analyze customer interactions, get accurate data, and extract
+                insights.
+              </h1>
+
+              <p>
+                Scrybe provides call recording solutions that make it easy and
+                efficient to increase resolution rates, optimize customer
+                service experience, improve retention rates and manage
+                operational costs. Our innovative Technology records customer
+                service conversations automatically, transcribes them, and
+                analyzes the sentiment behind them.
+              </p>
+
+              <h4>
+                Find out how to use Scrybe to generate insightful customer
+                insight data. Try it for free.
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="buss-section">
+        <div className="container">
+          <div className="buss-flex">
+            <div className="buss-img">
+              <img src={sentiment} alt="sentiment" />
+            </div>
+            <div className="buss-txt">
+              <h1>
+                Managing your phone calls can take up a lot of time and telling
+                who is happy and unhappy with your service isn’t easy
+              </h1>
+
+              <p>
+                Scrybe always tells you who is happy and unhappy with your
+                service. You can make changes and prevent fires before they get
+                too large to manage efficiently. Start managing customer
+                conversations with ease! You must upload the call, find out what
+                people think about your product or service, and fix any problems
+                you’ve overlooked. Get your free trial today!
+              </p>
             </div>
           </div>
         </div>

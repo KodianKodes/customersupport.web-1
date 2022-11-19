@@ -185,11 +185,49 @@
             }
 
             .buss-img  {
-                width: 50%;
+                width: 40%;
 
                 img {
                     width: 100%;
                 }
+            }
+        }
+    }
+}
+
+.container {
+    @include container;
+
+    .upload-container {
+        background: url(./assets/blur-bg.png);
+        background-size: cover;
+        padding: 4rem;
+
+        .cont {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+
+            h4 {
+                font-size: 23px;
+                color: #3F3F3F;
+                margin-bottom: 20px;
+            }
+
+            h1 {
+                font-size: 55px;
+                color: #005584;
+                font-weight: 600;
+                letter-spacing: 2px;
+                margin-bottom: 20px;
+
+                span {
+                    color: #006CFF;
+                }
+            }
+
+            button {
+                @include btn;
             }
         }
     }

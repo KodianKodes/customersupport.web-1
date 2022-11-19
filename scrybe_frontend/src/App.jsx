@@ -1,14 +1,16 @@
 import React from "react";
 import "./App.scss";
-// import Services from "./services-page/Services";
+import { Routes, Route } from "react-router-dom";
+
+import Services from "./services-page/Services";
 import Solutions from "./solutions-page/Solutions";
 
 function App() {
   return (
-    <div className="App" data-testid="app-container">
-      {/* <Services /> */}
-      <Solutions />
-    </div>
+    <Routes>
+      <Route path="/" element={<Services />} />
+      <Route path="/solution" element={<Solutions />} />
+    </Routes>
   );
 }
 
