@@ -118,7 +118,6 @@ function App() {
         {/* uploaded recordings page */}
         <Route path="/uploaded-recordings" element={<UploadedRecordings />} />
       </Routes>
-    </>
   );
 }
 export default App;
