@@ -6,7 +6,7 @@ function Content() {
   return (
     <div className={styles.container}>
       <p className={styles.update}>
-        <span className={styles.headings}>Update : </span>{" "}
+        <span className={styles.txt}>Update : </span>
         <span className={styles.paragraphs}> 15th November,2022</span>
       </p>
       <h3 className={styles.headings}>Company Overview</h3>
