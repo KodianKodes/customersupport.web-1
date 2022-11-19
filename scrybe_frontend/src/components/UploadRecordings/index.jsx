@@ -4,7 +4,7 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useLayoutEffect, useState } from "react";
 import closeModalIcon from "./imgs/close-icon.svg";
 import deleteIcon from "./imgs/delete-icon.svg";
 import notfoundImg from "./imgs/notfound.svg";
@@ -107,6 +107,10 @@ function UploadedRecordings() {
     }
     setRecordCheckedList(checkedList);
   };
+
+  useLayoutEffect(() => {
+    document.title = "Uploaded Recordings";
+  }, []);
 
   const deleteBulkRecordings = () => {
     const newRecordings = allRecordings.filter(
