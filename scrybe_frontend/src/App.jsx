@@ -15,7 +15,7 @@ function App() {
         element={<DummyPage someText="sentiment-analysis" />}
       />
       {/* transcriptions */}
-      <Route path="/transicriptions" element={<TranscribePage />} />
+      <Route path="/transcriptions" element={<TranscribePage />} />
       {/* try for free */}
       <Route path="/try" element={<DummyPage someText="try for free" />} />
       {/* press */}

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Transcribe.module.scss";
-import TranscriptionHeader from "./Components/TranscriptionHeader/TranscriptionHeader";
+import TranscriptionHeader from "../../../components/TranscriptionHeader/TranscriptionHeader";
 import TranscriptionMain from "./Components/TranscriptionMain/TranscriptionMain";
 
 function Transcribe() {
