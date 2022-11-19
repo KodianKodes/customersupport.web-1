@@ -10,7 +10,7 @@ function Grid(props) {
         <img src={CallImage} alt="" />
         <div className={styles.filename__text}>
           <h5>{props.name}</h5>
-          <p className={styles.paragraph}>{props.lenght}</p>
+          <p className={styles.paragraph}>{props.agent}</p>
         </div>
       </div>
       <div className={styles.analysis}>

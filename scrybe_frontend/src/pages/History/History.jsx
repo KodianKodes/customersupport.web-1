@@ -11,7 +11,7 @@ export default function History() {
   const recordGrid = data.map((item) => (
     <Grid
       name={item.name}
-      lenght={item.lenght}
+      agent={item.agent}
       analysis={item.analysis}
       date={item.date}
     />
