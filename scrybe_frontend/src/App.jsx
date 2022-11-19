@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.scss";
 import { Routes, Route } from "react-router-dom";
+import SentimentAnalysis from "./pages/SentimentAnalysis";
 import DummyPage from "./pages/DummyPage";
 import TranscribePage from "./pages/TranscribePage/TranscribePage";
 import { FAQs, TermsOfService } from "./pages";
@@ -16,10 +17,7 @@ function App() {
         {/* landing page */}
         <Route path="/" element={<LandingPage />} />
         {/* sentiment analysis */}
-        <Route
-          path="/sentiment-analysis"
-          element={<DummyPage someText="sentiment-analysis" />}
-        />
+        <Route path="/sentiment-analysis" element={<SentimentAnalysis />} />
         {/* transcriptions */}
         <Route path="/transcriptions" element={<TranscribePage />} />
         {/* try for free */}
