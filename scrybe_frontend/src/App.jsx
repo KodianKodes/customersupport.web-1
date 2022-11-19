@@ -1,16 +1,17 @@
 import React from "react";
+import { Route, Routes } from "react-router-dom";
 import "./App.scss";
-import { Routes, Route } from "react-router-dom";
-import SentimentAnalysis from "./pages/SentimentAnalysis";
-import DummyPage from "./pages/DummyPage";
-import TranscribePage from "./pages/TranscribePage/TranscribePage";
 import { FAQs, TermsOfService } from "./pages";
+import DummyPage from "./pages/DummyPage";
 import LandingPage from "./pages/landing-page-a";
 import PageB from "./pages/Landing-page-b";
-import NavBar from "./components/navBar";
+import SentimentAnalysis from "./pages/SentimentAnalysis";
+import TranscribePage from "./pages/TranscribePage/TranscribePage";
 
+import UploadedRecordings from "./components/UploadRecordings";
 import Services from "./pages/services-page/Services";
 import Solutions from "./pages/solutions-page/Solutions";
+import NavBar from "./components/navBar";
 
 function App() {
   return (
@@ -108,6 +109,7 @@ function App() {
         <Route path="/homeB" element={<PageB />} />
         <Route path="faq" element={<FAQs />} />
         <Route path="faq" element={<TermsOfService />} />
+        <Route path="/uploaded-recordings" element={<UploadedRecordings />} />
       </Routes>
     </>
   );
