@@ -6,16 +6,16 @@ function Charts() {
   const [options, setOptions] = useState({
     series: [
       {
-        name: "Net Profit",
-        data: [44, 55, 57, 56, 61, 58, 63, 60, 66],
+        name: "Positive",
+        data: [44, 55, 57, 56, 61, 58, 63],
       },
       {
-        name: "Revenue",
-        data: [76, 85, 101, 98, 87, 105, 91, 114, 94],
+        name: "Neutral",
+        data: [76, 85, 101, 98, 87, 105, 91],
       },
       {
-        name: "Free Cash Flow",
-        data: [35, 41, 36, 26, 45, 48, 52, 53, 41],
+        name: "Negative",
+        data: [35, 41, 36, 26, 45, 48, 52],
       },
     ],
     options: {
@@ -39,22 +39,10 @@ function Charts() {
         colors: ["transparent"],
       },
       xaxis: {
-        categories: [
-          "Feb",
-          "Mar",
-          "Apr",
-          "May",
-          "Jun",
-          "Jul",
-          "Aug",
-          "Sep",
-          "Oct",
-        ],
+        categories: ["11", "12", "13", "14", "15", "16", "17"],
       },
       yaxis: {
-        title: {
-          text: "$ (thousands)",
-        },
+        title: {},
       },
       fill: {
         opacity: 1,
@@ -62,7 +50,7 @@ function Charts() {
       tooltip: {
         y: {
           formatter(val) {
-            return "$ " + val + " thousands";
+            return val + " mins";
           },
         },
       },
@@ -70,13 +58,14 @@ function Charts() {
   });
   return (
     <div className={styles.chartContainer}>
-      <ApexCharts
-        options={options.options}
-        series={options.series}
-        type="bar"
-        height={250}
-        width={300}
-      />
+      <div className={styles.chartWrap}>
+        <ApexCharts
+          options={options.options}
+          series={options.series}
+          type="bar"
+          className={styles.chartImg}
+        />
+      </div>
     </div>
   );
 }
