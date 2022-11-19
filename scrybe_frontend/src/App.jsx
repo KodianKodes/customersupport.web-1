@@ -7,23 +7,16 @@ import TranscribePage from "./pages/TranscribePage/TranscribePage";
 import { FAQs, TermsOfService } from "./pages";
 import LandingPage from "./pages/landing-page-a";
 import PageB from "./pages/Landing-page-b";
-
-import UploadedRecordings from "./components/UploadRecordings";
-
-
-
 import NavBar from "./components/navBar";
 
 import Services from "./pages/services-page/Services";
 import Solutions from "./pages/solutions-page/Solutions";
-
 
 function App() {
   return (
     <>
       <NavBar />
       <Routes>
-        {/* landing page */}
         {/* landing page */}
         <Route path="/" element={<LandingPage />} />
         {/* sentiment analysis */}
@@ -115,10 +108,9 @@ function App() {
         <Route path="/homeB" element={<PageB />} />
         <Route path="faq" element={<FAQs />} />
         <Route path="faq" element={<TermsOfService />} />
-        {/* uploaded recordings */}
-        <Route path="/uploaded-recordings" element={<UploadedRecordings />} />
       </Routes>
     </>
   );
 }
+
 export default App;
