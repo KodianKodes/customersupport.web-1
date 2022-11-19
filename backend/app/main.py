@@ -65,3 +65,21 @@ async def analyse(file: UploadFile=File(...)):
 # async def login(form_data: OAuth2PasswordRequestForm = Depends(), session: Session = Depends(get_session)):
 #     # return token once the user has been successfully authenticated, or it returns an error.
 #     return await main_login(form_data, session)
+
+#create registration endpoint
+@app.post('/users', summary="Create new user")
+async def create_user(user: schema.Users, session: Session =Depends(get_current_user)):
+    hashed_password = pwd_context.hash(user.password)
+    db_user = models.User(first_name=user.firstname,last_name=user.last_name, email=user.email, hashed_password=hashed_password)
+    # querying database to check if user already exist
+    user = db.get(user.email, None)
+    if user is not None:
+            raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="User with this email already exist"
+        )
+    else:
+        session.add(db_user)
+        session.commit()
+        sesion.refresh(db_user)
+        return db_user
