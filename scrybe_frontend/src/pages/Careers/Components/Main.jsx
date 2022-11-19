@@ -1,12 +1,12 @@
 import image2 from '../Assets/image-2.jpg'
 import elipse1 from '../Assets/Ellipse1.png'
 import elipse2 from '../Assets/Ellipse2.png'
-import Bannre from './Bannre'
+import Banner from './Banner'
 
 function Main() {
   return (
     <div className="main-container">
-        <Bannre />
+        <Banner />
         <div className='careers'>
             <div className='text-container'>
                 <h1>Careers at scrybe</h1>

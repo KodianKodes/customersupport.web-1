@@ -1,5 +1,6 @@
 import image1 from '../Assets/image-1.jpg'
 import {BsSearch} from 'react-icons/bs'
+import '../Style/banner.scss'
 
 function Bannre() {
   return (
