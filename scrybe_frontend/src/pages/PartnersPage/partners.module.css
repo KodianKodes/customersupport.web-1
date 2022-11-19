@@ -410,4 +410,21 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
   .second__content .second__each {
     width: 23%;
   }
+  /* Styling of the third section */
+  .third__section {
+    border-top-right-radius: 0;
+    padding: 3em 0 2em;
+    margin-bottom: 3em;
+  }
+  .third__flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .third__left {
+    display: block;
+    width: 40%;
+  }
+  .third__right {
+    width: 50%;
+  }
 }/*# sourceMappingURL=partners.module.css.map */

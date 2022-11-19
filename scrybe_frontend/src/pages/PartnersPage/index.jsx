@@ -86,105 +86,113 @@ const index = () => {
       </section>
       <section className={styles.third__section}>
         <div className={styles.sect__container}>
-          <div className={styles.third__left}>
-            {/* third__sect - left */}
-            <img src={layoutIcon} alt="Layout three section hero icon" />
-          </div>
-          <div className={styles.third__right}>
-            {/* third__sect - right */}
-            <div className={styles.third__heading}>
-              <h2 className={styles.third__head}>
-                Why Join Our Partner Program
-              </h2>
+          <div className={styles.third__flex}>
+            <div className={styles.third__left}>
+              {/* third__sect - left */}
+              <img src={layoutIcon} alt="Layout three section hero icon" />
             </div>
-            <div className={styles.third__content}>
-              {/* third__bottom - content */}
-              <div className={styles.third__btm}>
-                <div className={styles.btm__left}>
-                  {/* third__btm - left */}
-                  <div className={styles.btm__icon}>
-                    {/* third__btm - icon */}
-                    <img src={oneIcon} alt="Layout three section hero icon" />
-                  </div>
-                  <div />
-                </div>
-                <div className={styles.btm__right}>
-                  {/* third__btm - right */}
-                  <h4 className={styles.btm__head}>
-                    {/* third__btm - head */}
-                    Service Offering
-                  </h4>
-                  <div className={styles.btm__subhead}>
-                    {/* third__btm - subhead */}
-                    <p className={styles.btm__subtext}>
-                      {/* third__btm - subtext */}
-                      Increase the value of your customer service, get VIP
-                      access to the most intelligent tool to help your business
-                      grow
-                    </p>
-                  </div>
-                </div>
+            <div className={styles.third__right}>
+              {/* third__sect - right */}
+              <div className={styles.third__heading}>
+                <h2 className={styles.third__head}>
+                  Why Join Our Partner Program
+                </h2>
               </div>
-              <div className={styles.third__btm}>
-                <div className={styles.btm__left}>
-                  <div className={styles.btm__icon}>
-                    <img src={twoIcon} alt="Layout three section hero icon" />
+              <div className={styles.third__content}>
+                {/* third__bottom - content */}
+                <div className={styles.third__btm}>
+                  <div className={styles.btm__left}>
+                    {/* third__btm - left */}
+                    <div className={styles.btm__icon}>
+                      {/* third__btm - icon */}
+                      <img src={oneIcon} alt="Layout three section hero icon" />
+                    </div>
+                    <div />
                   </div>
-                  <div />
-                </div>
-                <div className={styles.btm__right}>
-                  <h4 className={styles.btm__head}>
-                    VIP training & Onboarding
-                  </h4>
-                  <div className={styles.btm__subhead}>
-                    <p className={styles.btm__subtext}>
-                      Full access to our learning library, for your entire team
-                      to receive product training and our premium onboarding
-                      packages
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className={styles.third__btm}>
-                <div className={styles.btm__left}>
-                  <div className={styles.btm__icon}>
-                    <img src={threeIcon} alt="Layout three section hero icon" />
-                  </div>
-                  <div />
-                </div>
-                <div className={styles.btm__right}>
-                  <h4 className={styles.btm__head}>Marketing Support</h4>
-                  <div className={styles.btm__subhead}>
-                    <p className={styles.btm__subtext}>
-                      We will work together to create awareness of your
-                      company/agency through opportunity, event
-                      invitation/partnership, co-marketing initiatives, etc.
-                    </p>
+                  <div className={styles.btm__right}>
+                    {/* third__btm - right */}
+                    <h4 className={styles.btm__head}>
+                      {/* third__btm - head */}
+                      Service Offering
+                    </h4>
+                    <div className={styles.btm__subhead}>
+                      {/* third__btm - subhead */}
+                      <p className={styles.btm__subtext}>
+                        {/* third__btm - subtext */}
+                        Increase the value of your customer service, get VIP
+                        access to the most intelligent tool to help your
+                        business grow
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className={styles.third__btm}>
-                <div className={styles.btm__left}>
-                  <div className={styles.btm__icon}>
-                    <img src={fourIcon} alt="Layout three section hero icon" />
+                <div className={styles.third__btm}>
+                  <div className={styles.btm__left}>
+                    <div className={styles.btm__icon}>
+                      <img src={twoIcon} alt="Layout three section hero icon" />
+                    </div>
+                    <div />
                   </div>
-                  <div />
-                </div>
-                <div className={styles.btm__right}>
-                  <h4 className={styles.btm__head}>Shared Revenue</h4>
-                  <div className={styles.btm__subhead}>
-                    <p className={styles.btm__subtext}>
-                      A special reward for each referral, measured with an
-                      industry-leading revenue share
-                    </p>
+                  <div className={styles.btm__right}>
+                    <h4 className={styles.btm__head}>
+                      VIP training & Onboarding
+                    </h4>
+                    <div className={styles.btm__subhead}>
+                      <p className={styles.btm__subtext}>
+                        Full access to our learning library, for your entire
+                        team to receive product training and our premium
+                        onboarding packages
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className={styles.btm__subhead}>
-                <p className={styles.btm__subtext}>
-                  For more inquiries and questions on our partner&apos;s
-                  program, send a mail to partner@scrybe.com
-                </p>
+                <div className={styles.third__btm}>
+                  <div className={styles.btm__left}>
+                    <div className={styles.btm__icon}>
+                      <img
+                        src={threeIcon}
+                        alt="Layout three section hero icon"
+                      />
+                    </div>
+                    <div />
+                  </div>
+                  <div className={styles.btm__right}>
+                    <h4 className={styles.btm__head}>Marketing Support</h4>
+                    <div className={styles.btm__subhead}>
+                      <p className={styles.btm__subtext}>
+                        We will work together to create awareness of your
+                        company/agency through opportunity, event
+                        invitation/partnership, co-marketing initiatives, etc.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.third__btm}>
+                  <div className={styles.btm__left}>
+                    <div className={styles.btm__icon}>
+                      <img
+                        src={fourIcon}
+                        alt="Layout three section hero icon"
+                      />
+                    </div>
+                    <div />
+                  </div>
+                  <div className={styles.btm__right}>
+                    <h4 className={styles.btm__head}>Shared Revenue</h4>
+                    <div className={styles.btm__subhead}>
+                      <p className={styles.btm__subtext}>
+                        A special reward for each referral, measured with an
+                        industry-leading revenue share
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.btm__subhead}>
+                  <p className={styles.btm__subtext}>
+                    For more inquiries and questions on our partner&apos;s
+                    program, send a mail to partner@scrybe.com
+                  </p>
+                </div>
               </div>
             </div>
           </div>
