@@ -10,12 +10,12 @@ import monitor from "./assets/monitor.png";
 import dashboard from "./assets/dashboard.png";
 import sentiment from "./assets/sentiments.png";
 
-import warpWire from './assets/warpwire-logo.svg'
-import nCast from './assets/ncast-logo.svg'
-import microsoft from './assets/microsoft-logo.svg'
-import hulu from './assets/hulu-logo.svg'
-import happy from './assets/happy-logo.svg'
-import google from './assets/googole-logo.svg'
+import warpWire from "./assets/warpwire-logo.svg";
+import nCast from "./assets/ncast-logo.svg";
+import microsoft from "./assets/microsoft-logo.svg";
+import hulu from "./assets/hulu-logo.svg";
+import happy from "./assets/happy-logo.svg";
+import google from "./assets/googole-logo.svg";
 
 function Solutions() {
   return (
@@ -207,7 +207,10 @@ function Solutions() {
       <div className="container">
         <div className="setblur-container">
           <div className="cont">
-            <h4>If you have any questions about our solutions? Please contact us by email: info@scrybe.com.</h4>
+            <h4>
+              If you have any questions about our solutions? Please contact us
+              by email: info@scrybe.com.
+            </h4>
             <h1>
               <span>Get Started With</span>
               Scrybe
@@ -220,14 +223,17 @@ function Solutions() {
       <div className="logo-section">
         <div className="container">
           <h1>We are loved by Companies of all sizes</h1>
-          <p>Companies of all sizes from Startup and Fortune 500 companies use Scribe </p>
+          <p>
+            Companies of all sizes from Startup and Fortune 500 companies use
+            Scribe{" "}
+          </p>
           <div className="logo-flex">
-          <img src={microsoft} alt="microsoft-logo" />
-          <img src={nCast} alt="nCast-logo" />
-          <img src={warpWire} alt="warpwire-logo" />
-          <img src={hulu} alt="hulu-logo" />
-          <img src={happy} alt="hapy-scribelogo" />
-          <img src={google} alt="google-logo" />
+            <img src={microsoft} alt="microsoft-logo" />
+            <img src={nCast} alt="nCast-logo" />
+            <img src={warpWire} alt="warpwire-logo" />
+            <img src={hulu} alt="hulu-logo" />
+            <img src={happy} alt="hapy-scribelogo" />
+            <img src={google} alt="google-logo" />
             {/* <div className="flex-comp"></div> */}
           </div>
         </div>

@@ -51,7 +51,7 @@
 }
 
 .content-section {
-    padding: 10rem 0;
+    padding: 8rem 0;
     .container {
         @include container;
     
@@ -105,7 +105,7 @@
 .why-scrybe {
     .container {
         @include container;
-        padding: 0 0 10rem 0;
+        padding: 0 0 6rem 0;
 
         h1 {
             color: #005584;
@@ -302,6 +302,43 @@
 
             img {
                 width: 200px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1121px) {
+    .content-section {
+        .container {
+            .flex-items {
+                flex-direction: column;
+                row-gap: 4rem;
+
+                .txt-item, .img-item {
+                    width: 100%;
+                }
+
+                .txt-item {
+                    text-align: center;
+
+                    .btns {
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+
+    .why-scrybe {
+        .container {
+            .card-container {
+                flex-direction: column;
+                row-gap: 3rem;
+
+                .card {
+                    width: 38%;
+                }
             }
         }
     }
