@@ -1,8 +1,7 @@
 import React from "react";
 
 import styles from "../../styles/Industry/industry.module.css";
-import IndustryCard from '../../component/Industry/industryCard';
-
+import IndustryCard from "../../component/Industry/industryCard";
 
 function Industry() {
   return (
@@ -17,7 +16,7 @@ function Industry() {
           and products with state-of-the-art AI models.
         </p>
       </div>
-        <IndustryCard/>
+      <IndustryCard />
     </div>
   );
 }

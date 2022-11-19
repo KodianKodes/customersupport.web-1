@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import styles from "../../styles/Industry/industry.module.css";
 
 import Image from "../../assets/Industry/industryImage.png";
@@ -26,7 +26,7 @@ function industryCard() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default industryCard
+export default industryCard;
