@@ -13,7 +13,7 @@ filename = input("Enter the filepath to your audio file")
 api_key = os.getenv("API_KEY")
 model_key = os.getenv("MODEL_KEY")
 
-def convert_file(filename):
+def transcribe_file(filename):
 # Expects an mp3 file named test.mp3 in directory
     with open(filename, "rb") as file:
         # Load audio file
