@@ -1,8 +1,7 @@
-/* eslint-disable */
 import React from "react";
 import styles from "./listHeader.module.scss";
 
-const ListHeader = () => {
+function ListHeader() {
   return (
     <div className={styles.header}>
       <table className={styles.table}>
@@ -16,6 +15,6 @@ const ListHeader = () => {
       </table>
     </div>
   );
-};
+}
 
 export default ListHeader;

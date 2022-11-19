@@ -1,10 +1,12 @@
-/* eslint-disable */
+/* eslint-disable react/prop-types */
+/* eslint-disable react/destructuring-assignment */
 import React from "react";
 import styles from "./list.module.scss";
 import image from "../../assets/callImage.png";
 
 function List(props) {
   return (
+    // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
     <div
       className={`styles.listbox ${props.show ? "show" : ""}`}
       onClick={props.onClose}

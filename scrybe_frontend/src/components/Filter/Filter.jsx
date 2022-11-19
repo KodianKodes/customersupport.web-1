@@ -1,5 +1,5 @@
+/* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/prop-types */
-/* eslint-disable */
 import React from "react";
 import styles from "./filter.module.scss";
 
