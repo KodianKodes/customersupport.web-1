@@ -87,7 +87,10 @@ function App() {
           element={<IndustryArticle someText="industry" />}
         />
         {/* How It Works */}
-        <Route path="/industry" element={<HowItWorks someText="industry" />} />
+        <Route
+          path="/howitworks"
+          element={<HowItWorks someText="How It Works" />}
+        />
         {/* demo pages */}
         <Route path="/demos" element={<DummyPage someText="demo pages" />} />
         {/* reviews & pricing */}
