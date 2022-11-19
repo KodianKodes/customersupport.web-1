@@ -621,7 +621,7 @@ function LandingPage() {
                 Upload Audio between customers and staff on our database
               </p>
               <a
-                href="https://www.w3schools.com/react/react_css.asp"
+                href="/transcriptions"
                 className={styles.gettingStarted__card_cta}
               >
                 Get Started
@@ -2055,7 +2055,7 @@ function LandingPage() {
                 The text is analyzed using open Ai for for sentiments
               </p>
               <a
-                href="https://www.w3schools.com/react/react_css.asp"
+                href="transcriptions"
                 className={styles.gettingStarted__card_cta}
               >
                 Get Started
