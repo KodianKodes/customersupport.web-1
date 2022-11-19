@@ -35,3 +35,11 @@ async def analyse(files: UploadFile):
     transcript = transcribe(file)
     sentiment_result = sentiment(transcript)
     return {"transcript": transcript, "sentiment_result": sentiment_result}
+
+
+@app.get("/sentiment_analysis")
+async def get_sentiment_analysis_result():
+    return{"Message": "This is the result of the analysis. Thank you for using our service",
+        "Trancript": transcript,
+        "Sentiment": sentiment
+    }
