@@ -20,9 +20,10 @@ function NavBar() {
         </div>
         <div className={styles.nav__ctas}>
           <button type="button">Login</button>
-          <NavLink to="/terms">
-            <button type="button">Upgrade Plan</button>
-          </NavLink>
+
+          <button type="button">
+            <NavLink to="/terms">Upgrade Plan</NavLink>
+          </button>
         </div>
       </div>
     </nav>
