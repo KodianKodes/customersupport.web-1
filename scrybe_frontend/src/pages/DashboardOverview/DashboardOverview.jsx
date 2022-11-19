@@ -1,13 +1,13 @@
 import React from "react";
 import styles from "./DashboardOverview.module.scss";
-import toneWave from "../assets/tone_wave.svg";
-import chevron from "../assets/chevron_right.svg";
-import analysis from "../assets/analytics.svg";
-import leaderboard from "../assets/leaderboard.svg";
+import toneWave from "./assets/tone_wave.svg";
+import chevron from "./assets/chevron_right.svg";
+import analysis from "./assets/analytics.svg";
+import leaderboard from "./assets/leaderboard.svg";
 // import agent from "../assets/agent.png";
-import agent1 from "../assets/agent1.png";
-import agent2 from "../assets/agent2.png";
-import agent3 from "../assets/agent3.png";
+import agent1 from "./assets/agent1.png";
+import agent2 from "./assets/agent2.png";
+import agent3 from "./assets/agent3.png";
 
 function DashboardOverview() {
   return (
