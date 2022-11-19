@@ -2,6 +2,7 @@ import React from "react";
 import "./App.scss";
 import { Routes, Route } from "react-router-dom";
 import DummyPage from "./pages/DummyPage";
+import TranscribePage from "./pages/TranscribePage/TranscribePage";
 
 function App() {
   return (
@@ -14,10 +15,7 @@ function App() {
         element={<DummyPage someText="sentiment-analysis" />}
       />
       {/* transcriptions */}
-      <Route
-        path="/transicriptions"
-        element={<DummyPage someText="transcriptions" />}
-      />
+      <Route path="/transicriptions" element={<TranscribePage />} />
       {/* try for free */}
       <Route path="/try" element={<DummyPage someText="try for free" />} />
       {/* press */}
