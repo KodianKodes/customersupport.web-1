@@ -6,7 +6,7 @@ import TranscribePage from "./pages/TranscribePage/TranscribePage";
 import { FAQs, TermsOfService } from "./pages";
 import LandingPage from "./pages/landing-page-a";
 import PageB from "./pages/Landing-page-b";
-import NavBar from "./components/navBar";    
+import NavBar from "./components/navBar";
 
 function App() {
   return (
@@ -21,10 +21,7 @@ function App() {
           element={<DummyPage someText="sentiment-analysis" />}
         />
         {/* transcriptions */}
-        <Route
-          path="/transicriptions"
-          element={<DummyPage someText="TranscribePage" />}
-        />
+        <Route path="/transcriptions" element={<TranscribePage />} />
         {/* try for free */}
         <Route path="/try" element={<DummyPage someText="try for free" />} />
         {/* press */}
