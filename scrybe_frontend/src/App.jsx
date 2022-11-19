@@ -9,15 +9,19 @@ import Careers from "./pages/Careers/Careers";
 import DummyPage from "./pages/DummyPage";
 import LandingPage from "./pages/landing-page-a";
 import PageB from "./pages/Landing-page-b";
-
+import JobVacancy from "./pages/Careers/Components/JobVacancy";
+import NotHiring from "./pages/Careers/Components/NotHiring";
 
 function App() {
   return (
     <Routes>
-
       <Route path="/" element={<Dummy />} />
+      {/* Privacy Policy */}
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      {/* Career Pages */}
       <Route path="/careers" element={<Careers />} />
+      <Route path="/careers/vacancy" element={<JobVacancy />} />
+      <Route path="/careers/no-vacancy" element={<NotHiring />} />
 
       {/* landing page */}
       <Route path="/" element={<LandingPage />} />
@@ -114,7 +118,6 @@ function App() {
       {/* blog */}
       <Route path="/blog" element={<DummyPage someText="blog" />} />
       <Route path="/homeB" element={<PageB />} />
-
     </Routes>
   );
 }
