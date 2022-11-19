@@ -71,35 +71,123 @@
 
     .careers {
         display: flex;
+        flex-direction: column;
+        padding: 0 10%;
+
+        h1 {
+            margin: 20px 0;
+        }
+
+        p {
+            margin: 15px 0;
+        }
 
         .img-container {
-            width:50%;
+            display: flex;
 
-            img {
-                width: 80%
+            .careers-img {
+                width: 70%;
+                z-index: 100;
+                position: relative;
+                left: 10%;
             }
+
+           .ellipse {
+             position: absolute;
+
+             img {
+                position: relative;
+
+                .ellipse2 {
+                    right: 10%;
+                }
+             }
+
+           }
         }
     }
 
-    .promises {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
+    .our-promise-container {
+        background: rgb(224, 223, 223);
+        margin-top: 20px;
+        .our-promise {
 
-    .promise {
-        display: flex;
-        flex-direction: column;
+            padding: 20px 10%;
+            h1 {
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 11px;
+                letter-spacing: -0.02em;
+                margin: 20px 0;
+            }
+            p {
+                font-size: 12px;
+            }
+    
+            .our-promise-heading {
+                padding-bottom: 5px;
+                border-bottom: 1px solid cyan;
+            }
+    
+            .promises {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 5px;
+        
+                .promise {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+
     }
+    
 
     .currently-hiring {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
+        padding: 20px 5%;
+        margin-bottom: 100px;
 
-    .currently-hiring-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        h1 {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 11px;
+            letter-spacing: -0.02em;
+            margin: 20px 0;
+            color: white;
+        }
+
+        p, a {
+            font-size: 12px;
+            color: white;
+        }
+
+        .currently-hiring-heading {
+            color: black;
+        }
+
+        .currently-hiring-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 5px;
+    
+            .currently-hiring-grid {
+                background: #006CFF;
+                padding: 20px 5px;
+                position: relative;
+
+                .see-more-link {
+                    position: absolute;
+                    bottom: 2px;
+                    right: 10px;
+                    margin-top: 5px;
+                }
+            }
+        }
+
     }
 
     
@@ -120,6 +208,78 @@
                 }
             }
         }
+
+        .our-promise-container {
+            margin: 100px 0;
+            padding-bottom: 100px;
+            .our-promise {
+
+                h1 {
+                    font-size: 19px;
+                    font-weight: 700;
+                    line-height: 11px;
+                    letter-spacing: -0.02em;
+                    margin: 20px 0;
+                }
+                p {
+                    font-size: 14px;
+                }
+    
+                .our-promise-heading {
+                    font-size: 24px;
+                }
+                .promises {
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    gap: 20px;
+                }
+            }
+        }
+
+        .currently-hiring {
+            padding: 0 10%;
+            margin-bottom: 100px;
+            h1, p {
+                color: black;
+            }
+
+            h1 {
+                font-size: 19px;
+                font-weight: 700;
+                line-height: 11px;
+                letter-spacing: -0.02em;
+                margin: 20px 0;
+            }
+            p {
+                font-size: 14px;
+            }
+
+            .currently-hiring-heading {
+                margin: 20px 0;
+                font-size: 24px;
+            }
+
+            .currently-hiring-container {
+
+                gap: 20px;
+                .currently-hiring-grid {
+                    background: white;
+                    padding: 10px;
+
+                    .see-more-link {
+                        a{
+                            color: #006CFF;
+                        }
+                        
+                    }
+                }
+
+                .mid-grid {
+                    border-left: 1px solid black;
+                    border-right: 1px solid black;
+                }
+            }
+        }
+        
     }
       
 }
