@@ -91,6 +91,8 @@ h2 {
 
 .postDetails p {
     width: 90%;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
 }
 
 p {
@@ -98,6 +100,7 @@ p {
     font-weight: 300;
     display: inline-block;
     line-height: 2.6rem;
+    color: #454545;
 }
 
 h4 {
@@ -149,7 +152,7 @@ h4 span {
     font-size: 2rem;
     font-weight: 300;
     line-height: 2.6rem;
-    color: rgb(0, 106, 255);
+    color: #006aff;
     text-decoration: none;
 }
 

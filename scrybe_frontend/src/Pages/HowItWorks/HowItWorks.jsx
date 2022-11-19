@@ -16,7 +16,7 @@ function HowItWorks() {
         <p>Simple and powerful, Scrybe is really smart</p>
       </div>
       <section className={styles.steps}>
-        <div className={styles.card}>
+        <div className={`${styles.card} ${styles.left}`}>
           <span>1</span>
           <div className={styles.cardInfo}>
             <h3>Sign up to Scribe</h3>
@@ -29,7 +29,7 @@ function HowItWorks() {
             <img src={Image1} alt="" />
           </div>
         </div>
-        <div className={styles.card}>
+        <div className={`${styles.card} ${styles.right}`}>
           <span>2</span>
           <div className={styles.cardInfo}>
             <h3>Upload Recordings or Audio files of Conversation</h3>
@@ -48,7 +48,7 @@ function HowItWorks() {
             <img src={Image2} alt="" />
           </div>
         </div>
-        <div className={styles.card}>
+        <div className={`${styles.card} ${styles.left}`}>
           <span>3</span>
           <div className={styles.cardInfo}>
             <h3>
@@ -70,7 +70,7 @@ function HowItWorks() {
             <img src={Image3} alt="" />
           </div>
         </div>
-        <div className={styles.card}>
+        <div className={`${styles.card} ${styles.right}`}>
           <span>4</span>
           <div className={styles.cardInfo}>
             <h3>
@@ -89,8 +89,12 @@ function HowItWorks() {
         </div>
       </section>
       <section className={styles.links}>
-        <Link to="/">FAQs</Link>
-        <Link to="/">Try for Free</Link>
+        <Link to="/" className={`${styles.linkBtn} ${styles.white}`}>
+          FAQs
+        </Link>
+        <Link to="/" className={`${styles.linkBtn} ${styles.blue}`}>
+          Try for Free
+        </Link>
       </section>
     </div>
   );
