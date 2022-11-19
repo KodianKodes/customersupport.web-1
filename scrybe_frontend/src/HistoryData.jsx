@@ -1,5 +1,4 @@
-// eslint-disable-next-line import/prefer-default-export
-export const data = [
+const data = [
   {
     name: "Call Record 100.mp3",
     lenght: "3:05",
@@ -169,3 +168,5 @@ export const data = [
     agent: "Sam Edet",
   },
 ];
+
+export default data;
