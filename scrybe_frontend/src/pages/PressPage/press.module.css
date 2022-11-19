@@ -95,4 +95,26 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
   font-style: light;
   fill: solid;
   line-height: 1.2rem;
+}
+
+.section__four {
+  margin-top: 3em;
+}
+.section__four .four__heading {
+  margin-bottom: 1em;
+}
+.section__four .four__heading .four__head {
+  font-size: 0.9rem;
+  color: #313131;
+  font-weight: 600;
+  font-style: bold;
+  fill: solid;
+  line-height: 1.2rem;
+}
+.section__four .four__cards {
+  width: 70%;
+  margin: 0 auto;
+}
+.section__four .four__cards .card__container {
+  margin-bottom: 1.1em;
 }/*# sourceMappingURL=press.module.css.map */

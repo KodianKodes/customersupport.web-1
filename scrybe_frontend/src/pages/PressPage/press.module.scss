@@ -120,3 +120,31 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
         line-height: 1.2rem;
     }
 }
+
+// Styling of the section four
+
+.section__four {
+    margin-top: 3em;
+
+    .four__heading {
+        margin-bottom: 1em;
+    }
+
+    .four__heading .four__head {
+        font-size: .9rem;
+        color: #313131;
+        font-weight: 600;
+        font-style: bold;
+        fill: solid;
+        line-height: 1.2rem;
+    }
+
+    .four__cards {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .four__cards .card__container {
+        margin-bottom: 1.1em;
+    }
+}
