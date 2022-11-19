@@ -12,37 +12,32 @@ jobs:
     # if: github.event.pull_request.merged == true
 
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./scrybe_frontend
 
 
     steps:
           
       - name: Check out the repo
-        uses: actions/checkout@v3
-
-      - name: change directory
-        run: cd scrybe_frontend        
+        uses: actions/checkout@v3 
+    
       
-        
       - name: Log in to Docker Hub
-        uses: docker/login-action@f054a8b539a109f9f41c372932f1ae047eff08c9
+        uses: docker/login-action@v2
         with:
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_TOKEN }}
-      
-      - name: Extract metadata (tags, labels) for Docker
-        id: meta
-        uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
-        with:
-          images: vicdam/scrybefrontend
-      
-      - name: Build and push Docker image
-        uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
-        with:
-          file: ./customersupport.web/scrybe_frontend/Dockerfile
-          context: .
-          push: true
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }} 
+          username: ${{ secrets.DOCKERHUB_USERNAME }}          
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+            
+      - name: Get Current Date 
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d--%M-%S')"
+
+      - name: Build Docker Image
+        run: docker build . --file Dockerfile --tag $DOCKERHUB_USERNAME/$REPOSITORY_NAME:${{ steps.date.outputs.date }}
+        
+      - name: Push Docker Image to Docker Hub
+        run: docker push $DOCKERHUB_USERNAME/$REPOSITORY_NAME:${{ steps.date.outputs.date }}
 
 
   
