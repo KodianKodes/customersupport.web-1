@@ -6,7 +6,7 @@ import pieChart from "./icons/pie_chart.svg";
 import downloadIcon from "./icons/download.svg";
 import dropdownIcon from "./icons/dropdown.svg";
 import shareIcon from "./icons/share.svg";
-import AnalysisCard from "../../components/AnalysisCard";
+import AnalysisCard from "./components/AnalysisCard";
 
 function SentimentAnalysis() {
   const positiveTags = [
