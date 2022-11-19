@@ -41,12 +41,6 @@ jobs:
           docker build -t vicdam/scrybebackend:latest .
           docker push vicdam/scrybebackend:latest             
 
-
-  Deploy: 
-    needs: [ build_and_push_to_registry ]
-    runs-on: ubuntu-latest
-
-    steps:
       - name: Checkout master
         uses: actions/checkout@master
 
@@ -58,6 +52,7 @@ jobs:
           USERNAME: ${{ secrets.USERNAME }}
           KEY: ${{ secrets.KEY }}
           script: |
+            cd ../../
             docker-compose up -d .             
             
 
