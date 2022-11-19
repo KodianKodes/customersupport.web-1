@@ -2,13 +2,14 @@ import React from "react";
 import "./App.scss";
 import { Routes, Route } from "react-router-dom";
 import DummyPage from "./pages/DummyPage";
+import { FAQs, TermsOfService } from "./pages";
 import LandingPage from "./pages/landing-page-a";
 import PageB from "./pages/Landing-page-b";
 import NavBar from "./components/navBar";
 
 function App() {
   return (
-    <>
+  <>
       <NavBar />
       <Routes>
         {/* landing page */}
