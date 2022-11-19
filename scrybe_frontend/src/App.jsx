@@ -1,13 +1,24 @@
 import React from "react";
 import "./App.scss";
 import { Routes, Route } from "react-router-dom";
+
+import Dummy from "./components/Dummy";
+import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
+import Careers from "./pages/Careers/Careers";
+
 import DummyPage from "./pages/DummyPage";
 import LandingPage from "./pages/landing-page-a";
 import PageB from "./pages/Landing-page-b";
 
+
 function App() {
   return (
     <Routes>
+
+      <Route path="/" element={<Dummy />} />
+      <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      <Route path="/careers" element={<Careers />} />
+
       {/* landing page */}
       <Route path="/" element={<LandingPage />} />
       {/* sentiment analysis */}
@@ -103,6 +114,7 @@ function App() {
       {/* blog */}
       <Route path="/blog" element={<DummyPage someText="blog" />} />
       <Route path="/homeB" element={<PageB />} />
+
     </Routes>
   );
 }

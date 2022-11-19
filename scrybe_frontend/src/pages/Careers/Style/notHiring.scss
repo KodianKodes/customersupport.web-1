@@ -1,0 +1,70 @@
+.not-hiring-container {
+
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 100px 0;
+
+
+    h1 {
+        font-size: 24px;
+        margin: 20px 0;
+        font-weight: 500;
+        color: #1D1D1D;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .subscribe {
+        margin: 50px 0;
+        display: flex;
+        justify-content: flex-start;
+
+        form {
+            display: flex;
+            justify-content: space-between;
+            gap: 5px;
+
+            input {
+                height: 24px;
+                padding: 5px;
+                border-radius: 3px;
+                border: 1px solid black
+            }
+
+            input:focus {
+                outline: none;
+            }
+            
+            button {
+                background: #00A4FF;
+                border: none;
+                border-radius: 3px;
+                padding: 5px 10px;
+                color: white;
+            }
+        }
+    }
+
+    @media (min-width: 700px) {
+        h1 {
+            font-size: 42px;
+        }
+    
+        p {
+            font-size: 19px;
+        }
+
+        .subscribe {
+            margin-top: 150px;
+
+            form {
+                gap: 30px;
+            }
+        }
+    }
+}
