@@ -24,7 +24,7 @@ function Cards() {
           <Card
             src={general}
             header="General"
-            paragrapgh="Basic Articles that will help you get the most out of scribe"
+            paragrapgh="Basic Articles that will help you get the most out of scrybe"
           />
         </Link>
         <Card

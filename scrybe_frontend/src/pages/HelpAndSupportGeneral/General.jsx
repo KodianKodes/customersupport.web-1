@@ -10,7 +10,7 @@ import styles from "./General.module.scss";
 function General() {
   const [display, setDisplay] = useState(true);
   return (
-    <div>
+    <div className={styles.body}>
       <Header />
 
       <div className={styles.general}>

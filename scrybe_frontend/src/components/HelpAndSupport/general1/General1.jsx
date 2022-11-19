@@ -15,7 +15,7 @@ function General1({ setDisplay }) {
       <div className={styles.articles_cont}>
         <div className={styles.articles_wrapper}>
           <h3 onClick={() => setDisplay(false)}>
-            Guide: Signing Up for Scrybe
+            Guide: How to log in and sign up
           </h3>
           <h3>Guide: Who can use scrybe?</h3>
           <h3>Guide: How Accurate is the Transcriptor? </h3>
