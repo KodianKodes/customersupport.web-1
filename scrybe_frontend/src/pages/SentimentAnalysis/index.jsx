@@ -1,12 +1,12 @@
 import React from "react";
 import styles from "./SentimentAnalysis.module.scss";
 import arrowIcon from "./icons/arrow_back.svg";
-import audioIcon from "./icons/audio_icon.svg";
 import pieChart from "./icons/pie_chart.svg";
 import downloadIcon from "./icons/download.svg";
 import dropdownIcon from "./icons/dropdown.svg";
 import shareIcon from "./icons/share.svg";
 import AnalysisCard from "./components/AnalysisCard";
+import AudioCard from "./components/AudioCard";
 
 function SentimentAnalysis() {
   const positiveTags = [
@@ -43,6 +43,7 @@ function SentimentAnalysis() {
 
   return (
     <div className={styles.page__container}>
+      <div className={styles.audio__mobile} />
       <main className={styles.main__container}>
         <span className={styles.main__container__top}>
           <div className={styles.main__container__top__arrow__icon__container}>
@@ -69,15 +70,7 @@ function SentimentAnalysis() {
         </div>
       </main>
       <aside className={styles.aside__container}>
-        <div className={`${styles.audio__file} ${styles.inner__container}`}>
-          <div className={styles.audio__icon__container}>
-            <img src={audioIcon} alt="audio icon" />
-          </div>
-          <div className={styles.audio__text}>
-            <div className={styles.audio__name}>Recording.mp3</div>
-            <div className={styles.audio__size}>4.0 mb</div>
-          </div>
-        </div>
+        <AudioCard />
         <div
           className={`${styles.overall__sentiment} ${styles.inner__container}`}
         >
