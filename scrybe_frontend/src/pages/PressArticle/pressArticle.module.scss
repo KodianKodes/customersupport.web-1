@@ -39,3 +39,40 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
         line-height: 1.5rem;
     }
 }
+
+.second__section {
+    margin-top: 1em;
+    
+
+    .left__container .left__hero {
+        text-align: center;
+    }
+
+    .left__container .left__date {
+        margin-bottom: .5em;
+    }
+
+    .left__container .date__month, .left__subtext .left__text {
+        font-size: .7rem;
+        color: #313131;
+        font-weight: 300;
+        font-style: light;
+        fill: solid;
+        line-height: 1rem;
+    }
+
+    .desktop__text {
+        display: none;
+    }
+
+    .left__subtext {
+        margin-bottom: 2em;
+    }
+
+    hr {
+        background-color: #eee;
+        border: 0 none;
+        color: #eee;
+        height: 1px;
+    }
+}

@@ -33,4 +33,34 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
   font-weight: 600;
   fill: solid;
   line-height: 1.5rem;
+}
+
+.second__section {
+  margin-top: 1em;
+}
+.second__section .left__container .left__hero {
+  text-align: center;
+}
+.second__section .left__container .left__date {
+  margin-bottom: 0.5em;
+}
+.second__section .left__container .date__month, .second__section .left__subtext .left__text {
+  font-size: 0.7rem;
+  color: #313131;
+  font-weight: 300;
+  font-style: light;
+  fill: solid;
+  line-height: 1rem;
+}
+.second__section .desktop__text {
+  display: none;
+}
+.second__section .left__subtext {
+  margin-bottom: 2em;
+}
+.second__section hr {
+  background-color: #eee;
+  border: 0 none;
+  color: #eee;
+  height: 1px;
 }/*# sourceMappingURL=pressArticle.module.css.map */

@@ -47,38 +47,42 @@ const index = () => {
                 cause casualties in millions, many countries have gone under
                 lockdown. During this period, people have to stay within walls
                 and become more addicted towards social networks. They express
-                their emotions and sympathy via these online platforms. Thus,
-                popular social media (Twitter and Facebook) have become rich
-                sources of information for Opinion Mining and Sentiment Analysis
-                on COVID-19-related issues. We have used Aspect Based Sentiment
-                Analysis to anticipate the polarity of public opinion underlying
-                different aspects from Twitter during lockdown and stepwise
-                unlock phases.The COVID-19 pandemic has a significant impact on
-                the global economy and health. While the pandemic continues to
-                cause casualties in millions, many countries have gone under
-                lockdown. During this period, people have to stay within walls
-                and become more addicted towards social networks. They express
-                their emotions and sympathy via these online platforms. Thus,
-                popular social media (Twitter and Facebook) have become rich
-                sources of information for Opinion Mining and Sentiment Analysis
-                on COVID-19-related issues. We have used Aspect Based Sentiment
-                Analysis to anticipate the polarity of public opinion underlying
-                different aspects from Twitter during lockdown and stepwise
-                unlock phases.The COVID-19 pandemic has a significant impact on
-                the global economy and health. While the pandemic continues to
-                cause casualties in millions, many countries have gone under
-                lockdown. During this period, people have to stay within walls
-                and become more addicted towards social networks. They express
-                their emotions and sympathy via these online platforms. Thus,
-                popular social media (Twitter and Facebook) have become rich
-                sources of information for Opinion Mining and Sentiment Analysis
-                on COVID-19-related issues. We have used Aspect Based Sentiment
-                Analysis to anticipate the polarity of public opinion underlying
-                different aspects from Twitter during lockdown and stepwise
-                unlock phases.
+                their emotions and sympathy via these online platforms.
+                <span className={styles.desktop__text}>
+                  Thus, popular social media (Twitter and Facebook) have become
+                  rich sources of information for Opinion Mining and Sentiment
+                  Analysis on COVID-19-related issues. We have used Aspect Based
+                  Sentiment Analysis to anticipate the polarity of public
+                  opinion underlying different aspects from Twitter during
+                  lockdown and stepwise unlock phases.The COVID-19 pandemic has
+                  a significant impact on the global economy and health. While
+                  the pandemic continues to cause casualties in millions, many
+                  countries have gone under lockdown. During this period, people
+                  have to stay within walls and become more addicted towards
+                  social networks. They express their emotions and sympathy via
+                  these online platforms. Thus, popular social media (Twitter
+                  and Facebook) have become rich sources of information for
+                  Opinion Mining and Sentiment Analysis on COVID-19-related
+                  issues. We have used Aspect Based Sentiment Analysis to
+                  anticipate the polarity of public opinion underlying different
+                  aspects from Twitter during lockdown and stepwise unlock
+                  phases.The COVID-19 pandemic has a significant impact on the
+                  global economy and health. While the pandemic continues to
+                  cause casualties in millions, many countries have gone under
+                  lockdown. During this period, people have to stay within walls
+                  and become more addicted towards social networks. They express
+                  their emotions and sympathy via these online platforms. Thus,
+                  popular social media (Twitter and Facebook) have become rich
+                  sources of information for Opinion Mining and Sentiment
+                  Analysis on COVID-19-related issues. We have used Aspect Based
+                  Sentiment Analysis to anticipate the polarity of public
+                  opinion underlying different aspects from Twitter during
+                  lockdown and stepwise unlock phases.
+                </span>
               </p>
             </div>
           </div>
+          <hr />
           <div className={styles.right__container}>
             <div className={styles.right__heading}>
               <h3 className={styles.right__head}>More stories</h3>
