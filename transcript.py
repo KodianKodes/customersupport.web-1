@@ -1,4 +1,3 @@
-from fastapi import FastAPI
 from io import BytesIO
 import base64
 import banana_dev as banana
@@ -8,7 +7,7 @@ import os
 # Load all environment variables
 load_dotenv()
 
-filename = input("Enter the filepath to your audio file")
+
 
 api_key = os.getenv("API_KEY")
 model_key = os.getenv("MODEL_KEY")
@@ -21,5 +20,5 @@ def transcribe_file(filename):
         mp3 = base64.b64encode(mp3bytes.getvalue()).decode("ISO-8859-1")
         model_payload = {"mp3BytesString": mp3}
         out = banana.run(api_key, model_key, model_payload)
-        return out
+        return out.modelOutputs[0].text
 
