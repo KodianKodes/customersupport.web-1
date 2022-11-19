@@ -113,9 +113,9 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
         line-height: 1.2rem;
     }
 
-    .three__sep .three__head {
-        // margin-left: .2em;
-    }
+    // .three__sep .three__head {
+    //     margin-left: .2em;
+    // }
 
     .three__each .three__text, .three__sep .three__text {
         font-size: .6rem;
@@ -309,6 +309,28 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
             display: flex;
             // justify-content: space-between;
             // margin-bottom: 1em;
+        }
+    }
+
+    // Styling of the section four
+
+    .section__four {
+        margin-top: 3em;
+
+        .four__heading {
+            margin-bottom: 1em;
+        }
+
+        .four__cards {
+            width: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .four__cards .card__container {
+            margin-bottom: 0;
+            width: 23%;
         }
     }
 }

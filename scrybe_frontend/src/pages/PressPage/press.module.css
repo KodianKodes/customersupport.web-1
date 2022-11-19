@@ -236,4 +236,20 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
   .section__three .three__bottom .three__flex {
     display: flex;
   }
+  .section__four {
+    margin-top: 3em;
+  }
+  .section__four .four__heading {
+    margin-bottom: 1em;
+  }
+  .section__four .four__cards {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .section__four .four__cards .card__container {
+    margin-bottom: 0;
+    width: 23%;
+  }
 }/*# sourceMappingURL=press.module.css.map */
