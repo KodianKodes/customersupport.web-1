@@ -9,8 +9,13 @@
         }
         &__links{
                 display: flex;
-                gap: pix-rem(20);
+                gap: pix-rem(24);
                 align-items: center;
+                &> *{
+                        all: unset;
+                        color: #5E5E5E;
+                        font-weight: 300;
+                }
         }
         &__img{
                 max-width: pix-rem(172);
@@ -18,5 +23,20 @@
         &__ctas{
                 display: flex;
                 gap: pix-rem(24);
+                &>*{
+                        all: unset;
+                        width: fit-content;
+                        padding: pix-rem(16) pix-rem(32);
+                        border-radius: pix-rem(4);
+                        &:nth-child(1){
+                                background-color: transparent;
+                                color: #006CFF;
+                                border: 1px solid #006CFF;
+                        }
+                        &:nth-child(2){
+                                background-color: #006CFF;
+                                color: white;
+                        }
+                }
         }
 }
