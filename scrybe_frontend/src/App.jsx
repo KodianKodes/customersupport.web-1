@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 
 import Industry from "./Pages/indsutry/industry";
-import IndustryArticle from "./Pages/indsutry/industryArticle";
+import IndustryArticle from "./components/Industry/industryArticle";
 import HowItWorks from "./Pages/HowItWorks/HowItWorks";
 import Dummy from "./components/Dummy/index";
 
