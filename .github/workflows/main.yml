@@ -8,10 +8,8 @@ jobs:
   
   build_and_push_to_registry:
 
-
     # name: Build and push Docker Frontend image to Docker Hub
     # if: github.event.pull_request.merged == true
-
 
     runs-on: ubuntu-latest
     defaults:
