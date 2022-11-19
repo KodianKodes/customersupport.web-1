@@ -13,6 +13,7 @@ import TermsAndCondition from "./pages/TermsAndCondition/TermsOfService";
 import Services from "./pages/services-page/Services";
 import Solutions from "./pages/solutions-page/Solutions";
 import DashboardOverview from "./pages/DashboardOverview";
+import UploadedRecordings from "./components/UploadRecordings";
 
 function App() {
   return (
@@ -107,6 +108,8 @@ function App() {
         <Route path="/homeB" element={<PageB />} />
         <Route path="faq" element={<FAQs />} />
         <Route path="faq" element={<TermsOfService />} />
+        {/* uploaded recordings */}
+        <Route path="/uploaded-recordings" element={<UploadedRecordings />} />
       </Routes>
     </>
   );
