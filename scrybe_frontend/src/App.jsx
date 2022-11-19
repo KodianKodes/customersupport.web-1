@@ -46,14 +46,6 @@ function App() {
           path="/auth"
           element={<DummyPage someText="sign-in, sign up, reset password" />}
         />
-        <Route
-          path="/transicriptions"
-          element={<DummyPage someText="transcriptions" />}
-        />
-        <Route
-          path="/transicriptions"
-          element={<DummyPage someText="transcriptions" />}
-        />
         {/* career page & legal */}
         <Route
           path="/careers-and-legal"
