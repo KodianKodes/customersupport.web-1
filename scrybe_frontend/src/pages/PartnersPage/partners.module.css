@@ -427,4 +427,13 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
   .third__right {
     width: 50%;
   }
+  /* Styling of the fourth section */
+  .fourth__content {
+    width: 60%;
+    margin: 5em auto;
+  }
+  .fourth__heading .fourth__head {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }/*# sourceMappingURL=partners.module.css.map */
