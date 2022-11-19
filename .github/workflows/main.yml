@@ -24,20 +24,24 @@ jobs:
       
         
       - name: Log in to Docker Hub
-        uses: docker/login-action@v2
+        uses: docker/login-action@f054a8b539a109f9f41c372932f1ae047eff08c9
         with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}          
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
-            
-      - name: Get Current Date 
-        id: date
-        run: echo "::set-output name=date::$(date +'%Y-%m-%d--%M-%S')"
-        
-      - name: Build and push
-        uses: docker/build-push-action@v3
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_TOKEN }}
+      
+      - name: Extract metadata (tags, labels) for Docker
+        id: meta
+        uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
         with:
+          images: vicdam/scrybefrontend:latest
+      
+      - name: Build and push Docker image
+        uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
+        with:
+          context: .
           push: true
-          tags: vicdam/scrybefrontend:latest 
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }} 
 
 
   
@@ -57,21 +61,19 @@ jobs:
       - name: change directory
         run: cd backend/app        
                         
-      - name: Log in to Docker Hub
-        uses: docker/login-action@v2
+      - name: Extract metadata (tags, labels) for Docker
+        id: meta
+        uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
         with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}          
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
-            
-      - name: Get Current Date 
-        id: date
-        run: echo "::set-output name=date::$(date +'%Y-%m-%d--%M-%S')"
-        
-      - name: Build and push
-        uses: docker/build-push-action@v3
+          images: vicdam/scrybebackend:latest
+      
+      - name: Build and push Docker image
+        uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
         with:
+          context: .
           push: true
-          tags: vicdam/scrybebackend:latest
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }} 
 
   Deploy: 
     needs: [ build_and_push_to_registry_backend , build_and_push_to_registry ]
