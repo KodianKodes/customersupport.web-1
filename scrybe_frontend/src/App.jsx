@@ -1,11 +1,18 @@
 import React from "react";
 import "./App.scss";
 import { Routes, Route } from "react-router-dom";
+import SentimentAnalysis from "./pages/SentimentAnalysis";
 import DummyPage from "./pages/DummyPage";
+import TranscribePage from "./pages/TranscribePage/TranscribePage";
 import { FAQs, TermsOfService } from "./pages";
 import LandingPage from "./pages/landing-page-a";
 import PageB from "./pages/Landing-page-b";
 import NavBar from "./components/navBar";
+import TermsAndCondition from "./pages/TermsAndCondition/TermsOfService";
+
+import Services from "./pages/services-page/Services";
+import Solutions from "./pages/solutions-page/Solutions";
+import DashboardOverview from "./pages/DashboardOverview";
 import HelpSupport from "./pages/HelpAndSupport/HelpSupport";
 import General from "./pages/HelpAndSupportGeneral/General";
 
@@ -17,15 +24,9 @@ function App() {
         {/* landing page */}
         <Route path="/" element={<LandingPage />} />
         {/* sentiment analysis */}
-        <Route
-          path="/sentiment-analysis"
-          element={<DummyPage someText="sentiment-analysis" />}
-        />
+        <Route path="/sentiment-analysis" element={<SentimentAnalysis />} />
         {/* transcriptions */}
-        <Route
-          path="/transicriptions"
-          element={<DummyPage someText="transcriptions" />}
-        />
+        <Route path="/transcriptions" element={<TranscribePage />} />
         {/* try for free */}
         <Route path="/try" element={<DummyPage someText="try for free" />} />
         {/* press */}
@@ -49,14 +50,6 @@ function App() {
           path="/auth"
           element={<DummyPage someText="sign-in, sign up, reset password" />}
         />
-        <Route
-          path="/transicriptions"
-          element={<DummyPage someText="transcriptions" />}
-        />
-        <Route
-          path="/transicriptions"
-          element={<DummyPage someText="transcriptions" />}
-        />
         {/* career page & legal */}
         <Route
           path="/careers-and-legal"
@@ -65,7 +58,12 @@ function App() {
         {/* solutions & services */}
         <Route
           path="/services"
-          element={<DummyPage someText="solutions and services" />}
+          element={<Services someText="solutions and services" />}
+        />
+
+        <Route
+          path="/solutions"
+          element={<Solutions someText="solutions and services" />}
         />
         {/* about us */}
         <Route path="/about-us" element={<DummyPage someText="about us" />} />
@@ -79,10 +77,7 @@ function App() {
         {/* upload pages */}
         <Route path="/upload" element={<DummyPage someText="upload pages" />} />
         {/* dashboard */}
-        <Route
-          path="/dashboard"
-          element={<DummyPage someText="dashboard overview" />}
-        />
+        <Route path="/dashboard" element={<DashboardOverview />} />
         {/* accounts */}
         <Route path="/accounts" element={<DummyPage someText="accounts" />} />
         {/* industry */}
@@ -102,7 +97,7 @@ function App() {
         {/* terms and conditions */}
         <Route
           path="/terms"
-          element={<DummyPage someText="terms and conditions" />}
+          element={<TermsAndCondition someText="terms and conditions" />}
         />
         {/* terms of service */}
         <Route
