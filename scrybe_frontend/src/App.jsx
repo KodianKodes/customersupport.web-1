@@ -1,10 +1,15 @@
 import React from "react";
 import "./App.scss";
 import { Routes, Route } from "react-router-dom";
+import SentimentAnalysis from "./pages/SentimentAnalysis";
 import DummyPage from "./pages/DummyPage";
+import TranscribePage from "./pages/TranscribePage/TranscribePage";
+import { FAQs, TermsOfService } from "./pages";
 import LandingPage from "./pages/landing-page-a";
 import PageB from "./pages/Landing-page-b";
 import About from "./pages/AboutUs/About";
+
+
 
 function App() {
   return (
@@ -104,10 +109,7 @@ function App() {
       {/* blog */}
       <Route path="/blog" element={<DummyPage someText="blog" />} />
       <Route path="/homeB" element={<PageB />} />
-
-   
     </Routes>
-   
   );
 }
 
