@@ -32,6 +32,15 @@
   margin: 25px 0;
   width: 100%;
   background: #ffffff;
+  .notfound {
+    margin: 1rem 0;
+    text-align: center;
+    transform: translate(160%, 0);
+    -webkit-transform: translate(160%, 0);
+    -moz-transform: translate(160%, 0);
+    -ms-transform: translate(160%, 0);
+    -o-transform: translate(160%, 0);
+}
 }
 
 .uploaded_table thead {
@@ -88,40 +97,6 @@
   justify-content: center;
   input {
     margin-right: 1rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .uploaded_recordings {
-    padding: 1rem;
-  }
-  .uploaded_header h1 {
-    font-size: 16px;
-  }
-  .uploaded_header {
-    h2 {
-      display: none !important;
-    }
-  }
-
-  .uploaded_table {
-    border: 0;
-    th,
-    td {
-      font-size: 14px;
-      padding: 10px 3px;
-    }
-  }
-
-  .uploaded_table-row th:nth-child(7) {
-    display: none;
-  }
-
-  .uploaded_table tbody {
-    .uploaded_table_body_cell_img,
-    .delete-icon {
-      display: none;
-    }
   }
 }
 
@@ -235,3 +210,100 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  //responsive styles for the table
+  .uploaded_recordings {
+    padding: 1rem;
+    width: 100%;
+  }
+  .uploaded_header h1 {
+    font-size: 16px;
+  }
+  .uploaded_header {
+    h2 {
+      display: none !important;
+    }
+  }
+
+  .uploaded_table {
+    border: 0;
+    th,
+    td {
+      font-size: 14px;
+      padding: 10px 3px;
+    }
+  }
+
+  .uploaded_table-row th:nth-child(7) {
+    display: none;
+  }
+
+  .uploaded_table tbody {
+    .uploaded_table_body_cell_img,
+    .delete_icon {
+      display: none;
+    }
+  }
+
+  //responsive styles for options for the table
+  .uploaded_recordings_options {
+    // flex-direction: column;
+    .bulkbtn_calbackurl_wrap {
+      margin-left: 0;
+      .bulkselect_wrap {
+        margin-right: 1rem;
+      }
+      .calbackurl_wrap {
+        display: none;
+        p {
+          font-family: "Kanit";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 24px;
+          /* or 150% */
+
+          color: #434343;
+        }
+        .callback_url {
+          margin-right: 1rem;
+          font-family: "Kanit";
+          span {
+            color: #006cff;
+            border-bottom: 1px solid #006cff;
+          }
+        }
+      }
+    }
+    .view_resultbtn {
+      border-radius: 4px;
+      padding: 20px 30px;
+      font-family: "Kanit";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      width: max-content;
+      color: #c5c5c5;
+      border: none;
+    }
+    .disabled {
+      background: #ececec;
+      cursor: not-allowed;
+    }
+    .active {
+      background: #006cff;
+      cursor: pointer;
+    }
+
+    //custom select
+    .bulkselect_wrap {
+      position: relative;
+      .bulkselect {
+        width: 180px;
+        height: 50px;
+        padding: 0 2rem 0 1rem;
+      }
+    }
+  }
+}
