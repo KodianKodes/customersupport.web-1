@@ -7,6 +7,8 @@ import pressSmcardOne from "../myAssets/pressSmcardOne.png";
 import pressSmcardTwo from "../myAssets/pressSmcardTwo.png";
 import headDot from "../myAssets/headDot.png";
 import arrowLeft from "../myAssets/arrow__left.png";
+import logoText from "../myAssets/logoText.png";
+// import pressHero from "../myAssets/pressHero.png";
 
 const index = () => {
   return (
@@ -32,36 +34,47 @@ const index = () => {
         <div className={styles.sect__container} />
       </section>
       <section className={styles.section__three}>
+        {/* <div>
+          <img src={pressHero} alt="" />
+        </div> */}
         <div className={styles.sect__container}>
-          <div className={styles.three__top}>
-            <p className={styles.three__heading}>
-              An AI powered tool tailored for customers success and satisfaction
-            </p>
-          </div>
-          <div className={styles.three__bottom}>
-            <div className={styles.three__flex}>
-              <div className={styles.three__each}>
-                <p className={styles.three__head}>2022</p>
-                <p className={styles.three__text}>Founded</p>
-              </div>
-              <div className={styles.three__each}>
-                <p className={styles.three__head}>20+</p>
-                <p className={styles.three__text}>Active Users</p>
-              </div>
+          <div className={styles.three__center}>
+            <div className={styles.three__left}>
+              <img src={logoText} alt="Scrybe Text" />
             </div>
-            <div className={styles.three__flex}>
-              <div className={styles.three__each}>
-                <p className={styles.three__head}>200+</p>
-                <p className={styles.three__text}>Employees</p>
+            <div className={styles.three__right}>
+              <div className={styles.three__top}>
+                <p className={styles.three__heading}>
+                  An AI powered tool tailored for customers success and
+                  satisfaction
+                </p>
               </div>
-              <div className={styles.three__each}>
-                <p className={styles.three__head}>Headquartered</p>
-                <p className={styles.three__text}>in Abuja Nigeria</p>
+              <div className={styles.three__bottom}>
+                <div className={styles.three__flex}>
+                  <div className={styles.three__each}>
+                    <p className={styles.three__head}>2022</p>
+                    <p className={styles.three__text}>Founded</p>
+                  </div>
+                  <div className={styles.three__each}>
+                    <p className={styles.three__head}>20+</p>
+                    <p className={styles.three__text}>Active Users</p>
+                  </div>
+                </div>
+                <div className={styles.three__flex}>
+                  <div className={styles.three__each}>
+                    <p className={styles.three__head}>200+</p>
+                    <p className={styles.three__text}>Employees</p>
+                  </div>
+                  <div className={styles.three__each}>
+                    <p className={styles.three__head}>Headquartered</p>
+                    <p className={styles.three__text}>in Abuja Nigeria</p>
+                  </div>
+                </div>
+                <div className={styles.three__sep}>
+                  <p className={styles.three__head}>Get in touch</p>
+                  <p className={styles.three__text}>info@scrybe.co.za</p>
+                </div>
               </div>
-            </div>
-            <div className={styles.three__sep}>
-              <p className={styles.three__head}>Get in touch</p>
-              <p className={styles.three__text}>info@scrybe.co.za</p>
             </div>
           </div>
         </div>

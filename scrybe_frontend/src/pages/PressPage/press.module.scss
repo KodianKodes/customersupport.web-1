@@ -56,17 +56,22 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
 
 // Styling of the section two
 
-.section__two {
-    background: url('~/public/myAssets/pressHero.png') no-repeat;
-}
+// .section__two {
+//     background: url('~/public/myAssets/pressHero.png') no-repeat;
+// }
 
 
 // Styling of the section three
 
 .section__three {
 
+    .three__left {
+        display: none;
+    }
+
     .three__top {
-        margin: 1em 0;
+        margin: 1em auto;
+        width: 80%;
     }
 
     .three__heading {
@@ -79,7 +84,7 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
     }
 
     .three__bottom {
-        width: 65%;
+        width: 58%;
         margin: 0 auto;
     }
 
@@ -90,6 +95,7 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
     }
 
     .three__each {
+        width: 45%;
         text-align: center;
     }
 
@@ -108,7 +114,7 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
     }
 
     .three__sep .three__head {
-        margin-left: .2em;
+        // margin-left: .2em;
     }
 
     .three__each .three__text, .three__sep .three__text {
@@ -234,5 +240,75 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
     .five__bottom .five__articles .arrowleft {
         width: .7rem;
         margin-left: .2em;
+    }
+}
+
+
+
+
+@media (min-width: 768px) {
+
+    // Styling of the section one
+
+    .section__one {
+        margin-top: 3em;
+
+        .hero__head{
+            font-size: 2rem;
+        }
+
+        .hero__subhead .hero__subtext {
+            font-size: .8rem;
+            font-weight: 500;
+            font-style: medium;
+        }
+    }
+
+    // Styling of the section three
+
+    .section__three {
+
+        margin-top: 3em;
+
+        .three__center {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            width: 90%;
+        }
+
+        .three__left {
+            display: block;
+            width: 30%;
+        }
+
+        .three__right {
+            width: 60%;
+        }
+
+        .three__top {
+            margin: 1em 0;
+            width: 100%;
+        }
+
+        .three__heading {
+            font-size: 1rem;
+            color: #313131;
+            font-weight: 600;
+            font-style: bold;
+            fill: solid;
+            line-height: 1.2rem;
+        }
+
+        .three__bottom {
+            // width: 65%;
+            margin: 0 auto;
+        }
+
+        .three__bottom .three__flex {
+            display: flex;
+            // justify-content: space-between;
+            // margin-bottom: 1em;
+        }
     }
 }

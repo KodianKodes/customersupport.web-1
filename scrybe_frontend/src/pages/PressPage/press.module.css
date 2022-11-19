@@ -46,12 +46,12 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
   line-height: 1.25rem;
 }
 
-.section__two {
-  background: url("~/public/myAssets/pressHero.png") no-repeat;
+.section__three .three__left {
+  display: none;
 }
-
 .section__three .three__top {
-  margin: 1em 0;
+  margin: 1em auto;
+  width: 80%;
 }
 .section__three .three__heading {
   font-size: 0.7rem;
@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
   line-height: 1.2rem;
 }
 .section__three .three__bottom {
-  width: 65%;
+  width: 58%;
   margin: 0 auto;
 }
 .section__three .three__bottom .three__flex {
@@ -71,6 +71,7 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
   margin-bottom: 1em;
 }
 .section__three .three__each {
+  width: 45%;
   text-align: center;
 }
 .section__three .three__each .three__sep {
@@ -84,9 +85,6 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
   font-style: bold;
   fill: solid;
   line-height: 1.2rem;
-}
-.section__three .three__sep .three__head {
-  margin-left: 0.2em;
 }
 .section__three .three__each .three__text, .section__three .three__sep .three__text {
   font-size: 0.6rem;
@@ -190,4 +188,52 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
 .section__five .five__bottom .five__articles .arrowleft {
   width: 0.7rem;
   margin-left: 0.2em;
+}
+
+@media (min-width: 768px) {
+  .section__one {
+    margin-top: 3em;
+  }
+  .section__one .hero__head {
+    font-size: 2rem;
+  }
+  .section__one .hero__subhead .hero__subtext {
+    font-size: 0.8rem;
+    font-weight: 500;
+    font-style: medium;
+  }
+  .section__three {
+    margin-top: 3em;
+  }
+  .section__three .three__center {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .section__three .three__left {
+    display: block;
+    width: 30%;
+  }
+  .section__three .three__right {
+    width: 60%;
+  }
+  .section__three .three__top {
+    margin: 1em 0;
+    width: 100%;
+  }
+  .section__three .three__heading {
+    font-size: 1rem;
+    color: #313131;
+    font-weight: 600;
+    font-style: bold;
+    fill: solid;
+    line-height: 1.2rem;
+  }
+  .section__three .three__bottom {
+    margin: 0 auto;
+  }
+  .section__three .three__bottom .three__flex {
+    display: flex;
+  }
 }/*# sourceMappingURL=press.module.css.map */
