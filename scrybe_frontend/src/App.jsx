@@ -9,6 +9,7 @@ import PageB from "./Pages/Landing-page-b";
 import NavBar from "./components/navBar";
 import TermsAndCondition from "./Pages/TermsAndCondition/TermsOfService";
 import Industry from "./Pages/indsutry/industry";
+import IndustryArticle from "./components/Industry/industryArticle";
 import HowItWorks from "./Pages/HowItWorks/HowItWorks";
 
 import Services from "./Pages/services-page/Services";
@@ -81,6 +82,10 @@ function App() {
         <Route path="/accounts" element={<DummyPage someText="accounts" />} />
         {/* industry */}
         <Route path="/industry" element={<Industry someText="industry" />} />
+        <Route
+          path="/industryarticle"
+          element={<IndustryArticle someText="industry" />}
+        />
         {/* How It Works */}
         <Route path="/industry" element={<HowItWorks someText="industry" />} />
         {/* demo pages */}
