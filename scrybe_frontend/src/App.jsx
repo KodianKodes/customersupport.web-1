@@ -6,6 +6,8 @@ import { FAQs, TermsOfService } from "./pages";
 import LandingPage from "./pages/landing-page-a";
 import PageB from "./pages/Landing-page-b";
 import NavBar from "./components/navBar";
+import HelpSupport from "./pages/HelpAndSupport/HelpSupport";
+import General from "./pages/HelpAndSupportGeneral/General";
 
 function App() {
   return (
@@ -112,6 +114,9 @@ function App() {
         <Route path="/homeB" element={<PageB />} />
         <Route path="faq" element={<FAQs />} />
         <Route path="faq" element={<TermsOfService />} />
+        {/* HelpAndSupport */}
+        <Route path="/help-support" element={<HelpSupport />} />
+        <Route path="/help-support-general" element={<General />} />
       </Routes>
     </>
   );
