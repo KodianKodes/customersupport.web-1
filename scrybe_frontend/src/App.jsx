@@ -2,10 +2,11 @@ import React from "react";
 import "./App.scss";
 import { Routes, Route } from "react-router-dom";
 import DummyPage from "./pages/DummyPage";
+import TranscribePage from "./pages/TranscribePage/TranscribePage";
 import { FAQs, TermsOfService } from "./pages";
 import LandingPage from "./pages/landing-page-a";
 import PageB from "./pages/Landing-page-b";
-import NavBar from "./components/navBar";
+import NavBar from "./components/navBar";    
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
         {/* transcriptions */}
         <Route
           path="/transicriptions"
-          element={<DummyPage someText="transcriptions" />}
+          element={<DummyPage someText="TranscribePage" />}
         />
         {/* try for free */}
         <Route path="/try" element={<DummyPage someText="try for free" />} />
