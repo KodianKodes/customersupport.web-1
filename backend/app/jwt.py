@@ -7,7 +7,7 @@ from passlib.context import CryptContext
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
 
-from . import models
+import models
 from crud import get_user_by_email
 from db import engine, SessionLocal
 
@@ -16,24 +16,12 @@ import os
 
 load_dotenv()
 
-#can be found in .env file at base directory
+#Can be found in .env file at base directory
 JWT_ACCESS_SECRET_KEY = os.getenv("JWT_ACCESS_SECRET_KEY")
 JWT_REFRESH_SECRET_KEY = os.getenv("JWT_REFRESH_SECRET_KEY")
 ALGORITHM = "HS256"
-ACCESS_TOKEN_EXPIRE_MINUTES = 5 #30 mins
-REFRESH_TOKEN_EXPIRE_MINUTES = 20 # 2days
-
-
-models.Base.metadata.create_all(bind=engine)
-
-def get_db():
-    db = SessionLocal()
-    try:
-        yield db
-    finally:
-        db.close()
-
-
+ACCESS_TOKEN_EXPIRE_MINUTES = 5 #5 mins
+REFRESH_TOKEN_EXPIRE_MINUTES = 20 # 20 mins
 
 #Exceptions
 credentials_exception = HTTPException(
@@ -86,7 +74,7 @@ class RefreshToken(BaseModel):
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
-db = get_db()
+
 
 app = FastAPI()
 
@@ -96,7 +84,7 @@ def verify_password(plain_password, hashed_password):
 
 
 #Authenticates user with email and password
-def authenticate_user(email: str, password: str):
+def authenticate_user(db: Session, email: str, password: str):
     user = get_user_by_email(db, email)
     if not user:
         return False
@@ -131,14 +119,14 @@ def create_refresh_token(data: dict, expires_delta: Union[timedelta, None] = Non
 
 
 # Function that returns jwt accesss token and refresh token
-async def main_login(form_data):
+async def main_login(form_data, db):
     """
     N.B: form_data is a parameter in your endpoint should depend on OAuth2PasswordRequestForm, i.e:
             form_data: OAuth2PasswordRequestForm = Depends()
     """
 
     
-    user = authenticate_user(form_data.username, form_data.password)
+    user = authenticate_user(db, form_data.username, form_data.password)
     if not user:
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
@@ -159,7 +147,7 @@ async def main_login(form_data):
 
 
 
-async def refresh(refresh_token):
+async def refresh(refresh_token, db):
     """
     refresh token is a parameter in your endpoint and should have a pydantic model RefreshToken, i.e:
     class RefreshToken(BaseModel):
