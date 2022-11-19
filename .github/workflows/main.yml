@@ -42,7 +42,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: $DOCKERHUB_USERNAME/$REPOSITORY_NAME:${{ steps.date.outputs.date }} 
+          tags: vicdam/scrybefrontend:latest 
 
 
   
@@ -81,7 +81,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: $DOCKERHUB_USERNAME/$REPOSITORY_NAME_BACKEND:${{ steps.date.outputs.date }} 
+          tags: vicdam/scrybebackend:latest
 
   Deploy: 
     needs: [ build_and_push_to_registry_backend , build_and_push_to_registry ]
