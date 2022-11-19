@@ -8,9 +8,9 @@ import { FAQs, TermsOfService } from "./pages";
 import LandingPage from "./pages/landing-page-a";
 import PageB from "./pages/Landing-page-b";
 import NavBar from "./components/navBar";
-
 import Services from "./pages/services-page/Services";
 import Solutions from "./pages/solutions-page/Solutions";
+import DashboardOverview from "./pages/DashboardOverview";
 
 function App() {
   return (
@@ -73,10 +73,7 @@ function App() {
         {/* upload pages */}
         <Route path="/upload" element={<DummyPage someText="upload pages" />} />
         {/* dashboard */}
-        <Route
-          path="/dashboard"
-          element={<DummyPage someText="dashboard overview" />}
-        />
+        <Route path="/dashboard" element={<DashboardOverview />} />
         {/* accounts */}
         <Route path="/accounts" element={<DummyPage someText="accounts" />} />
         {/* industry */}
