@@ -1,25 +1,27 @@
-import React from "react";
-import "./App.scss";
-import scrybeLogo from "./assets/scrybe_logo_with_text.svg";
+
+import "./App.css";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import Signup from "./pages/SignUp";
+import Signin from "./pages/SignIn";
+import Successful from "./pages/Successful";
+import SetNewPassword from "./pages/SetNewPassword";
+import ForgetPassword from "./pages/ForgetPassword";
+import PasswordResetSuccessful from "./pages/PasswordResetSuccessful";
 
 function App() {
   return (
-    <div className="App" data-testid="app-container">
-      <div
-        style={{
-          width: "100vw",
-          height: "80vh",
-          display: "grid",
-          placeItems: "center",
-        }}
-      >
-        <img
-          src={scrybeLogo}
-          alt="scrybeLogo"
-          style={{ objectFit: "contain", width: "100%" }}
-        />
-      </div>
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Signup />} />
+          <Route path="/signin" element={<Signin />} />
+          <Route path="/reset-successful" element={<Successful />} />
+          <Route path="/set-new-password" element={<SetNewPassword />} />
+          <Route path="/forget-password" element={<ForgetPassword />} />
+          <Route path="/pw-reset-successful" element={<PasswordResetSuccessful />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
