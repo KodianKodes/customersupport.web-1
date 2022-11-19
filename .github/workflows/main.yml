@@ -33,7 +33,7 @@ jobs:
       - name: docker build, tag and push
         run: |
           docker build -t vicdam/scrybefrontend:latest .
-          docker push
+          docker push vicdam/scrybefrontend:latest
 
 
   
