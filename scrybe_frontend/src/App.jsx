@@ -9,8 +9,8 @@ import LandingPage from "./pages/landing-page-a";
 import PageB from "./pages/Landing-page-b";
 import NavBar from "./components/navBar";
 
-// import Services from "./pages/services-page/Services";
-// import Solutions from "./pages/solutions-page/Solutions";
+import Services from "./pages/services-page/Services";
+import Solutions from "./pages/solutions-page/Solutions";
 
 function App() {
   return (
@@ -62,7 +62,12 @@ function App() {
         {/* solutions & services */}
         <Route
           path="/services"
-          element={<DummyPage someText="solutions and services" />}
+          element={<Services someText="solutions and services" />}
+        />
+
+        <Route
+          path="/solutions"
+          element={<Solutions someText="solutions and services" />}
         />
         {/* about us */}
         <Route path="/about-us" element={<DummyPage someText="about us" />} />
