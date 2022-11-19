@@ -88,4 +88,13 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
   font-weight: 500;
   font-style: medium;
   line-height: 1rem;
+}
+
+/* Styling of the second section */
+.second__content {
+  margin-bottom: 2em;
+}
+
+.second__content .second__each {
+  width: 30%;
 }/*# sourceMappingURL=partners.module.css.map */
