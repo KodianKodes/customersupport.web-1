@@ -75,42 +75,41 @@ function UploadedRecordings() {
   const timeLeft = 20;
 
   return (
-    <div className={styles["uploaded-recordings"]}>
-      <div className={styles["uploaded-header"]}>
+    <div className={styles.uploaded_recordings}>
+      <div className={styles.uploaded_header}>
         <h1>Transcription Status </h1>
-        <h2 className="est-time-left">
+        <h2 className={styles.est_time_left}>
           Estimated Time Left:{" "}
-          <strong className={styles["est-time-left-num"]}>{timeLeft}</strong>{" "}
-          Min
+          <strong className={styles.est_time_left_num}>{timeLeft}</strong> Min
         </h2>
       </div>
-      <div className={styles["uploaded-table-wrap"]}>
-        <table className={styles["uploaded-table"]}>
-          <thead className={styles["uploaded-table-header"]}>
-            <tr className={styles["uploaded-table-row"]}>
+      <div className={styles.uploaded_table_wrap}>
+        <table className={styles.uploaded_table}>
+          <thead className={styles.uploaded_table_header}>
+            <tr className={styles.uploaded_table_row}>
               <th />
-              <th>File Name</th>
+              <th>Filename</th>
               <th>Length</th>
               <th>Size</th>
-              <th>Date</th>
+              <th>Date (Time)</th>
               <th>Status</th>
               <th />
             </tr>
           </thead>
-          <tbody className={styles["uploaded-table-body"]}>
+          <tbody className={styles.uploaded_table_body}>
             {recordings.map((recording) => (
               <tr key={recording.id}>
-                <td className={styles["uploaded-table-body-checkbox-img-wrap"]}>
+                <td className={styles.uploaded_table_body_checkbox_img_wrap}>
                   <input
                     type="checkbox"
                     name=""
                     id=""
-                    className={styles["uploaded-table-body-checkbox"]}
+                    className={styles.uploaded_table_body_checkbox}
                   />
                   <img
                     src={soundwave}
                     alt="soundwave-icon"
-                    className={styles["uploaded-table-body-cell-img"]}
+                    className={styles.uploaded_tablebody_cell_img}
                   />
                 </td>
                 <td>{recording.fileName}</td>
@@ -141,13 +140,32 @@ function UploadedRecordings() {
                   <img
                     src={deleteIcon}
                     alt="delete-icon "
-                    className={styles["delete-icon"]}
+                    className={styles.delete_icon}
                   />
                 </td>
               </tr>
             ))}
           </tbody>
         </table>
+      </div>
+      <div className={styles.uploaded_recordings_options}>
+        <div className={styles.bulkbtn_calbackurl_wrap}>
+          <div className={styles.bulkselect_wrap}>
+            <select name="" id="" className={styles.bulkselect}>
+              <option value="">Bulk Actions</option>
+              <option value="">Delete</option>
+            </select>
+          </div>
+          <div className={styles.calbackurl_wrap}>
+            <p>This process might take up to 20 minutes. </p>
+            <p className={styles.callback_url}>
+              Can’t wait? <span>Click here to copy your call back URL</span>{" "}
+            </p>
+          </div>
+        </div>
+        <div className={`${styles.view_resultbtn} ${styles.disabled}`}>
+          View Result
+        </div>
       </div>
     </div>
   );
