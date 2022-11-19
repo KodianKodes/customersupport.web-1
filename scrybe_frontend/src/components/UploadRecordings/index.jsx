@@ -179,7 +179,13 @@ function UploadedRecordings() {
                 </tr>
               ))
             ) : (
-              <img src={notfound} alt="not found" className={styles.notfound} />
+              <div className={styles.notfound_wrap}>
+                <img
+                  src={notfound}
+                  alt="not found"
+                  className={styles.notfound}
+                />
+              </div>
             )}
           </tbody>
         </table>
