@@ -13,12 +13,11 @@ import PageB from "./pages/Landing-page-b";
 import JobVacancy from "./pages/Careers/Components/JobVacancy";
 import NotHiring from "./pages/Careers/Components/NotHiring";
 
-import UploadedRecordings from "./components/UploadRecordings";
+// import UploadedRecordings from "./components/UploadRecordings";
 
 
 
 import NavBar from "./components/navBar";
-
 import Services from "./pages/services-page/Services";
 import Solutions from "./pages/solutions-page/Solutions";
 
@@ -59,8 +58,12 @@ function App() {
         />
         {/* career page & legal */}
         <Route
-          path="/careers-and-legal"
-          element={<DummyPage someText="career page and legal" />}
+          path="/careers"
+          element={<Careers/>}
+        />
+        <Route
+          path="/privacy-policy"
+          element={<PrivacyPolicy/>}
         />
         {/* solutions & services */}
         <Route
