@@ -51,7 +51,7 @@ function Solutions() {
 
       <div className="why-scrybe">
         <div className="container">
-          <h1>Why Scribe</h1>
+          <h1>Why Scrybe?</h1>
           <p>
             Our product’s-solution cuts across various pain points faced by call
             center/customer support managers. We help you:
@@ -108,7 +108,7 @@ function Solutions() {
         <div className="container">
           <div className="monitor-flex">
             <div className="buss-img">
-              <img src={monitor} alt="upload" />
+              <img src={monitor} alt="upload" className="img"/>
             </div>
             <div className="buss-txt">
               <h1>
@@ -193,7 +193,7 @@ function Solutions() {
                 too large to manage efficiently. Start managing customer
                 conversations with ease! You must upload the call, find out what
                 people think about your product or service, and fix any problems
-                you’ve overlooked. Get your free trial today!
+                you’ve overlooked. Get your <span>free trial</span> today!
               </p>
             </div>
           </div>
@@ -208,8 +208,7 @@ function Solutions() {
               by email: info@scrybe.com.
             </h4>
             <h1>
-              <span>Get Started With </span>
-              Scrybe
+              Get Started With Scrybe
             </h1>
             <button type="button">Try for Free</button>
           </div>

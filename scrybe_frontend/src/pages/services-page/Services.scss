@@ -12,6 +12,21 @@
     display: inline-block;
     width: 180px;
     font-size: 18px;
+    transition: all 0.3s ease;
+    position: relative;
+    border: 1px solid transparent;
+}
+
+@mixin btnStates {
+    &:hover {
+        background: transparent;
+        border-color: #006CFF;
+        color: #006CFF;
+    }
+
+    &:active {
+        top: 3px;
+    }
 }
 
 @mixin btnTrans {
@@ -29,6 +44,20 @@
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+@mixin btnTransStates {
+    &:hover {
+        background: #006CFF;
+        border-color: #fff;
+        color: #fff;
+    }
+
+    &:active {
+        top: 2px;
+    }
 }
 
 @mixin container {
@@ -80,6 +109,10 @@
     
         button {
             @include btn;
+
+            &:hover {
+                @include btnStates();
+            }
         }
     }
 
@@ -121,6 +154,10 @@
         @include btn;
         text-align: center;
         margin: 30px auto 0 auto;
+
+        &:hover {
+            @include btnStates();
+        }
     }
 }
 
@@ -202,6 +239,10 @@
     
                 button {
                     @include btnTrans;
+
+                    &:hover {
+                        @include btnStates();
+                    }
                 }
             }
 
@@ -249,6 +290,10 @@
 
         button {
             @include btn;
+
+            &:hover {
+                @include btnStates();
+            }
         }
     }
 }

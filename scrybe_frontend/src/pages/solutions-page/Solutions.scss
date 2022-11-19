@@ -19,6 +19,21 @@
     display: inline-block;
     width: 180px;
     font-size: 18px;
+    position: relative;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+@mixin btnStates {
+    &:hover {
+        background: transparent;
+        border-color: #006CFF;
+        color: #006CFF;
+    }
+
+    &:active {
+        top: 2px;
+    }
 }
 
 @mixin btnTrans {
@@ -36,6 +51,19 @@
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+@mixin btnTransStates {
+    &:hover {
+        background: #006CFF;
+        border-color: #fff;
+        color: #fff;
+    }
+
+    &:active {
+        top: 3px;
+    }
 }
 
 @mixin container {
@@ -51,7 +79,7 @@
 }
 
 .content-section {
-    padding: 8rem 0;
+    // padding: 8rem 0;
     .container {
         @include container;
     
@@ -64,9 +92,9 @@
                 h1 {
                     color: #005584;
                     font-size: 40px;
-                    line-height: 1.7;
+                    line-height: 1.5;
                     font-weight: 600;
-                    margin-bottom: 30px;
+                    margin-bottom: 20px;
                 }
     
                 p {
@@ -79,14 +107,22 @@
                     display: flex;
                     align-items: center;
                     gap: 4rem;
-                    margin-top: 30px;
+                    margin-top: 40px;
     
                     .filled {
-                        @include btn
+                        @include btn;
+
+                        &:hover {
+                            @include btnStates;
+                        }
                     }
         
                     .transparent {
                         @include btnTrans;
+
+                        &:hover {
+                            @include btnTransStates;
+                        }
                     }
                 }
             }
@@ -111,7 +147,7 @@
             font-weight: 600;
             font-size: 30px;
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 16px;
         }
 
         p {
@@ -155,7 +191,6 @@
 }
 
 .buss-section {
-    padding: 7rem 0;
     .container {
         @include container;
 
@@ -166,27 +201,27 @@
                 width: 50%;
                 h1 {
                     color: #005584;
-                    margin: 0 0 30px 0;
+                    margin: 0 0 20px 0;
                     font-size: 30px;
-                    line-height: 1.9;
+                    line-height: 1.6;
                 }
 
                 p {
                     color: #3F3F3F;
                     font-size: 20px;
                     line-height: 1.8;
-                    margin-bottom: 30px;
+                    margin-bottom: 8px;
                 }
 
                 h4 {
-                    font-size: 25px;
+                    font-size: 20px;
                     font-weight: 600;
                     color: #006CFF;
                 }
             }
 
             .buss-img  {
-                width: 40%;
+                width: 50%;
 
                 img {
                     width: 100%;
@@ -197,7 +232,6 @@
 }
 
 .monitor-section {
-    padding: 7rem 0;
     .container {
         @include container;
 
@@ -208,30 +242,39 @@
                 width: 50%;
                 h1 {
                     color: #005584;
-                    margin: 0 0 30px 0;
+                    margin: 0 0 20px 0;
                     font-size: 30px;
-                    line-height: 1.8;
+                    line-height: 1.6;
                 }
 
                 p {
                     color: #3F3F3F;
                     font-size: 20px;
                     line-height: 1.9;
-                    margin-bottom: 30px;
+                    margin-bottom: 8px;
+
+                    span {
+                        color: #006CFF;
+                        font-weight: 600;
+                    }
                 }
 
                 h4 {
-                    font-size: 25px;
+                    font-size: 20px;
                     font-weight: 600;
                     color: #006CFF;
                 }
             }
 
             .buss-img  {
-                width: 40%;
+                width: 45%;
 
                 img {
                     width: 100%;
+                }
+
+                .img {
+                    width: 90%
                 }
             }
         }
@@ -240,12 +283,13 @@
 
 .container {
     @include container;
+    padding: 6rem 0;
 
     .upload-container {
         background: url(./assets/blur-bg.png);
         background-size: cover;
         background-repeat: no-repeat;
-        padding: 4rem;
+        padding: 3rem;
 
         .cont {
             width: 80%;
@@ -260,18 +304,18 @@
 
             h1 {
                 font-size: 55px;
-                color: #005584;
+                color: #006CFF;;
                 font-weight: 600;
                 letter-spacing: 2px;
                 margin-bottom: 20px;
-
-                span {
-                    color: #006CFF;
-                }
             }
 
             button {
                 @include btn;
+
+                &:hover {
+                    @include btnStates;
+                }
             }
         }
     }
@@ -284,7 +328,7 @@
         background: url(./assets/set-blur.png);
         background-size: cover;
         background-repeat: no-repeat;
-        padding: 4rem;
+        padding: 3rem;
 
         .cont {
             width: 80%;
@@ -299,32 +343,32 @@
 
             h1 {
                 font-size: 55px;
-                color: #005584;
+                color: #006CFF;
                 font-weight: 600;
                 letter-spacing: 2px;
                 margin-bottom: 20px;
-
-                span {
-                    color: #006CFF;
-                }
             }
 
             button {
                 @include btn;
+
+                &:hover {
+                    @include btnStates;
+                }
             }
         }
     }
 }
 
 .logo-section {
-    padding: 8rem 0 13rem 0;
+    padding: 0 0 13rem 0;
 
     .container {
         text-align: center;
         h1 {
             color: #262626;
             font-size: 40px;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
         }
 
         p {
@@ -335,14 +379,14 @@
         .logo-flex {
             display: flex;
             align-items: center;
-            width: 70%;
+            width: 80%;
             flex-wrap: wrap;
             margin: 3rem auto 0 auto;
             row-gap: 3rem;
             justify-content: space-around;
 
             img {
-                width: 200px;
+                width: 260px;
             }
         }
     }
