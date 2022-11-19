@@ -56,13 +56,10 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}          
           password: ${{ secrets.DOCKERHUB_TOKEN }}
             
-      - name: Get Current Date 
-        id: date
-        run: echo "::set-output name=date::$(date +'%Y-%m-%d--%M-%S')"
 
       - name: docker build, tag and push
         run: |
-          docker build -t vicdam/scrybefrontend:latest .
+          docker build -t vicdam/scrybebackend:latest .
           docker push vicdam/scrybebackend:latest        
         
 
