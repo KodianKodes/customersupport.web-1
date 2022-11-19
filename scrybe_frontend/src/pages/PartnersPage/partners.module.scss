@@ -285,3 +285,92 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
 }
 
 
+
+/* Styling of the fifth bottom section */
+
+.fifth__btm {
+  background: #E6F0FF;
+  margin: 5em 0;
+  padding: 1em 0;
+  border-radius: 1rem;
+}
+
+.fifth__btm .fifth__content {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.fifth__content .fifth__left {
+  margin-top: 1.5em;
+}
+
+.fifth__left .fifth__heading {
+  width: 95%;
+  text-align: center;
+  margin-bottom: 1.2em;
+}
+
+.fifth__heading .fifth__head {
+  font-size: 1.1rem;
+  color: #454545;
+  font-weight: 600;
+  font-style: light;
+  fill: solid;
+  line-height: 1.2rem;
+}
+
+.fifth__subhead {
+  width: 80%;
+  margin: 0 auto;
+
+}
+
+.fifth__subhead .fifth__subtext {
+  font-size: .7rem;
+  color: #3F3F3F;
+  font-weight: 300;
+  font-style: light;
+  fill: solid;
+  line-height: 1.2rem;
+}
+
+.fifth__action {
+  width: 70%;
+  margin: 1.2em auto 0;
+}
+
+.fifth__btn {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.fifth__btn .btn__act {
+  width: 100%;
+  font-weight: 500;
+  border: none;
+  border-radius: .3rem;
+  padding: .8em .8em;
+  background: #006CFF;
+  color: #FFFFFF;
+  font-size: .7rem;
+  line-height: 1.5rem;
+  outline: none;
+}
+
+.fifth__secondbtn {
+  margin-top: 1em;
+}
+
+.fifth__secondbtn .btn__secondact {
+  width: 100%;
+  background: #E6F0FF;
+  border: 1px solid #006CFF;
+  font-weight: 500;
+  border-radius: .3rem;
+  padding: .8em .8em;
+  color: #006CFF;
+  font-size: .7rem;
+  line-height: 1.5rem;
+  outline: none;
+}
+
