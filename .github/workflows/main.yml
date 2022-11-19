@@ -3,15 +3,13 @@ name: Main Testing
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 
 jobs:
   
   build_and_push_to_registry:
 
-    name: Build and push Docker Frontend image to Docker Hub
-    if: github.event.pull_request.merged == true
+    # name: Build and push Docker Frontend image to Docker Hub
+    # if: github.event.pull_request.merged == true
 
     runs-on: ubuntu-latest
     defaults:
@@ -42,8 +40,8 @@ jobs:
   
   build_and_push_to_registry_backend:
 
-    name: Build and push Docker image to Docker Hub
-    if: github.event.pull_request.merged == true
+    # name: Build and push Docker image to Docker Hub
+    # if: github.event.pull_request.merged == true
 
     runs-on: ubuntu-latest
     defaults:
@@ -71,6 +69,7 @@ jobs:
         run: docker push $DOCKERHUB_USERNAME/$REPOSITORY_NAME_BACKEND:${{ steps.date.outputs.date }}
 
   Deploy: 
+    needs: [ build_and_push_to_registry_backend , build_and_push_to_registry ]
     runs-on: ubuntu-latest
 
     steps:
