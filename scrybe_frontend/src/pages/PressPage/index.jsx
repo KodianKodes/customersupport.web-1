@@ -5,6 +5,7 @@ import pressCardtwo from "../myAssets/pressCardtwo.png";
 import pressCardthree from "../myAssets/pressCardthree.png";
 import pressSmcardOne from "../myAssets/pressSmcardOne.png";
 import pressSmcardTwo from "../myAssets/pressSmcardTwo.png";
+import pressSmcard from "../myAssets/pressSmcard.png";
 import headDot from "../myAssets/headDot.png";
 import arrowLeft from "../myAssets/arrow__left.png";
 import logoText from "../myAssets/logoText.png";
@@ -128,6 +129,268 @@ const index = () => {
               <a href="/" className={styles.point__link}>
                 Brand guideline
               </a>
+            </div>
+          </div>
+          <div className={styles.five__desktop}>
+            <div className={styles.five__articles}>
+              <div className={styles.article__icon}>
+                <img
+                  src={pressSmcardOne}
+                  alt="Icon of Press cards"
+                  className={styles.each__icon}
+                />
+              </div>
+              <div className={styles.five__heading}>
+                <h3 className={styles.five__head}>
+                  Twitter users commend the rising transcription and sentiment
+                  analysis tool- Scrybe.
+                </h3>
+              </div>
+              <div className={styles.five__subtext}>
+                <p className={styles.five__texts}>
+                  We&apos;ve seen scrybers take to twitt..
+                </p>
+              </div>
+              <div className={styles.more__details}>
+                <a className={styles.read__more} href="/">
+                  Read more
+                </a>
+                <span>
+                  <img
+                    src={arrowLeft}
+                    alt="Arrow action to another"
+                    className={styles.arrowleft}
+                  />
+                </span>
+              </div>
+            </div>
+            <div className={styles.five__articles}>
+              <div className={styles.article__icon}>
+                <img
+                  src={pressSmcardTwo}
+                  alt="Icon of Press cards"
+                  className={styles.each__icon}
+                />
+              </div>
+              <div className={styles.five__heading}>
+                <h3 className={styles.five__head}>
+                  Aspect based sentiment analysis using multi-criteria
+                  decision-making
+                </h3>
+              </div>
+              <div className={styles.five__subtext}>
+                <p className={styles.five__texts}>
+                  The covid-19 pandemic has had a significant impact on the
+                  global a
+                </p>
+              </div>
+              <div className={styles.more__details}>
+                <a className={styles.read__more} href="/">
+                  Read more
+                </a>
+                <span>
+                  <img
+                    src={arrowLeft}
+                    alt="Arrow action to another"
+                    className={styles.arrowleft}
+                  />
+                </span>
+              </div>
+            </div>
+            <div className={styles.five__articles}>
+              <div className={styles.article__icon}>
+                <img
+                  src={pressSmcard}
+                  alt="Icon of Press cards"
+                  className={styles.each__icon}
+                />
+              </div>
+              <div className={styles.five__heading}>
+                <h3 className={styles.five__head}>
+                  Twitter users commend the rising transcription and sentiment
+                  analysis tool- Scrybe.
+                </h3>
+              </div>
+              <div className={styles.five__subtext}>
+                <p className={styles.five__texts}>
+                  We&apos;ve seen scrybers take to twitt..
+                </p>
+              </div>
+              <div className={styles.more__details}>
+                <a className={styles.read__more} href="/">
+                  Read more
+                </a>
+                <span>
+                  <img
+                    src={arrowLeft}
+                    alt="Arrow action to another"
+                    className={styles.arrowleft}
+                  />
+                </span>
+              </div>
+            </div>
+            <div className={styles.five__articles}>
+              <div className={styles.article__icon}>
+                <img
+                  src={pressSmcard}
+                  alt="Icon of Press cards"
+                  className={styles.each__icon}
+                />
+              </div>
+              <div className={styles.five__heading}>
+                <h3 className={styles.five__head}>
+                  Twitter users commend the rising transcription and sentiment
+                  analysis tool- Scrybe.
+                </h3>
+              </div>
+              <div className={styles.five__subtext}>
+                <p className={styles.five__texts}>
+                  We&apos;ve seen scrybers take to twitt..
+                </p>
+              </div>
+              <div className={styles.more__details}>
+                <a className={styles.read__more} href="/">
+                  Read more
+                </a>
+                <span>
+                  <img
+                    src={arrowLeft}
+                    alt="Arrow action to another"
+                    className={styles.arrowleft}
+                  />
+                </span>
+              </div>
+            </div>
+            <div className={styles.five__articles}>
+              <div className={styles.article__icon}>
+                <img
+                  src={pressSmcardTwo}
+                  alt="Icon of Press cards"
+                  className={styles.each__icon}
+                />
+              </div>
+              <div className={styles.five__heading}>
+                <h3 className={styles.five__head}>
+                  Aspect based sentiment analysis using multi-criteria
+                  decision-making
+                </h3>
+              </div>
+              <div className={styles.five__subtext}>
+                <p className={styles.five__texts}>
+                  The covid-19 pandemic has had a significant impact on the
+                  global a
+                </p>
+              </div>
+              <div className={styles.more__details}>
+                <a className={styles.read__more} href="/">
+                  Read more
+                </a>
+                <span>
+                  <img
+                    src={arrowLeft}
+                    alt="Arrow action to another"
+                    className={styles.arrowleft}
+                  />
+                </span>
+              </div>
+            </div>
+            <div className={styles.five__articles}>
+              <div className={styles.article__icon}>
+                <img
+                  src={pressSmcardOne}
+                  alt="Icon of Press cards"
+                  className={styles.each__icon}
+                />
+              </div>
+              <div className={styles.five__heading}>
+                <h3 className={styles.five__head}>
+                  Twitter users commend the rising transcription and sentiment
+                  analysis tool- Scrybe.
+                </h3>
+              </div>
+              <div className={styles.five__subtext}>
+                <p className={styles.five__texts}>
+                  We&apos;ve seen scrybers take to twitt..
+                </p>
+              </div>
+              <div className={styles.more__details}>
+                <a className={styles.read__more} href="/">
+                  Read more
+                </a>
+                <span>
+                  <img
+                    src={arrowLeft}
+                    alt="Arrow action to another"
+                    className={styles.arrowleft}
+                  />
+                </span>
+              </div>
+            </div>
+            <div className={styles.five__articles}>
+              <div className={styles.article__icon}>
+                <img
+                  src={pressSmcardTwo}
+                  alt="Icon of Press cards"
+                  className={styles.each__icon}
+                />
+              </div>
+              <div className={styles.five__heading}>
+                <h3 className={styles.five__head}>
+                  Aspect based sentiment analysis using multi-criteria
+                  decision-making
+                </h3>
+              </div>
+              <div className={styles.five__subtext}>
+                <p className={styles.five__texts}>
+                  The covid-19 pandemic has had a significant impact on the
+                  global a
+                </p>
+              </div>
+              <div className={styles.more__details}>
+                <a className={styles.read__more} href="/">
+                  Read more
+                </a>
+                <span>
+                  <img
+                    src={arrowLeft}
+                    alt="Arrow action to another"
+                    className={styles.arrowleft}
+                  />
+                </span>
+              </div>
+            </div>
+            <div className={styles.five__articles}>
+              <div className={styles.article__icon}>
+                <img
+                  src={pressSmcardTwo}
+                  alt="Icon of Press cards"
+                  className={styles.each__icon}
+                />
+              </div>
+              <div className={styles.five__heading}>
+                <h3 className={styles.five__head}>
+                  Aspect based sentiment analysis using multi-criteria
+                  decision-making
+                </h3>
+              </div>
+              <div className={styles.five__subtext}>
+                <p className={styles.five__texts}>
+                  The covid-19 pandemic has had a significant impact on the
+                  global a
+                </p>
+              </div>
+              <div className={styles.more__details}>
+                <a className={styles.read__more} href="/">
+                  Read more
+                </a>
+                <span>
+                  <img
+                    src={arrowLeft}
+                    alt="Arrow action to another"
+                    className={styles.arrowleft}
+                  />
+                </span>
+              </div>
             </div>
           </div>
           <div className={styles.five__bottom}>
