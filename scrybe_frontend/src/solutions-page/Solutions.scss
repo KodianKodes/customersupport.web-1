@@ -384,35 +384,6 @@
         }
     }
 
-    .buss-section {
-        .container {
-
-            .buss-flex {
-                @include flexItem(space-between, column);
-                row-gap: 4rem;
-    
-                .buss-txt, .buss-img {
-                    width: 100%;
-                    text-align: center;
-                }
-            }
-        }
-    }
-
-    .monitor-section {
-        .container {
-            .monitor-flex {
-                @include flexItem(space-between, column-reverse );
-                row-gap: 4rem;
-
-                .buss-txt, .buss-img {
-                    width: 100%;
-                    text-align: center;
-                }
-            }
-        }
-    }
-
     .container {
         .setblur-container {
             .cont {
@@ -432,6 +403,7 @@
             .cont {
                 h1 {
                     font-size: 30px;
+                    text-align: center;
                 }
 
                 h4 {
@@ -442,3 +414,108 @@
     }
 }
 
+@media (max-width: 1376px) {
+    .buss-section {
+        .container {
+
+            .buss-flex {
+                @include flexItem(space-between, column);
+                row-gap: 6rem;
+    
+                .buss-txt, .buss-img {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .monitor-section {
+        .container {
+            .monitor-flex {
+                @include flexItem(space-between, column-reverse );
+                row-gap: 6rem;
+
+                .buss-txt, .buss-img {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 920px) {
+    .why-scrybe {
+        .container {
+            .card-container {
+                .card {
+                    width: 45%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 790px) {
+    .why-scrybe {
+        .container {
+            p {
+                width: 80%;
+            }
+            .card-container {
+                .card {
+                    width: 55%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 570px) {
+    .why-scrybe {
+        .container {
+            .card-container {
+                .card {
+                    width: 65%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 550px) {
+    .why-scrybe {
+        .container {
+            .card-container {
+                .card {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .content-section {
+        .container {
+            .flex-items {
+                .txt-item {
+                    .btns {
+                        flex-direction: column;
+                        gap: 2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .container {
+        .setblur-container, .upload-container {
+            .cont {
+                width: 100%;
+            }
+        }
+    }
+}

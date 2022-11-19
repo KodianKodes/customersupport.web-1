@@ -138,11 +138,7 @@ function Solutions() {
         <div className="upload-container">
           <div className="cont">
             <h4>Ready to improve your customer support efficiency?</h4>
-            <h1>
-              <span>Upload.</span>
-              Transcribe.
-              <span>Analyze.</span>
-            </h1>
+            <h1>Upload. Transcribe. Analyze.</h1>
             <button type="button">Try for Free</button>
           </div>
         </div>
@@ -212,7 +208,7 @@ function Solutions() {
               by email: info@scrybe.com.
             </h4>
             <h1>
-              <span>Get Started With</span>
+              <span>Get Started With </span>
               Scrybe
             </h1>
             <button type="button">Try for Free</button>

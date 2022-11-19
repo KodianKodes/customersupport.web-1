@@ -465,6 +465,22 @@
   .why-scrybe .container .card-container .card {
     width: 38%;
   }
+  .container .setblur-container .cont h1 {
+    font-size: 30px;
+  }
+  .container .setblur-container .cont h4 {
+    font-size: 18px;
+  }
+  .container .upload-container .cont h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .container .upload-container .cont h4 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1376px) {
   .buss-section .container .buss-flex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -479,7 +495,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    row-gap: 4rem;
+    row-gap: 6rem;
   }
   .buss-section .container .buss-flex .buss-txt, .buss-section .container .buss-flex .buss-img {
     width: 100%;
@@ -499,23 +515,51 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    row-gap: 4rem;
+    row-gap: 6rem;
   }
   .monitor-section .container .monitor-flex .buss-txt, .monitor-section .container .monitor-flex .buss-img {
     width: 100%;
     text-align: center;
   }
-  .container .setblur-container .cont h1 {
-    font-size: 30px;
+}
+
+@media (max-width: 920px) {
+  .why-scrybe .container .card-container .card {
+    width: 45%;
   }
-  .container .setblur-container .cont h4 {
-    font-size: 18px;
+}
+
+@media (max-width: 790px) {
+  .why-scrybe .container p {
+    width: 80%;
   }
-  .container .upload-container .cont h1 {
-    font-size: 30px;
+  .why-scrybe .container .card-container .card {
+    width: 55%;
   }
-  .container .upload-container .cont h4 {
-    font-size: 18px;
+}
+
+@media (max-width: 570px) {
+  .why-scrybe .container .card-container .card {
+    width: 65%;
+  }
+}
+
+@media (max-width: 550px) {
+  .why-scrybe .container .card-container .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .content-section .container .flex-items .txt-item .btns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+  }
+  .container .setblur-container .cont, .container .upload-container .cont {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=Solutions.css.map */
