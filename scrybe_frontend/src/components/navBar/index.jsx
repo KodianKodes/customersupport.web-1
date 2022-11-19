@@ -6,7 +6,7 @@ import logo from "../../assets/scrybe_logo_with_text.svg";
 function NavBar() {
   return (
     <nav className={styles.nav}>
-      <div className={`container ${styles.nav_content}`}>
+      <div className={`${styles.nav_content}`}>
         <div className={styles.nav__img}>
           <img src={logo} alt="Company Logo" />
         </div>

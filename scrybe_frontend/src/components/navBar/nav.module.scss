@@ -2,10 +2,13 @@
 
 .nav{
         padding-block: pix-rem(20) ;
+        padding-inline: pix-rem(20);
         &_content{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                width: min(100%, pix-rem(1264));
+                margin-inline: auto;
         }
         &__links{
                 display: flex;

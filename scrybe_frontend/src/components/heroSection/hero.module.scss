@@ -14,6 +14,9 @@
         -webkit-mask-position: 0 100%;
         mask-size: cover;
         -webkit-mask-size: cover;
+        @include media(1220px) {
+                min-height: 110vh;
+        }
 
         .container {
                 width: min(100%, pix-rem(1204));
@@ -50,6 +53,21 @@
                         display: flex;
                         gap: pix-rem(50);
                         margin-top: pix-rem(90);
+
+                        @include media(1220px) {
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                .ctaDemo,
+                                .ctaStarter {
+                                        text-decoration: none;
+                                        padding-block: pix-rem(16);
+                                        padding-inline: pix-rem(16);
+                                        border-radius: pix-rem(4);
+                                        width: min(100%, pix-rem(220));
+                                        text-align: center;
+                                }
+                        }
 
                         .ctaDemo,
                         .ctaStarter {
