@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
+  font-family: "Kanit", sans-serif;
+}
+
+.sect__container {
+  width: 90%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.section__one {
+  margin-top: 3em;
+}
+.section__one .hero__head {
+  font-size: 1.25rem;
+  color: #313131;
+  font-weight: 600;
+  fill: solid;
+  line-height: 2.5rem;
+}
+.section__one .hero__head .hero__inline {
+  color: #0062E8;
+}
+.section__one .hero__subhead {
+  margin-bottom: 0.5em;
+}
+.section__one .hero__subhead .hero__subtext {
+  font-size: 0.8rem;
+  color: #313131;
+  font-weight: 300;
+  font-style: light;
+  fill: solid;
+  line-height: 1.25rem;
+}/*# sourceMappingURL=press.module.css.map */

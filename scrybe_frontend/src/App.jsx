@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.scss";
 // import PartnerPage from "../src/pages/PartnersPage";
-import PressPage from "../src/pages/PressPage"
+import PressPage from "./pages/PressPage";
 // import scrybeLogo from "./assets/scrybe_logo_with_text.svg";
 
 function App() {
