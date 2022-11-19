@@ -1,5 +1,6 @@
-from fastapi import Depends, FastAPI, UploadFile
+from fastapi import Depends, FastAPI, UploadFile, File
 from routers.sentiment import sentiment
+from routers.transcribe import transcribe_file
 import models
 
 description = """
@@ -8,12 +9,8 @@ Scrybe API helps you analyse sentiments in your customer support calls
 
 tags_metadata = [
     {
-        "name": "uploa",
+        "name": "upload",
         "description": "Analyse audio calls for sentiment.",
-    },
-    {
-        "name": "users",
-        "description": "Operations with users. The **login** logic is also here.",
     },
 ]
 
@@ -27,11 +24,20 @@ app = FastAPI(
 
 @app.get("/")
 async def ping():
-    return {"message": "Scrybe Upp"}
+    return {"message": "Scrybe Up"}
 
 
 @app.post("/upload", tags=['analyse'])
-async def analyse(files: UploadFile):
-    transcript = transcribe(file)
+async def analyse(file: UploadFile=File(...)):
+    try:
+        contents = file.file.read()
+        with open(file.filename, 'wb') as f:
+            f.write(contents)
+    except Exception:
+        return {"error": "There was an error uploading the file"}
+    finally:
+        file.file.close()
+
+    transcript = transcribe_file(file.filename)
     sentiment_result = sentiment(transcript)
     return {"transcript": transcript, "sentiment_result": sentiment_result}
