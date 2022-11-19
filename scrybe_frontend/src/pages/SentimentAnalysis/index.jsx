@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react";
 import styles from "./SentimentAnalysis.module.scss";
 import arrowIcon from "./icons/arrow_back.svg";
@@ -8,6 +9,7 @@ import dropdownIcon from "./icons/dropdown.svg";
 import shareIcon from "./icons/share.svg";
 import AnalysisCard from "./components/AnalysisCard";
 import AudioCard from "./components/AudioCard";
+import SentimentAside from "./components/SentimentAside";
 
 function SentimentAnalysis() {
   const positiveTags = [
@@ -42,6 +44,8 @@ function SentimentAnalysis() {
     "criticism",
   ];
 
+  const openSentimentTab = () => {};
+
   return (
     <div className={styles.page__container}>
       <div className={styles.audio__mobile}>
@@ -49,9 +53,10 @@ function SentimentAnalysis() {
       </div>
       <div className={styles.sentiment__tab__opener}>
         Overall sentiment
-        <div className={styles.arrow__container}>
+        <div className={styles.arrow__container} onClick={openSentimentTab}>
           <img src={blueArrowIcon} alt="arrow icon" />
         </div>
+        {<SentimentAside />}
       </div>
       <main className={styles.main__container}>
         <span className={styles.main__container__top}>
