@@ -108,7 +108,7 @@ function Solutions() {
         <div className="container">
           <div className="monitor-flex">
             <div className="buss-img">
-              <img src={monitor} alt="upload" className="img"/>
+              <img src={monitor} alt="upload" className="img" />
             </div>
             <div className="buss-txt">
               <h1>
@@ -207,9 +207,7 @@ function Solutions() {
               If you have any questions about our solutions? Please contact us
               by email: info@scrybe.com.
             </h4>
-            <h1>
-              Get Started With Scrybe
-            </h1>
+            <h1>Get Started With Scrybe</h1>
             <button type="button">Try for Free</button>
           </div>
         </div>
