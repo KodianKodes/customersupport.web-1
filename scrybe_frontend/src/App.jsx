@@ -17,10 +17,7 @@ function App() {
         {/* landing page */}
         <Route path="/" element={<LandingPage />} />
         {/* sentiment analysis */}
-        <Route
-          path="/sentiment-analysis"
-          element={<SentimentAnalysis someText="sentiment-analysis" />}
-        />
+        <Route path="/sentiment-analysis" element={<SentimentAnalysis />} />
         {/* transcriptions */}
         <Route path="/transcriptions" element={<TranscribePage />} />
         {/* try for free */}
