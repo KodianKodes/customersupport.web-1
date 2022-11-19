@@ -2,12 +2,14 @@ import React from "react";
 import "./App.scss";
 import { Routes, Route } from "react-router-dom";
 import DummyPage from "./pages/DummyPage";
+import LandingPage from "./pages/landing-page-a";
+import PageB from "./pages/Landing-page-b";
 
 function App() {
   return (
     <Routes>
       {/* landing page */}
-      <Route path="/" element={<DummyPage />} />
+      <Route path="/" element={<LandingPage />} />
       {/* sentiment analysis */}
       <Route
         path="/sentiment-analysis"
@@ -100,6 +102,7 @@ function App() {
       />
       {/* blog */}
       <Route path="/blog" element={<DummyPage someText="blog" />} />
+      <Route path="/homeB" element={<PageB />} />
     </Routes>
   );
 }
