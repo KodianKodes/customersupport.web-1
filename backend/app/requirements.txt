@@ -5,3 +5,9 @@ nltk
 sqlalchemy
 banana-dev==4.0.0
 python-dotenv
+python-jose
+passlib
+pyjwt
+mysql-connector-python
+mysqlclient
+
