@@ -1,20 +1,12 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-import Industry from "./Pages/indsutry/industry";
-import IndustryArticle from "./components/Industry/industryArticle";
-import HowItWorks from "./Pages/HowItWorks/HowItWorks";
-
 import "./App.scss";
 import DummyPage from "./Pages/DummyPage";
 
 function App() {
   return (
     <div className="App" data-testid="app-container">
-      <Industry />
-      <IndustryArticle />
-      <HowItWorks />
-
       <Routes>
         {/* landing page */}
         <Route path="/" element={<DummyPage />} />
