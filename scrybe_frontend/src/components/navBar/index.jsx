@@ -12,8 +12,8 @@ function NavBar() {
         </div>
         <div className={styles.nav__links}>
           <NavLink to="/"> Home </NavLink>
-          <NavLink to="/">Service</NavLink>
-          <NavLink to="/">Solutions</NavLink>
+          <NavLink to="/services">Service</NavLink>
+          <NavLink to="/solutions">Solutions</NavLink>
           <NavLink to="/"> Pricing </NavLink>
           <NavLink to="/"> Industry</NavLink>
           <NavLink to="/">About Us</NavLink>
