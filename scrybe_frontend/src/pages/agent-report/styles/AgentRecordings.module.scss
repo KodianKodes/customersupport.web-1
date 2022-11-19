@@ -1,0 +1,65 @@
+@use "./_mixins.scss" as mixins;
+
+
+.recordings {
+  .title {
+    font-size: 16px;
+    margin: 20px 0px;
+  }
+  .plainTable {
+    background-color: #ececec;
+    border: 0;
+  }
+  .tableContainer {
+    height: 25%;
+    overflow: scroll;
+    &::-webkit-scrollbar {
+        display: none;
+      }
+  }
+}
+
+.MUITableRow-root>*{
+    font-family: inherit;
+}
+
+.Table th {
+    border: none!important;
+}
+
+.Table td {
+    border: 5px;
+}
+
+
+
+
+// .recordings {
+//     .title {
+//       font-size: 24px;
+//       margin: 20px 0px;
+//     }
+//     .plainTable {
+//       background-color: #ececec;
+//       border: 0;
+//     }
+//     .tableContainer {
+//       height: 25%;
+//       overflow: scroll;
+//       &::-webkit-scrollbar {
+//           display: none;
+//         }
+//     }
+//   }
+  
+//   .MUITableRow-root>*{
+//       font-family: inherit;
+//   }
+  
+//   .Table th {
+//       border: none!important;
+//   }
+  
+//   .Table td {
+//       border: 5px;
+//   }

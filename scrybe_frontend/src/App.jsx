@@ -2,12 +2,16 @@ import React from "react";
 import "./App.scss";
 import { Routes, Route } from "react-router-dom";
 import DummyPage from "./pages/DummyPage";
+import AgentReport from "./pages/agent-report";
+
 
 function App() {
   return (
     <Routes>
       {/* landing page */}
       <Route path="/" element={<DummyPage />} />
+      {/* agent report */}
+      <Route path="/agent-report" element={<AgentReport />} />
       {/* sentiment analysis */}
       <Route
         path="/sentiment-analysis"
