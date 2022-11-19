@@ -45,11 +45,7 @@ jobs:
   Deploy: 
     needs: [ build_and_push_to_registry ]
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: scrybe_frontend
   
-
     steps:
       - name: Checkout master
         uses: actions/checkout@master
