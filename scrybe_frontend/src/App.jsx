@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import DummyPage from "./pages/DummyPage";
 import LandingPage from "./pages/landing-page-a";
 import PageB from "./pages/Landing-page-b";
+import About from "./pages/AboutUs/About";
 
 function App() {
   return (
@@ -103,7 +104,14 @@ function App() {
       {/* blog */}
       <Route path="/blog" element={<DummyPage someText="blog" />} />
       <Route path="/homeB" element={<PageB />} />
+
+        {/* about us*/}
+     <Route
+     path="/about"
+     element={<About someText="about us" />}
+   />
     </Routes>
+   
   );
 }
 
