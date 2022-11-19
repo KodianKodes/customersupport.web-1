@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 
 import { NavLink } from "react-router-dom";
-import SignInOutResetHeader from "../components/SignInOutResetHeader";
+import SignInOutResetHeader from "../../components/SignInOutResetHeader";
 
-function Signup() {
+function Signin() {
   const {
     register,
     handleSubmit,
@@ -21,42 +21,23 @@ function Signup() {
   };
 
   // Watch event for disable button
-  const fullname = watch("fullname");
   const email = watch("email");
-  const company = watch("company");
   const password = watch("password");
 
-  console.log("fullname", fullname);
   console.log("email", email);
-  console.log("company", company);
   console.log("password", password);
 
-  const isValid = fullname && email && company && password;
+  const isValid = email && password;
 
   return (
     <>
       <SignInOutResetHeader />
-
       <main className="signup-wrapper">
         <div className="signup">
-          <div className="first">
-            <h1>Create an account</h1>
-            <h3>Let’s get you started</h3>
+          <div className="first signin other-than-signup">
+            <h1>Welcome back, Scryber!</h1>
+            <h3>Please enter your details</h3>
             <form onSubmit={handleSubmit(onSubmit)}>
-              <label htmlFor="fullname">
-                Full name
-                <input
-                  type="text"
-                  name="fullname"
-                  id="fullname"
-                  placeholder="Enter your full name"
-                  className={`${errors.fullname && "error-input"} `}
-                  // eslint-disable-next-line
-                  {...register("fullname", { required: "Name is required" })}
-                />
-              </label>
-              <p className="error-msg">{errors.fullname?.message}</p>
-
               <label htmlFor="email">
                 Email
                 <input
@@ -76,60 +57,44 @@ function Signup() {
                 />
               </label>
               <p className="error-msg">{errors.email?.message}</p>
-
-              <label htmlFor="company">
-                Company
-                <input
-                  type="text"
-                  name="company"
-                  id="company"
-                  placeholder="Enter your company name"
-                  className={`${errors.company && "error-input"} `}
-                  // eslint-disable-next-line
-                  {...register("company", {
-                    required: "Company name is required",
-                  })}
-                />
-              </label>
-              <p className="error-msg">{errors.company?.message}</p>
-
               <label htmlFor="password">
                 Password
                 <input
                   type="password"
                   name="password"
                   id="password"
-                  placeholder="Enter your password"
+                  placeholder="Password at least 8 characters"
                   className={`${errors.password && "error-input"} `}
                   // eslint-disable-next-line
                   {...register("password", {
                     required: "Password is required",
                     minLength: {
                       value: 8,
-                      message: "Password must be at least 8 characters",
+                      message:
+                        "Password you input is different from your current password",
                     },
                   })}
                 />
               </label>
               <p className="error-msg">{errors.password?.message}</p>
-
+              <div className="accept remember">
+                <div className="remember-me">
+                  <input type="checkbox" name="" id="" />
+                  <span className="remember-span">Remember me</span>
+                </div>
+                <NavLink to="/forget-password" className="remember-forget">
+                  Forgot password?
+                </NavLink>
+              </div>
               <input
                 type="submit"
                 disabled={!isValid}
-                value="Create an account"
+                value="Sign in"
                 className={`${isValid && "submit-valid"}`}
               />
-              <div className="accept up">
-                <input type="checkbox" name="" id="" />
-                <span>
-                  I have read and agree to{" "}
-                  <NavLink to="">Terms of Service</NavLink> and{" "}
-                  <NavLink to="">Privacy Policy</NavLink>
-                  <br />
-                  Already have an account?{" "}
-                  <NavLink to="/signin">Sign in</NavLink>
-                </span>
-              </div>
+              <p>
+                Don’t have an account? <NavLink to="/">Sign up</NavLink>
+              </p>
             </form>
           </div>
           <div className="second">
@@ -141,4 +106,4 @@ function Signup() {
   );
 }
 
-export default Signup;
+export default Signin;

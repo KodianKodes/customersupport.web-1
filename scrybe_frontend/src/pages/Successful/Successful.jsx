@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import SignInOutResetHeader from "../components/SignInOutResetHeader";
+import SignInOutResetHeader from "../../components/SignInOutResetHeader";
 
 function Successful() {
   return (

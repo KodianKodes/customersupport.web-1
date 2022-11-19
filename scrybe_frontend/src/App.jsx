@@ -9,10 +9,15 @@ import LandingPage from "./pages/landing-page-a";
 import PageB from "./pages/Landing-page-b";
 import NavBar from "./components/navBar";
 import TermsAndCondition from "./pages/TermsAndCondition/TermsOfService";
-
 import Services from "./pages/services-page/Services";
 import Solutions from "./pages/solutions-page/Solutions";
 import DashboardOverview from "./pages/DashboardOverview";
+import Signup from "./pages/SignUp/SignUp";
+import Signin from "./pages/SignIn/SignIn";
+import Successful from "./pages/Successful/Successful";
+import SetNewPassword from "./pages/SetNewPassword/SetNewPassword";
+import ForgetPassword from "./pages/ForgetPassword/ForgetPassword";
+import PasswordResetSuccessful from "./pages/PasswordResetSuccessful/PasswordResetSuccessful";
 
 function App() {
   return (
@@ -107,6 +112,16 @@ function App() {
         <Route path="/homeB" element={<PageB />} />
         <Route path="faq" element={<FAQs />} />
         <Route path="faq" element={<TermsOfService />} />
+        {/* Sign In, Sign Out and Reset Password */}
+        <Route path="/" element={<Signup />} />
+        <Route path="/signin" element={<Signin />} />
+        <Route path="/reset-successful" element={<Successful />} />
+        <Route path="/set-new-password" element={<SetNewPassword />} />
+        <Route path="/forget-password" element={<ForgetPassword />} />
+        <Route
+          path="/pw-reset-successful"
+          element={<PasswordResetSuccessful />}
+        />
       </Routes>
     </>
   );

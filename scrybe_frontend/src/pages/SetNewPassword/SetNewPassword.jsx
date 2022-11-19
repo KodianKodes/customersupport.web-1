@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 
-import SignInOutResetHeader from "../components/SignInOutResetHeader";
+import SignInOutResetHeader from "../../components/SignInOutResetHeader";
 
 function SetNewPassword() {
   const {

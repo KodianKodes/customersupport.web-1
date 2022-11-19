@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 
 import { NavLink } from "react-router-dom";
-import SignInOutResetHeader from "../components/SignInOutResetHeader";
+import SignInOutResetHeader from "../../components/SignInOutResetHeader";
 
 function ForgetPassword() {
   const {
