@@ -22,13 +22,7 @@ jobs:
       - name: change directory
         run: cd scrybe_frontend        
       
-      - name: Set up QEMU
-        uses: docker/setup-qemu-action@v2
-  
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v2
-      
-      
+        
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
         with:
@@ -62,14 +56,7 @@ jobs:
 
       - name: change directory
         run: cd backend/app        
-            
-      - name: Set up QEMU
-        uses: docker/setup-qemu-action@v2
-  
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v2
-      
-      
+                        
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
         with:
