@@ -5,6 +5,7 @@ import DummyPage from "./pages/DummyPage";
 import { FAQs, TermsOfService } from "./pages";
 import LandingPage from "./pages/landing-page-a";
 import PageB from "./pages/Landing-page-b";
+import UploadedRecordings from "./components/UploadRecordings";
 
 function App() {
   return (
@@ -103,6 +104,9 @@ function App() {
       {/* blog */}
       <Route path="/blog" element={<DummyPage someText="blog" />} />
       <Route path="/homeB" element={<PageB />} />
+
+      {/* uploaded recordings screen */}
+      <Route path="/uploaded-recordings" element={<UploadedRecordings />} />
     </Routes>
   );
 }
