@@ -59,8 +59,9 @@ jobs:
 
       - name: docker build, tag and push
         run: |
-          docker build -t vicdam/scrybebackend:latest .
-          docker push vicdam/scrybebackend:latest        
+          ls
+#          docker build -t vicdam/scrybebackend:latest .
+#          docker push vicdam/scrybebackend:latest        
         
 
   Deploy: 
