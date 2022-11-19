@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
   list-style: none;
 }
 
@@ -358,4 +357,46 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
   font-size: 0.7rem;
   line-height: 1.5rem;
   outline: none;
+}
+
+@media (min-width: 768px) {
+  /* Styling of the first section */
+  .first__flex {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .first__right {
+    width: 60%;
+  }
+  .first__left {
+    width: 40%;
+    margin-top: 4em;
+  }
+  .first__heading {
+    margin: 0;
+  }
+  .first__head {
+    font-size: 2.1rem;
+    line-height: 2rem;
+  }
+  .first__subhead {
+    margin-top: 1em;
+  }
+  .first__left .first__subtext {
+    font-size: 0.6rem;
+    line-height: 1rem;
+  }
+  .first__subtext .first__inline {
+    font-size: 0.6rem;
+    line-height: 1.25rem;
+  }
+  .first__input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.5em;
+    width: 100%;
+  }
 }/*# sourceMappingURL=partners.module.css.map */

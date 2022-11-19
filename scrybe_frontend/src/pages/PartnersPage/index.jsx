@@ -17,7 +17,7 @@ const index = () => {
     <div>
       <section className={styles.first__sect}>
         <div className={styles.sect__container}>
-          <div>
+          <div className={styles.first__flex}>
             <div className={styles.first__right}>
               {/* first__sect - right */}
               <img src={heroIcon} alt="Hero icon of the page" />
@@ -46,19 +46,20 @@ const index = () => {
                 </p>
               </div>
               <div className={styles.first__input}>
-                {/* first__sect - input */}
-                {/* first__input - field */}
-                <input
-                  type="email"
-                  placeholder="Email address"
-                  className={styles.first__field}
-                />
-                {/* first__input - btn */}
-                <input
-                  type="submit"
-                  value="Become a Partner"
-                  className={styles.first__botton}
-                />
+                <div className={styles.input__container}>
+                  <input
+                    type="email"
+                    placeholder="Email address"
+                    className={styles.first__field}
+                  />
+                </div>
+                <div className={styles.input__container}>
+                  <input
+                    type="submit"
+                    value="Become a Partner"
+                    className={styles.first__botton}
+                  />
+                </div>
               </div>
             </div>
           </div>
