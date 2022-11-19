@@ -24,7 +24,7 @@ const index = () => {
             <div className={styles.first__left}>
               <div className={styles.first__heading}>
                 <h1 className={styles.first__head}>
-                  Grow with us, Become a Partner
+                  Grow with us,<br/> Become a Partner
                 </h1>
               </div>
               <div className={styles.first__subhead}>
@@ -41,14 +41,14 @@ const index = () => {
                 </p>
               </div>
               <div className={styles.first__input}>
-                <div className={styles.input__container}>
+                <div className={styles.email__container}>
                   <input
                     type="email"
                     placeholder="Email address"
                     className={styles.first__field}
                   />
                 </div>
-                <div className={styles.input__container}>
+                <div className={styles.partner__container}>
                   <input
                     type="submit"
                     value="Become a Partner"
@@ -63,17 +63,37 @@ const index = () => {
       <section className={styles.second__sect}>
         <div className={styles.sect__container}>
           <div className={styles.second__content}>
-            <div className={styles.second__each}>
-              <img src={google} alt="google-icon" />
+            <div className={styles.second__social}>
+              <div className={styles.second__each}>
+                <img
+                  src={google}
+                  alt="google-icon"
+                  className={styles.social__icons}
+                />
+              </div>
+              <div className={styles.second__each}>
+                <img
+                  src={microsoft}
+                  alt="microsoft-icon"
+                  className={styles.social__icons}
+                />
+              </div>
             </div>
-            <div className={styles.second__each}>
-              <img src={microsoft} alt="microsoft-icon" />
-            </div>
-            <div className={styles.second__each}>
-              <img src={hotel} alt=" hotel-icon" />
-            </div>
-            <div className={styles.second__each}>
-              <img src={payooneer} alt="payooneer" />
+            <div className={styles.second__social}>
+              <div className={styles.second__each}>
+                <img
+                  src={hotel}
+                  alt=" hotel-icon"
+                  className={styles.social__icons}
+                />
+              </div>
+              <div className={styles.second__each}>
+                <img
+                  src={payooneer}
+                  alt="payooneer"
+                  className={styles.social__icons}
+                />
+              </div>
             </div>
           </div>
         </div>
