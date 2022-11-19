@@ -1,5 +1,6 @@
 /* eslint-disable react/button-has-type */
 /* eslint-disable react/react-in-jsx-scope */
+import { Link } from "react-router-dom";
 import Card from "../card/Card";
 import styles from "./Cards.module.scss";
 import general from "../assets/general.svg";
@@ -19,11 +20,13 @@ function Cards() {
       </div>
 
       <div className={styles.cards_holder}>
-        <Card
-          src={general}
-          header="General"
-          paragrapgh="Basic Articles that will help you get the most out of scribe"
-        />
+        <Link to="/help-support-general">
+          <Card
+            src={general}
+            header="General"
+            paragrapgh="Basic Articles that will help you get the most out of scribe"
+          />
+        </Link>
         <Card
           src={account}
           header="Account Management"
