@@ -2,7 +2,7 @@ import image1 from '../Assets/image-1.jpg'
 import {BsSearch} from 'react-icons/bs'
 import '../Style/banner.scss'
 
-function Bannre() {
+function Banner() {
   return (
     <div className='problem-solvers'>
         <img src={image1} alt="" />
@@ -23,4 +23,4 @@ function Bannre() {
   )
 }
 
-export default Bannre
+export default Banner
