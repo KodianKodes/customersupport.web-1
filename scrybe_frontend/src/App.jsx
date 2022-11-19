@@ -1,4 +1,3 @@
-
 import "./App.css";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Signup from "./pages/SignUp";
@@ -10,18 +9,19 @@ import PasswordResetSuccessful from "./pages/PasswordResetSuccessful";
 
 function App() {
   return (
-    <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Signup />} />
-          <Route path="/signin" element={<Signin />} />
-          <Route path="/reset-successful" element={<Successful />} />
-          <Route path="/set-new-password" element={<SetNewPassword />} />
-          <Route path="/forget-password" element={<ForgetPassword />} />
-          <Route path="/pw-reset-successful" element={<PasswordResetSuccessful />} />
-        </Routes>
-      </BrowserRouter>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Signup />} />
+        <Route path="/signin" element={<Signin />} />
+        <Route path="/reset-successful" element={<Successful />} />
+        <Route path="/set-new-password" element={<SetNewPassword />} />
+        <Route path="/forget-password" element={<ForgetPassword />} />
+        <Route
+          path="/pw-reset-successful"
+          element={<PasswordResetSuccessful />}
+        />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
