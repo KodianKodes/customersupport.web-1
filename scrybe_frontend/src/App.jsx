@@ -104,8 +104,7 @@ function App() {
         {/* blog */}
         <Route path="/blog" element={<DummyPage someText="blog" />} />
         <Route path="/homeB" element={<PageB />} />
-        <Route path="faq" element={<FAQs />} />
-        <Route path="faq" element={<TermsOfService />} />
+     
       </Routes>
     </>
   );
