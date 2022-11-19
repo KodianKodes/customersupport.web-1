@@ -97,4 +97,64 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
 
 .second__content .second__each {
   width: 30%;
+}
+
+/* Styling of the third section */
+.third__section {
+  background: #E6F0FF;
+  border-top-right-radius: 10rem;
+  padding: 4em 0 1em;
+  margin-bottom: 3em;
+}
+
+.third__left {
+  display: none;
+}
+
+.third__heading {
+  margin-bottom: 2em;
+}
+
+.third__heading .third__head {
+  font-size: 2rem;
+  color: #3F3F3F;
+  font-weight: 700;
+  font-style: bold;
+  fill: solid;
+  line-height: 2rem;
+}
+
+.third__btm {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.btm__right {
+  width: 60%;
+}
+
+.btm__left {
+  width: 20%;
+}
+
+.btm__left .btm__icon {
+  width: 2.5rem;
+}
+
+.btm__right .btm__head {
+  font-size: 0.8rem;
+  color: #3F3F3F;
+  font-weight: 700;
+  font-style: bold;
+  fill: solid;
+  line-height: 1.25rem;
+}
+
+.btm__subhead .btm__subtext {
+  font-size: 0.8rem;
+  color: #3F3F3F;
+  font-weight: 300;
+  font-style: light;
+  fill: solid;
+  line-height: 1.25rem;
 }/*# sourceMappingURL=partners.module.css.map */
