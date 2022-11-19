@@ -17,6 +17,9 @@ jobs:
         working-directory: scrybe_frontend
 
     steps:
+
+      - name: change directory
+        run: cd scrybe_frontend
           
       - name: Check out the repo
         uses: actions/checkout@v3
@@ -52,11 +55,13 @@ jobs:
     # if: github.event.pull_request.merged == true
 
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: backend/app    
+   
 
     steps:
+
+      - name: change directory
+        run: cd backend/app
+
       - name: Check out the repo
         uses: actions/checkout@v3
             
