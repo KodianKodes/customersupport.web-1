@@ -148,3 +148,91 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
         margin-bottom: 1.1em;
     }
 }
+
+// Styling of the section five
+
+.section__five {
+    margin-top: 3em;
+
+    .five__top {
+        display: flex;
+        margin-bottom: 1em;
+    }
+
+    .five__top .point__link {
+        font-size: .8rem;
+        color: #313131;
+        font-weight: 600;
+        font-style: bold;
+        fill: solid;
+        line-height: 1.2rem;
+    }
+
+    .five__top .five__pointlinks {
+        margin-left: 1em;
+    }
+
+    .five__bottom {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 4em;
+    }
+
+    .five__bottom .five__articles {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        flex-basis: 45%;
+    }
+
+    .five__bottom .five__articles .each__icon {
+        width: 100%;
+    }
+
+    .five__bottom .five__articles .five__heading {
+        margin-top: .5em;
+        width: 100%;
+    }
+
+    .five__bottom .five__articles .five__head {
+        font-size: .7rem;
+        color: #313131;
+        font-weight: 600;
+        font-style: bold;
+        fill: solid;
+        line-height: 1.2rem;
+    }
+
+    .five__bottom .five__articles .five__subtext {
+        margin-top: .5em;
+        width: 100%;
+    }
+
+    .five__bottom .five__articles .five__texts {
+        font-size: .6rem;
+        color: #313131;
+        font-weight: 300;
+        font-style: light;
+        fill: solid;
+        line-height: 1rem;
+    }
+
+    .five__bottom .five__articles .more__details {
+        display: flex;
+        align-items: center;
+    }
+
+    .five__bottom .five__articles .read__more {
+        font-size: .5rem;
+        color: #313131;
+        font-weight: 300;
+        font-style: light;
+        fill: solid;
+        line-height: 1rem;
+    }
+
+    .five__bottom .five__articles .arrowleft {
+        width: .7rem;
+        margin-left: .2em;
+    }
+}

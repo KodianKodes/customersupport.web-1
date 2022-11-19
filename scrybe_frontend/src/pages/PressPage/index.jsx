@@ -106,11 +106,15 @@ const index = () => {
       <section className={styles.section__five}>
         <div className={styles.sect__container}>
           <div className={styles.five__top}>
-            <div>
-              <a href="/">Latest news</a>
+            <div className={styles.five__links}>
+              <a href="/" className={styles.point__link}>
+                Latest news
+              </a>
             </div>
-            <div>
-              <a href="/">Brand guideline</a>
+            <div className={styles.five__pointlinks}>
+              <a href="/" className={styles.point__link}>
+                Brand guideline
+              </a>
             </div>
           </div>
           <div className={styles.five__bottom}>
@@ -132,12 +136,16 @@ const index = () => {
                   Several hundreds of thousands of raw data are...
                 </p>
               </div>
-              <div>
+              <div className={styles.more__details}>
                 <a className={styles.read__more} href="/">
                   Read more
                 </a>
                 <span>
-                  <img src={arrowLeft} alt="Arrow action to another" />
+                  <img
+                    src={arrowLeft}
+                    alt="Arrow action to another"
+                    className={styles.arrowleft}
+                  />
                 </span>
               </div>
             </div>
@@ -164,7 +172,11 @@ const index = () => {
                   Read more
                 </a>
                 <span>
-                  <img src={arrowLeft} alt="Arrow action to another" />
+                  <img
+                    src={arrowLeft}
+                    alt="Arrow action to another"
+                    className={styles.arrowleft}
+                  />
                 </span>
               </div>
             </div>
