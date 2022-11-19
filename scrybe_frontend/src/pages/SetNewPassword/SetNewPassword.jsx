@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import '../../../src/App.css'
 
 import SignInOutResetHeader from "../../components/SignInOutResetHeader";
 
@@ -29,8 +30,6 @@ function SetNewPassword() {
   const isValid = password && password2;
   return (
     <>
-      <SignInOutResetHeader />
-
       <main className="signup-wrapper">
         <div className="signup">
           <div className="first signin other-than-signup">

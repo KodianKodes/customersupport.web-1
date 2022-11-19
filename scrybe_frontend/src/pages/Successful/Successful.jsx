@@ -5,8 +5,6 @@ import SignInOutResetHeader from "../../components/SignInOutResetHeader";
 function Successful() {
   return (
     <>
-      <SignInOutResetHeader />
-
       <main className="signup-wrapper">
         <div className="signup">
           <div className="first signin other-than-signup">

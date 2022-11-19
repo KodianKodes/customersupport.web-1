@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import '../../../src/App.css'
 
 import { NavLink } from "react-router-dom";
 import SignInOutResetHeader from "../../components/SignInOutResetHeader";
@@ -31,7 +32,6 @@ function Signin() {
 
   return (
     <>
-      <SignInOutResetHeader />
       <main className="signup-wrapper">
         <div className="signup">
           <div className="first signin other-than-signup">
@@ -93,7 +93,7 @@ function Signin() {
                 className={`${isValid && "submit-valid"}`}
               />
               <p>
-                Don’t have an account? <NavLink to="/">Sign up</NavLink>
+                Don’t have an account? <NavLink to="/create-account">Sign up</NavLink>
               </p>
             </form>
           </div>

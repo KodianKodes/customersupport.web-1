@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import '../../../src/App.css'
 
 import { NavLink } from "react-router-dom";
 import SignInOutResetHeader from "../../components/SignInOutResetHeader";
@@ -35,8 +36,6 @@ function Signup() {
 
   return (
     <>
-      <SignInOutResetHeader />
-
       <main className="signup-wrapper">
         <div className="signup">
           <div className="first">

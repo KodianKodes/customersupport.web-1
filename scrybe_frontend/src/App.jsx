@@ -113,7 +113,7 @@ function App() {
         <Route path="faq" element={<FAQs />} />
         <Route path="faq" element={<TermsOfService />} />
         {/* Sign In, Sign Out and Reset Password */}
-        <Route path="/" element={<Signup />} />
+        <Route path="/create-account" element={<Signup />} />
         <Route path="/signin" element={<Signin />} />
         <Route path="/reset-successful" element={<Successful />} />
         <Route path="/set-new-password" element={<SetNewPassword />} />
