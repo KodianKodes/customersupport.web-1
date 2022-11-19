@@ -1,0 +1,125 @@
+.main-container {
+
+    h1 {
+        font-weight: 600;
+    }
+
+    .problem-solvers {
+        position: relative;
+
+        
+        
+        img {
+            width: 100%;
+            opacity: 1;
+        }
+
+        .problem-solvers-container {
+            width: 100%;
+            position: absolute;
+            bottom: 15%;
+            padding: 0 10%;
+
+            h1 {
+                color: white;
+                font-size: 17px;
+                margin-bottom: 10px;
+            }
+            
+
+            .input-containers {
+                display: flex;
+                justify-content: flex-start;
+
+                .input{
+                    width: 30%;
+                    margin: 0 5px;
+                    height: fit-content;
+                    background: white;
+                    padding: 7px 3px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    .icon {
+                        font-size: 14px;
+                        margin-right: 2px;
+                    }
+
+                    input {
+                        width:90%;
+                        border: none;
+                        font-size: 10px;
+                        
+                    }
+
+                    input:focus {
+                        outline: none;
+                    }
+                }
+            }
+
+            
+        }
+    }
+
+    .our-promise {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .careers {
+        display: flex;
+
+        .img-container {
+            width:50%;
+
+            img {
+                width: 80%
+            }
+        }
+    }
+
+    .promises {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .promise {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .currently-hiring {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .currently-hiring-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    
+
+    @media (min-width: 700px){
+        .problem-solvers {
+            .problem-solvers-container {
+                h1 {
+                    font-size: 64px;
+                    margin-bottom: 50px;
+                }
+
+                .input-containers {
+                    .input {
+                        width: 20%;
+                        padding: 12px 3px;
+                    }
+                }
+            }
+        }
+    }
+      
+}
