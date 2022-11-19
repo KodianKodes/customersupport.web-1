@@ -19,6 +19,7 @@ function Charts() {
       },
     ],
     options: {
+      colors: ["#76C86F", "#FFCE54", "#FF7589"],
       chart: {
         type: "bar",
         height: 350,
