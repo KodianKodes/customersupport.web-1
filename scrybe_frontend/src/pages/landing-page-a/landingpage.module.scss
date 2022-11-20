@@ -7,6 +7,8 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        width: min(100%, pix-rem(1264));
+        margin-inline: auto;
         @include media(1100px) {
                 align-items: center;
                 flex-flow: column-reverse;
@@ -51,6 +53,10 @@
 .gettingStarted {
         background-color: #e6f6ff;
         padding-block: pix-rem(70);
+        & > div {
+                width: min(100%, pix-rem(1264));
+                margin-inline: auto;
+        }
 
         &__title {
                 text-align: center;

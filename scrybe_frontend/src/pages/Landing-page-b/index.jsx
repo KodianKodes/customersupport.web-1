@@ -6,6 +6,7 @@ import styles from "./pageB.module.scss";
 import imag3d from "./assets/Other 14.webp";
 import upload from "./assets/Group 1000000932.png";
 import NavBar from "../../components/navBar";
+import Footer from "../../components/footer";
 
 function PageB() {
   return (
@@ -67,6 +68,7 @@ function PageB() {
         </h2>
         <CustomerSay />
       </section>
+      <Footer />
     </>
   );
 }

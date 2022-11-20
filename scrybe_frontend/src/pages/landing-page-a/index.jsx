@@ -7,6 +7,7 @@ import FaqElement from "../../components/faqElement";
 import Hero from "../../components/heroSection";
 import CustomerSay from "../../components/customersSay";
 import NavBar from "../../components/navBar";
+import Footer from "../../components/footer";
 
 function LandingPage() {
   return (
@@ -18,7 +19,7 @@ function LandingPage() {
       </section>
 
       <section aria-label="About Us">
-        <div className={`container ${styles.aboutUs}`}>
+        <div className={` ${styles.aboutUs}`}>
           <div className={styles.aboutUs__img}>
             <img src={aboutUsimage} alt="" srcSet="" />
           </div>
@@ -41,7 +42,7 @@ function LandingPage() {
         </div>
       </section>
       <section className={styles.gettingStarted}>
-        <div className="container">
+        <div>
           <h2 className={styles.gettingStarted__title}>Getting Started</h2>
           <div className={styles.gettingStarted__cards}>
             <div className={styles.gettingStarted__card}>
@@ -2110,6 +2111,7 @@ function LandingPage() {
           </form>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }
