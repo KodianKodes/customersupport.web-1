@@ -53,7 +53,6 @@ function App() {
         path="/services"
         element={<Services someText="solutions and services" />}
       />
-
       <Route
         path="/solutions"
         element={<Solutions someText="solutions and services" />}
