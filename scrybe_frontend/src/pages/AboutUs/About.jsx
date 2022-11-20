@@ -49,7 +49,6 @@ function About() {
               interact with their customers.
             </p>
             <p>
-            
               We believe that we can come together, to make the business world
               better for all and this is what we are forever committed to. Our
               slogan is <span>Speak, we listen</span>
