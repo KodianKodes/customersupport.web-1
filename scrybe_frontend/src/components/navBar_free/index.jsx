@@ -28,7 +28,6 @@ function NavBarFree() {
             <button type="button" className={styles.nav__signin}>
               <NavLink to="/signin">Login</NavLink>
             </button>
-
             <button type="button">
               <NavLink to="/terms">Try for Free</NavLink>
             </button>
