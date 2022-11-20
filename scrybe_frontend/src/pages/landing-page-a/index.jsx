@@ -6,13 +6,13 @@ import aboutUsimage from "./assets/Group 1000000931.webp";
 import FaqElement from "../../components/faqElement";
 import Hero from "../../components/heroSection";
 import CustomerSay from "../../components/customersSay";
-import NavBar from "../../components/navBar";
 import Footer from "../../components/footer";
+import NavBarFree from "../../components/navBar_free";
 
 function LandingPage() {
   return (
     <div>
-      <NavBar />
+      <NavBarFree />
       <Hero />
       <section aria-label="Our Clients">
         <OurClient />
