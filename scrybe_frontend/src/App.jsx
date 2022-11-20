@@ -12,6 +12,7 @@ import Services from "./pages/services-page/Services";
 import Solutions from "./pages/solutions-page/Solutions";
 import DashboardOverview from "./pages/DashboardOverview";
 import About from "./pages/AboutUs/About";
+import TryForFree from "./pages/TryForFree";
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
       {/* transcriptions */}
       <Route path="/transcriptions" element={<TranscribePage />} />
       {/* try for free */}
-      <Route path="/try" element={<DummyPage someText="try for free" />} />
+      <Route path="/try" element={<TryForFree someText="try for free" />} />
       {/* press */}
       <Route path="/press" element={<DummyPage someText="press" />} />
       {/* settings */}
