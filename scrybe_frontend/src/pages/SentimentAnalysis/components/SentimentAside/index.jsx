@@ -134,9 +134,9 @@ function SentimentAside({ isMobileAsideOpen, closeFunction }) {
   );
 }
 
-SentimentAside.porpTypes = {
-  isMobileAsideOpen: PropTypes.boolean,
-  closeFunction: PropTypes.func,
+SentimentAside.propTypes = {
+  isMobileAsideOpen: PropTypes.bool.isRequired,
+  closeFunction: PropTypes.func.isRequired,
 };
 
 export default SentimentAside;
