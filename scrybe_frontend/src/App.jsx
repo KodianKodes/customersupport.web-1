@@ -22,6 +22,7 @@ import TryForFree from "./pages/TryForFree";
 import Industry from "./pages/indsutry/industry";
 import HowitWorks from "./pages/HowItWorks/HowItWorks";
 import UploadedRecordings from "./components/UploadRecordings";
+import Account from "./pages/Account";
 
 function App() {
   return (
@@ -80,7 +81,7 @@ function App() {
       {/* dashboard */}
       <Route path="/dashboard" element={<DashboardOverview />} />
       {/* accounts */}
-      <Route path="/accounts" element={<DummyPage someText="accounts" />} />
+      <Route path="/accounts" element={<Account />} />
       {/* industry */}
       <Route path="/industry" element={<Industry />} />
       {/* how it works */}
