@@ -5,7 +5,7 @@ import models
 # from jwt import (
 #     main_login
 # )
-# from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 
 from db import Base, engine, SessionLocal
 from sqlalchemy.orm import Session
@@ -106,6 +106,6 @@ def read_user(user_id: int, db: Session = Depends(get_db)):
 @app.get("/sentiment_analysis")
 async def get_sentiment_analysis_result():
     return{"Message": "This is the result of the analysis. Thank you for using our service",
-        "Transcript": transcript,
-        "Sentiment Result": sentiment_result
+        "Transcript": transcribe_file,
+        "Sentiment Result": sentiment
     }
