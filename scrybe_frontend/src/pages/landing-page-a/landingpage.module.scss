@@ -7,6 +7,10 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        @include media(1100px) {
+                align-items: center;
+                flex-flow: column;
+        }
         &__img {
                 width: min(100%, pix-rem(600.85));
         }
@@ -27,6 +31,9 @@
                 font-size: pix-rem(24);
                 color: #313131;
                 font-weight: 400;
+                @include media(1100px) {
+                        text-align: center;
+                }
         }
         &__cta {
                 width: min(100%, pix-rem(146));

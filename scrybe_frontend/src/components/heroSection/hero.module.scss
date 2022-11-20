@@ -14,7 +14,12 @@
         -webkit-mask-position: 0 100%;
         mask-size: cover;
         -webkit-mask-size: cover;
-
+        @include media(1220px){
+                min-height: 134vh;
+        }
+        @include media(320px){
+                min-height: 150vh;
+        }
         .container {
                 width: min(100%, pix-rem(1204));
                 margin-inline: auto;
