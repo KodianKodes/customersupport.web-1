@@ -7,6 +7,7 @@
     color: #fff;
     border: 0;
     border-radius: 3px;
+    display: block !important;
     font-weight: 600;
     cursor: pointer;
     display: inline-block;
@@ -31,6 +32,7 @@
 
 @mixin btnTrans {
     font-family: 'Kanit', sans-serif;
+    display: block !important;
     padding: 15px 20px;
     background: transparent;
     color: #006CFF;
@@ -40,7 +42,7 @@
     cursor: pointer;
     width: 180px;
     font-size: 18px;
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
@@ -60,7 +62,7 @@
     }
 }
 
-@mixin container {
+@mixin containers {
     width: 90%;
     margin: auto;
     padding: 0;
@@ -80,8 +82,8 @@
     background-repeat: no-repeat;
     font-family: 'Kanit', sans-serif;
 
-    .container {
-        @include container;
+    .containers {
+        @include containers;
         padding: 4rem 0 7rem 0;
     }
 
@@ -128,8 +130,8 @@
 
 .offer-section {
     padding: 10rem 0;
-    .container {
-        @include container;
+    .containers {
+        @include containers;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -165,8 +167,8 @@
     background: #E6F0FF;
     padding: 7rem 0;
 
-    .container {
-        @include container;
+    .containers {
+        @include containers;
 
         .wecan-flex {
             display: flex;
@@ -204,8 +206,8 @@
 }
 
 .transcription-section, .sentiment-section, .report-section {
-    .container {
-        @include container;
+    .containers {
+        @include containers;
 
         .trans-flex {
             display: flex;
@@ -219,7 +221,7 @@
                     @include heading;
                 }
     
-                .check-container {
+                .check-containers {
                     span {
                         display: flex;
                         align-items: baseline;
@@ -271,8 +273,8 @@
 .article-section {
     padding: 6rem 0 20rem 0;
     
-    .container {
-        @include container;
+    .containers {
+        @include containers;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -365,7 +367,7 @@
     }
 
     .transcription-section, .sentiment-section, .report-section {
-        .container {
+        .containers {
             .trans-flex {
                 flex-direction: column-reverse;
                 gap: 5rem;
@@ -378,7 +380,7 @@
                     h1 {
                         text-align: center;
                     }
-                    .check-container {
+                    .check-containers {
                         span {
                             justify-content: center;
                             gap: 1rem;
@@ -400,7 +402,7 @@
 
 @media (max-width: 500px) {
     .hero-section {
-        .container {
+        .containers {
             .hero-flex {
                 .text-cont {
                     p {
@@ -412,14 +414,14 @@
     }
 
     .transcription-section, .sentiment-section, .report-section {
-        .container {
+        .containers {
             .trans-flex {
                 .trans-txt {
                     h1 {
                         font-size: 5vw;
                         text-align: center;
                     }
-                    .check-container {
+                    .check-containers {
                         span {
                             p {
                                 font-size: 15px;
@@ -442,7 +444,7 @@
     }
 
     .article-section {
-        .container {
+        .containers {
             p {
                 width: 90%;
                 font-size: 17px;

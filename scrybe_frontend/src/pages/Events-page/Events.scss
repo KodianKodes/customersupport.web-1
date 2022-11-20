@@ -88,7 +88,7 @@
 .header-section {
     background: #F9FDFF;
     padding: 4rem 0;
-    .container {
+    .containers {
         @include container;
 
         .event-flex {
@@ -138,7 +138,7 @@
 
     .comingsoon {
         margin-top: 5rem;
-        .container {
+        .containers {
             @include container;
             h1 {
                 @include headText;
@@ -189,7 +189,7 @@
 
 .mission-section {
     margin-top: 5rem;
-    .container {
+    .containers {
         @include container;
         text-align: center;
 
@@ -285,7 +285,7 @@
 .other-event {
     margin: 5rem 0;
 
-    .container {
+    .containers {
         @include container();
         padding: 0;
         h2 {
@@ -339,7 +339,7 @@
 .past-event {
     margin-top: 10rem;
 
-    .container {
+    .containers {
         @include container();
         padding: 0;
         margin-bottom: 5rem;
@@ -399,7 +399,7 @@
 
 @media (max-width: 970px) {
     .comingsoon {
-        .container {
+        .containers {
             .coming-flex {
                 @include flexItem(space-between, row-reverse, 2rem)
             }

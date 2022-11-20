@@ -21,7 +21,7 @@ function Solutions() {
   return (
     <div className="solution-section">
       <div className="content-section">
-        <div className="container">
+        <div className="containers">
           <div className="flex-items">
             <div className="txt-item">
               <h1>
@@ -50,14 +50,14 @@ function Solutions() {
       </div>
 
       <div className="why-scrybe">
-        <div className="container">
+        <div className="containers">
           <h1>Why Scrybe?</h1>
           <p>
             Our product’s-solution cuts across various pain points faced by call
             center/customer support managers. We help you:
           </p>
 
-          <div className="card-container">
+          <div className="card-containers">
             <div className="card">
               <img src={durationIcon} alt="duration" />
               <p>Break your audio files into sections using time frames</p>
@@ -77,7 +77,7 @@ function Solutions() {
       </div>
 
       <div className="buss-section">
-        <div className="container">
+        <div className="containers">
           <div className="buss-flex">
             <div className="buss-txt">
               <h1>
@@ -105,7 +105,7 @@ function Solutions() {
       </div>
 
       <div className="monitor-section">
-        <div className="container">
+        <div className="containers">
           <div className="monitor-flex">
             <div className="buss-img">
               <img src={monitor} alt="upload" className="img" />
@@ -134,8 +134,8 @@ function Solutions() {
         </div>
       </div>
 
-      <div className="container">
-        <div className="upload-container">
+      <div className="containers">
+        <div className="upload-containers">
           <div className="cont">
             <h4>Ready to improve your customer support efficiency?</h4>
             <h1>Upload. Transcribe. Analyze.</h1>
@@ -144,7 +144,7 @@ function Solutions() {
         </div>
       </div>
       <div className="monitor-section">
-        <div className="container">
+        <div className="containers">
           <div className="monitor-flex row-rev">
             <div className="buss-txt">
               <h1>
@@ -176,7 +176,7 @@ function Solutions() {
       </div>
 
       <div className="monitor-section">
-        <div className="container">
+        <div className="containers">
           <div className="monitor-flex">
             <div className="buss-img">
               <img src={sentiment} alt="sentiment" />
@@ -200,8 +200,8 @@ function Solutions() {
         </div>
       </div>
 
-      <div className="container">
-        <div className="setblur-container">
+      <div className="containers">
+        <div className="setblur-containers">
           <div className="cont">
             <h4>
               If you have any questions about our solutions? Please contact us
@@ -214,7 +214,7 @@ function Solutions() {
       </div>
 
       <div className="logo-section">
-        <div className="container">
+        <div className="containers">
           <h1>We are loved by Companies of all sizes</h1>
           <p>
             Companies of all sizes from Startup and Fortune 500 companies use

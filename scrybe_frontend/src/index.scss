@@ -6,10 +6,10 @@ section {
   padding-inline: pix-rem(16);
 }
 
-.container {
-  width: min(100%, pix-rem(1264));
-  margin-inline: auto;
-}
+// .container {
+//   width: min(100%, pix-rem(1264));
+//   margin-inline: auto;
+// }
 
 // this container is affecting my code. I used this class name "container" to add space around my component, while the one here is adding extra padding to it 
 
@@ -58,6 +58,6 @@ section {
   --primary-blue-700: #004db5;
 }
 
-* {
-  font-size: 16px !important;
-}
+// * {
+//   font-size: 16px !important;
+// }
