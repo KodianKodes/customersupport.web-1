@@ -11,6 +11,7 @@ import History from "./pages/History/History";
 import Services from "./pages/services-page/Services";
 import Solutions from "./pages/solutions-page/Solutions";
 import DashboardOverview from "./pages/DashboardOverview";
+import Events from "./pages/Events-page/Events";
 import HelpSupport from "./pages/HelpAndSupport/HelpSupport";
 import General from "./components/HelpAndSupport/HelpAndSupportGeneral/General";
 import General1 from "./components/HelpAndSupport/general1/General1";
@@ -59,6 +60,7 @@ function App() {
       {/* career page & legal */}
       <Route path="/careers" element={<Careers />} />
       <Route path="/privacy" element={<PrivacyPolicy />} />
+
       {/* solutions & services */}
       <Route
         path="/services"
@@ -71,7 +73,7 @@ function App() {
       {/* about us */}
       <Route path="/about-us" element={<About someText="about us" />} />
       {/* events */}
-      <Route path="/events" element={<DummyPage someText="events" />} />
+      <Route path="/events" element={<Events someText="events" />} />
       {/* agent report */}
       <Route
         path="/report"
@@ -82,7 +84,9 @@ function App() {
       {/* dashboard */}
       <Route path="/dashboard" element={<DashboardOverview />} />
       {/* accounts */}
+
       <Route path="/accounts" element={<Account />} />
+
       {/* industry */}
       <Route path="/industry" element={<Industry />} />
       {/* how it works */}
