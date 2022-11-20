@@ -1,9 +1,11 @@
 import Hero from "../Assets/image-2.jpg";
 import Banner from "./Banner";
-
+import NavBar from "../../../components/navBar";
+import Footer from "../../../components/footer";
 function Main() {
   return (
     <div className="main-container">
+      <NavBar />
       <Banner />
       <div className="careers">
         <div className="text-container">
@@ -97,6 +99,7 @@ function Main() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

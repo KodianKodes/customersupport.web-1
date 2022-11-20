@@ -1,10 +1,12 @@
 import React from "react";
 import Banner from "./Banner.jsx";
 import "../Style/jobVacancy.scss";
-
+import NavBar from "../../../components/navBar/index.jsx";
+import Footer from "../../../components/footer/index.jsx";
 function JobVacancy() {
   return (
     <div>
+      <NavBar />
       <Banner />
       <div className="vacancy-container">
         <div className="summary">
@@ -72,6 +74,7 @@ function JobVacancy() {
           </ul>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

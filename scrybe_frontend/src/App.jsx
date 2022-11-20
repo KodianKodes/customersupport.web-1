@@ -24,7 +24,7 @@ import HowitWorks from "./pages/HowItWorks/HowItWorks";
 import UploadedRecordings from "./components/UploadRecordings";
 import Account from "./pages/Account";
 import Signin from "./pages/SignIn/SignIn";
-import Careers from "./pages/Careers";
+import {Careers, JobVacancy, NotHiring} from "./pages/Careers";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 function App() {

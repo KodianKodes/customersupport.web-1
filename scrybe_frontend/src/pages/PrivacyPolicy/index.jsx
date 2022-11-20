@@ -17,11 +17,15 @@ import TransferOfData from "./Components/TransferOfData.jsx";
 import UseOfData from "./Components/UseOfData.jsx";
 import YourRights from "./Components/YourRights.jsx";
 import Payments from "./Components/Payments.jsx";
+import NavBar from "../../components/navBar/index.jsx";
+import Footer from "../../components/footer/index.jsx";
 
 import "./Style/privacyPolicy.scss";
 
 function PrivacyPolicy() {
   return (
+    <div>
+      <NavBar />
     <div className="container">
       <div className="heading">
         <h1>PRIVACY POLICY</h1>
@@ -48,6 +52,8 @@ function PrivacyPolicy() {
         <Changes />
         <ContactUs />
       </div>
+      </div>
+      <Footer />
     </div>
   );
 }

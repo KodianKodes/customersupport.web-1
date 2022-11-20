@@ -1,10 +1,13 @@
 import React from "react";
 import Banner from "./Banner";
 import "../Style/notHiring.scss";
+import NavBar from "../../../components/navBar";
+import Footer from "../../../components/footer";
 
 function NotHiring() {
   return (
     <div>
+      <NavBar />
       <Banner />
       <div className="not-hiring-container">
         <div className="not-hiring">
@@ -21,6 +24,7 @@ function NotHiring() {
           </form>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
