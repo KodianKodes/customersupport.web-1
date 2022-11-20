@@ -10,10 +10,11 @@
   cursor: auto;
 
   @include mediaQuery(768px) {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     max-width: pix-rem(500);
+    overflow-y: scroll;
     height: 100%;
   }
 
