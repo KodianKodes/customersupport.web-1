@@ -15,6 +15,7 @@ function NavBar() {
         <div className={styles.nav__img}>
           <img src={logo} alt="Company Logo" />
         </div>
+
         <div className={clicked ? styles.nav__active : styles.nav__mobile}>
           <div className={styles.nav__links}>
             <NavLink to="/"> Home </NavLink>
