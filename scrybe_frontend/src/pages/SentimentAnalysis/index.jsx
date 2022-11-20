@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React from "react";
 import styles from "./SentimentAnalysis.module.scss";
 import arrowIcon from "./icons/arrow_back.svg";
