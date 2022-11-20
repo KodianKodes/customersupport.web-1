@@ -9,7 +9,7 @@
         flex-wrap: wrap;
         @include media(1100px) {
                 align-items: center;
-                flex-flow: column;
+                flex-flow: column-reverse;
         }
         &__img {
                 width: min(100%, pix-rem(600.85));
