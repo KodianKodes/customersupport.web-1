@@ -21,6 +21,7 @@ import About from "./pages/AboutUs/About";
 import TryForFree from "./pages/TryForFree";
 import Industry from "./pages/indsutry/industry";
 import HowitWorks from "./pages/HowItWorks/HowItWorks";
+import UploadedRecordings from "./components/UploadRecordings";
 
 function App() {
   return (
@@ -131,6 +132,8 @@ function App() {
         <Route index element={<PromotedArticle1 />} />
         <Route path="*" element={<PromotedArticle1 />} />
       </Route>
+      {/* uploaded recordings */}
+      <Route path="/uploaded-recordings" element={<UploadedRecordings />} />
     </Routes>
 
   );
