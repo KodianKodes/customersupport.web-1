@@ -11,6 +11,7 @@ import arrowLeft from "../myAssets/arrow__left.png";
 import whiteArrowleft from "../myAssets/whiteArrowleft.png";
 import logoText from "../myAssets/logoText.png";
 import bannerImage from "../myAssets/bannerImage.png";
+import cardlogo from "../myAssets/cardlogo.png";
 
 const index = () => {
   return (
@@ -155,33 +156,139 @@ const index = () => {
             <h2 className={styles.four__head}>Featured</h2>
           </div>
           <div className={styles.four__cards}>
-            <div className={styles.card__container}>
-              <img
-                src={pressCardone}
-                alt="Icon of press card"
-                className={styles.each__card}
-              />
+            <div
+              className={styles.card__container}
+              style={{
+                backgroundImage: `url(${pressCardone})`,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                height: 180,
+                width: 180,
+              }}
+            >
+              <div className={styles.card__content}>
+                <div className={styles.card__heading}>
+                  <h3 className={styles.card__head}>
+                    Pricing <br /> Update
+                  </h3>
+                </div>
+                <div className={styles.card__subhead}>
+                  <p className={styles.card__subtext}>
+                    Scrybre was birthed from the need to provide a more...
+                  </p>
+                </div>
+                <div className={styles.banner__details}>
+                  <a className={styles.banner__read} href="/">
+                    Learn more
+                  </a>
+                  <span>
+                    <img
+                      src={whiteArrowleft}
+                      alt="Arrow action to another"
+                      className={styles.arrowpoint}
+                    />
+                  </span>
+                </div>
+              </div>
             </div>
-            <div className={styles.card__container}>
-              <img
-                src={pressCardtwo}
-                alt="Icon of press card"
-                className={styles.each__card}
-              />
+            <div
+              className={styles.card__container}
+              style={{
+                backgroundImage: `url(${pressCardtwo})`,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                height: 180,
+                width: 180,
+              }}
+            >
+              <div className={styles.card__content}>
+                <div className={styles.card__heading}>
+                  <h3 className={styles.card__head}>The Partnership</h3>
+                </div>
+                <div className={styles.card__logo}>
+                  <img src={cardlogo} alt="Logo of scrybe and hotel ng" />
+                </div>
+                <div className={styles.banner__details}>
+                  <a className={styles.banner__read} href="/">
+                    Learn more
+                  </a>
+                  <span>
+                    <img
+                      src={whiteArrowleft}
+                      alt="Arrow action to another"
+                      className={styles.arrowpoint}
+                    />
+                  </span>
+                </div>
+              </div>
             </div>
-            <div className={styles.card__container}>
-              <img
-                src={pressCardthree}
-                alt="Icon of press card"
-                className={styles.each__card}
-              />
+            <div
+              className={styles.card__container}
+              style={{
+                backgroundImage: `url(${pressCardthree})`,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                height: 180,
+                width: 180,
+              }}
+            >
+              <div className={styles.card__content}>
+                <div className={styles.card__heading}>
+                  <h3 className={styles.card__head}>Our Success Story</h3>
+                </div>
+                <div className={styles.card__subhead}>
+                  <p className={styles.card__subtext}>
+                    Scrybre was birthed from the need to provide a more...
+                  </p>
+                </div>
+                <div className={styles.banner__details}>
+                  <a className={styles.banner__read} href="/">
+                    Learn more
+                  </a>
+                  <span>
+                    <img
+                      src={whiteArrowleft}
+                      alt="Arrow action to another"
+                      className={styles.arrowpoint}
+                    />
+                  </span>
+                </div>
+              </div>
             </div>
-            <div className={styles.card__container}>
-              <img
-                src={pressCardone}
-                alt="Icon of press card"
-                className={styles.each__card}
-              />
+            <div
+              className={styles.card__container}
+              style={{
+                backgroundImage: `url(${pressCardone})`,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                height: 180,
+                width: 180,
+              }}
+            >
+              <div className={styles.card__content}>
+                <div className={styles.card__heading}>
+                  <h3 className={styles.card__head}>
+                    Pricing <br /> Update
+                  </h3>
+                </div>
+                <div className={styles.card__subhead}>
+                  <p className={styles.card__subtext}>
+                    Scrybre was birthed from the need to provide a more...
+                  </p>
+                </div>
+                <div className={styles.banner__details}>
+                  <a className={styles.banner__read} href="/">
+                    Learn more
+                  </a>
+                  <span>
+                    <img
+                      src={whiteArrowleft}
+                      alt="Arrow action to another"
+                      className={styles.arrowpoint}
+                    />
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>

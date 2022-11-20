@@ -195,13 +195,66 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
     }
 
     .four__cards {
-        width: 70%;
+        width: 60%;
         margin: 0 auto;
+        // text-align: center;
+        position: relative;
     }
 
     .four__cards .card__container {
         margin-bottom: 1.1em;
+        position: relative;
+        // flex: 0 1 48%;
     }
+
+    .card__content {
+        position: absolute;
+        padding: 2em 1em 1em;
+    }
+
+    .card__heading .card__head {
+        font-size: 1.3rem;
+        color: #FFFFFF;
+        font-weight: 700;
+        font-style: bold;
+        fill: solid;
+        line-height: 1.8rem;
+    }
+
+    .card__subhead, .card__logo {
+        margin-top: 1em;
+    }
+
+    .card__subhead .card__subtext {
+        font-size: .7rem;
+        color: #FFFFFF;
+        font-weight: 300;
+        font-style: light;
+        fill: solid;
+        line-height: 1.2rem;
+    }
+
+    .banner__details {
+        margin-top: .4em;
+        position: absolute;
+        right: 5%;
+    }
+
+    .banner__details .banner__read {
+        font-size: .6rem;
+        color: #FEFEFE;
+        font-weight: 300;
+        font-style: light;
+        fill: solid;
+        line-height: 1rem;
+    }
+
+    .banner__details .arrowpoint {
+        width: .7rem;
+        margin-left: .2em;
+    }
+
+    
 }
 
 // Styling of the section five
@@ -300,7 +353,7 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
 
 
 
-@media (min-width: 768px) {
+@media (min-width: 825px) {
 
     // Styling of the section one
 
@@ -466,7 +519,7 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
 
         .four__cards .card__container {
             margin-bottom: 0;
-            width: 23%;
+            width: 15%;
         }
     }
 
