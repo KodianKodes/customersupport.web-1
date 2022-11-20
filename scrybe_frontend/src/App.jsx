@@ -21,11 +21,6 @@ import About from "./pages/AboutUs/About";
 import TryForFree from "./pages/TryForFree";
 import Industry from "./pages/indsutry/industry";
 import HowitWorks from "./pages/HowItWorks/HowItWorks";
-//new additions
-import PrivacyPolicy from "./pages/PrivacyPolicy";
-import Careers from "./pages/Careers";
-import JobVacancy from "./pages/Careers/Components/JobVacancy";
-import NotHiring from "./pages/Careers/Components/NotHiring";
 
 function App() {
   return (
