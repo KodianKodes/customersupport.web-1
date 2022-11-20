@@ -100,3 +100,14 @@ def read_user(user_id: int, db: Session = Depends(get_db)):
     if db_user is None:
         raise HTTPException(status_code=404, detail="User not found")
     return db_user
+
+
+@app.post("/forgot-password/", summary="make a request to resetpassword")
+async def forgot_password(email: str):
+    if(crud.get_user_by_email(db, email=email)):
+         await emails.send_email_reset([instance.email], instance)
+
+
+@app.post("/reset-password/", summary="user resets his password")
+async def reset_password(password: str, confirm_password: str)
+    
