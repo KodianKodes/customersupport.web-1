@@ -44,7 +44,7 @@ async def send_email(email: List, instance: User):
                     <p>Thank you for registering with us. Kindly click on the link below to
                     verify your email and have full acccess to the platform.</p>
 
-                    <a href="http://localhost:8000/verification/?token={token}">Verify your email address </a>
+                    <a href="http://localhost:8000/verification?token={token}">Verify your email address </a>
                 </div>
             </body>
 
