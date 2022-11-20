@@ -123,7 +123,7 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
     }
 
     .three__top {
-        margin: 1em auto;
+        margin: 1em 0;
         width: 80%;
     }
 
@@ -141,20 +141,26 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
         margin: 0 auto;
     }
 
+    .three__sep {
+        width: 50%;
+        margin-left: .8em;
+    }
+
     .three__bottom .three__flex {
         display: flex;
         justify-content: space-between;
         margin-bottom: 1em;
+        width: 70%;
     }
 
     .three__each {
         width: 45%;
+        border-bottom: 1px solid #ECECEC;
         text-align: center;
     }
 
     .three__each .three__sep {
-        border-bottom: 1px solid #cccc;
-        border-bottom-width: 1px thick;
+        border-bottom: 1px solid #ECECEC;
     }
 
     .three__each .three__head, .three__sep .three__head {
@@ -167,6 +173,7 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
     }
 
     .three__each .three__text, .three__sep .three__text {
+        padding-bottom: 1em;
         font-size: .6rem;
         color: #313131;
         font-weight: 300;
@@ -478,11 +485,6 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
 
         .three__flexed {
             display: flex;
-            margin-left: 3em;
-        }
-
-        .three__sep +.three__sep {
-            margin-left: 7em;
         }
 
         .three__sep {
