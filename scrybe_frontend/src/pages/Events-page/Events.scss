@@ -86,6 +86,7 @@
 }
 
 .header-section {
+    background: #F9FDFF;
     padding: 4rem 0;
     .container {
         @include container;
@@ -272,6 +273,91 @@
 
                 &:hover {
                     @include btnStates();
+                }
+            }
+        }
+    }
+}
+
+.other-event {
+    margin: 5rem 0;
+
+    .container {
+        padding: 0;
+        h2 {
+            @include headText();
+            font-size: 40px;
+            margin-bottom: 3rem;
+        }
+
+        .content-container {
+            .event-content {
+                @include flexItem(space-between, row, 4rem);
+                align-items: flex-start;
+                margin-bottom: 5rem;
+                .img-content {
+                    width: 45%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .txt-content {
+                    h4 {
+                        @include headText;
+                        font-size: 30px;
+                    }
+
+                    p {
+                        color: #3F3F3F;
+                        font-size: 17px;
+                        line-height: 1.6;
+                        font-weight: 200;
+                        width: 50%;
+                        margin-bottom: 1rem;
+                    }
+
+                    button {
+                        @include btn;
+                        // margin-top: 1rem;
+
+                        &:hover {
+                            @include btnStates();
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.past-event {
+    margin-top: 10rem;
+
+    .container {
+        @include container();
+        padding: 0;
+
+        h1 {
+            @include headText();
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 2rem;
+        }
+
+        .past-content {
+            .past-container {
+                h2 {
+                    @include headText();
+                    font-size: 25px;
+                }
+
+                .past-card {
+                    width: 30%;
+                    border: 5px solid #00A4FF;
+                    border-radius: 10px;
+                    padding: 40px;
                 }
             }
         }

@@ -11,6 +11,10 @@ import linkedin from "./assets/linkedin.svg";
 import twitter from "./assets/twitter.svg";
 import expect from "./assets/expect-icon.svg";
 
+import communication from './assets/communication.png'
+import winingWay from './assets/winning-way.png'
+import business from './assets/business.png'
+
 const Events = () => {
   return (
     <div className="event-section">
@@ -120,6 +124,70 @@ const Events = () => {
             </div>
 
             <button>Learn More</button>
+          </div>
+        </div>
+      </div>
+
+      <div className="other-event">
+        <div className="container">
+        <h2>Other Events In The Month Of November</h2>
+
+        <div className="content-container">
+          <div className="event-content">
+            <div className="img-content">
+              <img src={winingWay} alt="winning" />
+            </div>
+
+            <div className="txt-content">
+              <h4>Winning Ways</h4>
+              <p>Bridging the gulf between businesses and stakeholders in a dynamic business atmosphere.</p>
+              <p>November 18th, 2022 | Virtual</p>
+              <button>Register</button>
+            </div>
+          </div>
+          <div className="event-content">
+            <div className="img-content">
+              <img src={communication} alt="communication" />
+            </div>
+
+            <div className="txt-content">
+              <h4>Communicating Effectively With Clients</h4>
+              <p>Customer support act as the bridge between your business and clients.Find out how productivity can be maximized through effective communication on your end.</p>
+              <p>November 22nd, 2022 | Virtual</p>
+              <button>Register</button>
+            </div>
+          </div>
+          <div className="event-content">
+            <div className="img-content">
+              <img src={business} alt="communication" />
+            </div>
+
+            <div className="txt-content">
+              <h4>A Good Day To Do Business</h4>
+              <p>Every party to a business transaction has a crucial part to play toward the success of that venture. Find out what and how.</p>
+              <p>November 29th, 2022 | Virtual</p>
+              <button>Register</button>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div className="past-event">
+        <div className="container">
+          <h1>Past Events</h1>
+
+          <div className="past-content">
+          
+            <div className="past-container">
+            <h2>07/02</h2>
+            <div className="past-card">
+              <p>Highlights</p>
+              <h3>A Word From Our Founder</h3>
+              <p>Every party to a business transaction has a crucial part to play toward the success of that venture. Find out what and how.</p>
+              <button>Explore</button>
+            </div>
+            </div>
           </div>
         </div>
       </div>
