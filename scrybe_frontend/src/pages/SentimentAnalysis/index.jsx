@@ -45,8 +45,11 @@ function SentimentAnalysis() {
   ];
 
   const openSentimentTab = () => {
-    console.log("hey");
     setIsMobileAsideOpen(true);
+  };
+
+  const closeSentimentTab = () => {
+    setIsMobileAsideOpen(false);
   };
 
   return (
@@ -61,7 +64,10 @@ function SentimentAnalysis() {
             <img src={blueArrowIcon} alt="arrow icon" />
           </div>
         </div>
-        {isMobileAsideOpen && <SentimentAside />}
+        <SentimentAside
+          isMobileAsideOpen={isMobileAsideOpen}
+          closeFunction={closeSentimentTab}
+        />
       </div>
       <main className={styles.main__container}>
         <span className={styles.main__container__top}>

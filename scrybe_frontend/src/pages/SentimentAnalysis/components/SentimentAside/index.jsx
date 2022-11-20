@@ -1,4 +1,5 @@
-import React from "react";
+import PropTypes from "prop-types";
+
 import styles from "./SentimentAside.module.scss";
 import pieChart from "../../icons/pie_chart.svg";
 import downloadIcon from "../../icons/download.svg";
@@ -6,7 +7,7 @@ import dropdownIcon from "../../icons/dropdown.svg";
 import shareIcon from "../../icons/share.svg";
 import arrowIcon from "../../icons/arrow_back.svg";
 
-function SentimentAside() {
+function SentimentAside({ isMobileAsideOpen, closeFunction }) {
   const positiveTags = [
     "brave",
     "good",
@@ -39,9 +40,13 @@ function SentimentAside() {
     "criticism",
   ];
   return (
-    <aside className={styles.aside__container}>
+    <aside
+      className={`${styles.aside__container} ${
+        isMobileAsideOpen ? styles.open__aside : ""
+      }`}
+    >
       <div className={`${styles.back}`}>
-        <div className={styles.back__content}>
+        <div className={styles.back__content} onClick={closeFunction}>
           <img src={arrowIcon} alt="back arrow" />
           <div className={styles.back__text}>Overall Sentiment</div>
         </div>
@@ -128,5 +133,10 @@ function SentimentAside() {
     </aside>
   );
 }
+
+SentimentAside.porpTypes = {
+  isMobileAsideOpen: PropTypes.boolean,
+  closeFunction: PropTypes.func,
+};
 
 export default SentimentAside;
