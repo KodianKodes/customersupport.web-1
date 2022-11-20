@@ -12,15 +12,18 @@ function NavBar() {
         </div>
         <div className={styles.nav__links}>
           <NavLink to="/"> Home </NavLink>
-          <NavLink to="/">Service</NavLink>
-          <NavLink to="/">Solutions</NavLink>
+          <NavLink to="/services">Service</NavLink>
+          <NavLink to="/solutions">Solutions</NavLink>
           <NavLink to="/"> Pricing </NavLink>
           <NavLink to="/"> Industry</NavLink>
           <NavLink to="/">About Us</NavLink>
         </div>
         <div className={styles.nav__ctas}>
           <button type="button">Login</button>
-          <button type="button">Upgrade Plan</button>
+
+          <button type="button">
+            <NavLink to="/terms">Upgrade Plan</NavLink>
+          </button>
         </div>
       </div>
     </nav>
