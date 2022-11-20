@@ -8,7 +8,7 @@ import LandingPage from "./pages/landing-page-a";
 import PageB from "./pages/Landing-page-b";
 import NavBar from "./components/navBar";
 import TermsAndCondition from "./pages/TermsAndCondition/TermsOfService";
-
+import About from "./pages/AboutUs/About";
 
 
 function App() {
@@ -61,7 +61,7 @@ function App() {
           element={<Solutions someText="solutions and services" />}
         />
         {/* about us */}
-        <Route path="/about-us" element={<DummyPage someText="about us" />} />
+        <Route path="/about-us" element={<About someText="about us" />} />
         {/* events */}
         <Route path="/events" element={<DummyPage someText="events" />} />
         {/* agent report */}
