@@ -4,11 +4,12 @@ import { Routes, Route } from "react-router-dom";
 import SentimentAnalysis from "./pages/SentimentAnalysis";
 import DummyPage from "./pages/DummyPage";
 import TranscribePage from "./pages/TranscribePage/TranscribePage";
-import { FAQs, TermsOfService } from "./pages";
+import TermsOfService from "./pages/Terms-of-service/TermsOfService";
+import FAQs from "./pages/FAQs-page/FAQs";
 import LandingPage from "./pages/landing-page-a";
 import PageB from "./pages/Landing-page-b";
 import NavBar from "./components/navBar";
-import TermsAndCondition from "./pages/TermsAndCondition/TermsOfService";
+import TermsAndCondition from "./pages/Terms-and-condition/TermsAndCondition";
 
 import Services from "./pages/services-page/Services";
 import Solutions from "./pages/solutions-page/Solutions";
@@ -93,10 +94,7 @@ function App() {
           element={<DummyPage someText="leaderboard" />}
         />
         {/* terms and conditions */}
-        <Route
-          path="/terms"
-          element={<TermsAndCondition someText="terms and conditions" />}
-        />
+        <Route path="/terms" element={<TermsAndCondition />} />
         {/* terms of service */}
         <Route path="/terms-of-service" element={<TermsOfService />} />
         {/* FAQs */}
