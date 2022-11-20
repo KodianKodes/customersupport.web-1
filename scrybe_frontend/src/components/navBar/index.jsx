@@ -15,7 +15,7 @@ function NavBar() {
           <NavLink to="/services">Service</NavLink>
           <NavLink to="/solutions">Solutions</NavLink>
           <NavLink to="/"> Pricing </NavLink>
-          <NavLink to="/"> Industry</NavLink>
+          <NavLink to="/industry"> Industry</NavLink>
           <NavLink to="/">About Us</NavLink>
         </div>
         <div className={styles.nav__ctas}>

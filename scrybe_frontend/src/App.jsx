@@ -17,6 +17,8 @@ import General1 from "./components/HelpAndSupport/general1/General1";
 import General2 from "./components/HelpAndSupport/general2/General2";
 import PromotedArticles from "./components/HelpAndSupport/promoted-articles/PromotedArticles";
 import PromotedArticle1 from "./components/HelpAndSupport/PromotedArticle1/PromotedArticle1";
+import About from "./pages/AboutUs/About";
+import TryForFree from "./pages/TryForFree";
 
 function App() {
   return (
@@ -28,7 +30,7 @@ function App() {
       {/* transcriptions */}
       <Route path="/transcriptions" element={<TranscribePage />} />
       {/* try for free */}
-      <Route path="/try" element={<DummyPage someText="try for free" />} />
+      <Route path="/try" element={<TryForFree someText="try for free" />} />
       {/* press */}
       <Route path="/press" element={<DummyPage someText="press" />} />
       {/* settings */}
@@ -57,13 +59,12 @@ function App() {
         path="/services"
         element={<Services someText="solutions and services" />}
       />
-
       <Route
         path="/solutions"
         element={<Solutions someText="solutions and services" />}
       />
       {/* about us */}
-      <Route path="/about-us" element={<DummyPage someText="about us" />} />
+      <Route path="/about-us" element={<About someText="about us" />} />
       {/* events */}
       <Route path="/events" element={<DummyPage someText="events" />} />
       {/* agent report */}
