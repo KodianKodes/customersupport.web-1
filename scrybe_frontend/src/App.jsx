@@ -11,6 +11,7 @@ import History from "./pages/History/History";
 import Services from "./pages/services-page/Services";
 import Solutions from "./pages/solutions-page/Solutions";
 import DashboardOverview from "./pages/DashboardOverview";
+import Events from "./pages/Events-page/Events";
 import HelpSupport from "./pages/HelpAndSupport/HelpSupport";
 import General from "./components/HelpAndSupport/HelpAndSupportGeneral/General";
 import General1 from "./components/HelpAndSupport/general1/General1";
@@ -73,7 +74,7 @@ function App() {
       {/* about us */}
       <Route path="/about-us" element={<About someText="about us" />} />
       {/* events */}
-      <Route path="/events" element={<DummyPage someText="events" />} />
+      <Route path="/events" element={<Events someText="events" />} />
       {/* agent report */}
       <Route
         path="/report"
