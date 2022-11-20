@@ -24,7 +24,8 @@ const index = () => {
             <div className={styles.first__left}>
               <div className={styles.first__heading}>
                 <h1 className={styles.first__head}>
-                  Grow with us,<br/> Become a Partner
+                  Grow with us,
+                  <br /> Become a Partner
                 </h1>
               </div>
               <div className={styles.first__subhead}>

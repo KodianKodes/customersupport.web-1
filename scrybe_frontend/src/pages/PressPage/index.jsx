@@ -8,8 +8,9 @@ import pressSmcardTwo from "../myAssets/pressSmcardTwo.png";
 import pressSmcard from "../myAssets/pressSmcard.png";
 import headDot from "../myAssets/headDot.png";
 import arrowLeft from "../myAssets/arrow__left.png";
+import whiteArrowleft from "../myAssets/whiteArrowleft.png";
 import logoText from "../myAssets/logoText.png";
-// import pressHero from "../myAssets/pressHero.png";
+import bannerImage from "../myAssets/bannerImage.png";
 
 const index = () => {
   return (
@@ -31,19 +32,87 @@ const index = () => {
           </div>
         </div>
       </section>
-      <section className={styles.section__two}>
-        <div className={styles.sect__container} />
+      <section
+        className={styles.section__two}
+        style={{
+          backgroundImage: `url(${bannerImage})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          height: 250,
+          width: "100%",
+        }}
+      >
+        <div className={styles.sect__container}>
+          <div className={styles.banner__flex}>
+            <div className={styles.left__ban}>
+              <div className={styles.ban__heading}>
+                <h2 className={styles.ban__head}>Article of the day</h2>
+              </div>
+              <div className={styles.ban__subhead}>
+                <p className={styles.ban__subtext}>
+                  Aspect based sentiment analysis using multi-criteria
+                  decision-making and deep learning under COVID-19 pandemic
+                </p>
+              </div>
+            </div>
+            <div className={styles.right__ban}>
+              <div className={styles.banner__details}>
+                <a className={styles.banner__read} href="/">
+                  Read more
+                </a>
+                <span>
+                  <img
+                    src={whiteArrowleft}
+                    alt="Arrow action to another"
+                    className={styles.arrowpoint}
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <section className={styles.section__three}>
-        {/* <div>
-          <img src={pressHero} alt="" />
-        </div> */}
         <div className={styles.sect__container}>
           <div className={styles.three__center}>
             <div className={styles.three__left}>
               <img src={logoText} alt="Scrybe Text" />
             </div>
             <div className={styles.three__right}>
+              <div className={styles.three__top}>
+                <p className={styles.three__heading}>
+                  An AI powered tool tailored for customers success and
+                  satisfaction
+                </p>
+              </div>
+              <div className={styles.three__bottom}>
+                <div className={styles.three__flex}>
+                  <div className={styles.three__each}>
+                    <p className={styles.three__head}>2022</p>
+                    <p className={styles.three__text}>Founded</p>
+                  </div>
+                  <div className={styles.three__each}>
+                    <p className={styles.three__head}>20+</p>
+                    <p className={styles.three__text}>Active Users</p>
+                  </div>
+                </div>
+                <div className={styles.three__flex}>
+                  <div className={styles.three__each}>
+                    <p className={styles.three__head}>200+</p>
+                    <p className={styles.three__text}>Employees</p>
+                  </div>
+                  <div className={styles.three__each}>
+                    <p className={styles.three__head}>Headquartered</p>
+                    <p className={styles.three__text}>in Abuja Nigeria</p>
+                  </div>
+                </div>
+                <div className={styles.three__sep}>
+                  <p className={styles.three__head}>Get in touch</p>
+                  <p className={styles.three__text}>info@scrybe.co.za</p>
+                </div>
+              </div>
+            </div>
+            <div className={styles.three__desktop}>
               <div className={styles.three__top}>
                 <p className={styles.three__heading}>
                   An AI powered tool tailored for customers success and

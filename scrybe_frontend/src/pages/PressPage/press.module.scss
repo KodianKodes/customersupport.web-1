@@ -56,9 +56,58 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
 
 // Styling of the section two
 
-// .section__two {
-//     background: url('~/public/myAssets/pressHero.png') no-repeat;
-// }
+.section__two {
+    position: relative;
+
+    .banner__flex {
+        position: absolute;
+        bottom: 15%;
+    }
+
+    .right__ban {
+        margin-top: .5em;
+    }
+
+    .ban__heading .ban__head {
+        font-size: 1rem;
+        color: #FEFEFE;
+        font-weight: 600;
+        font-style: bold;
+        fill: solid;
+        line-height: 2.5rem;
+    }
+
+    .ban__subhead .ban__subtext {
+        font-size: .7rem;
+        color: #FEFEFE;
+        font-weight: 300;
+        font-style: light;
+        fill: solid;
+        line-height: 1rem;
+    }
+
+    .banner__details {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 3%;
+    }
+
+    .banner__details .banner__read {
+        font-size: .6rem;
+        color: #FEFEFE;
+        font-weight: 600;
+        font-style: bold;
+        fill: solid;
+        line-height: 1rem;
+    }
+
+    .banner__details .arrowpoint {
+        width: .7rem;
+        margin-left: .2em;
+    }
+
+}
 
 
 // Styling of the section three
@@ -268,6 +317,50 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
             font-style: medium;
         }
     }
+
+
+    // Styling of the section two
+
+    .section__two {
+
+        .banner__flex {
+            bottom: 10%;
+        }
+
+        .left__ban {
+            width: 60%;
+        }
+
+        .ban__heading .ban__head {
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+        }
+
+        .ban__subhead {
+            margin-top: 1em;
+        }
+
+        .ban__subhead .ban__subtext {
+            font-size: 1rem;
+            font-weight: 600;
+            font-style: bold;
+            line-height: 1.5rem;
+        }
+
+        .banner__details {
+            right: 1%;
+            bottom: 7%;
+        }
+
+        .banner__details .banner__read {
+            font-size: .8rem;
+        }
+
+        .banner__details .arrowpoint {
+            width: 1rem;
+        }
+    }
+
 
     // Styling of the section three
 
