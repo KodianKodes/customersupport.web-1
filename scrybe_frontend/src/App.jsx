@@ -13,6 +13,8 @@ import Solutions from "./pages/solutions-page/Solutions";
 import DashboardOverview from "./pages/DashboardOverview";
 import About from "./pages/AboutUs/About";
 import TryForFree from "./pages/TryForFree";
+import Industry from "./pages/indsutry/industry";
+import HowitWorks from "./pages/HowItWorks/HowItWorks";
 
 function App() {
   return (
@@ -73,7 +75,9 @@ function App() {
       {/* accounts */}
       <Route path="/accounts" element={<DummyPage someText="accounts" />} />
       {/* industry */}
-      <Route path="/industry" element={<DummyPage someText="industry" />} />
+      <Route path="/industry" element={<Industry />} />
+      {/* how it works */}
+      <Route path="/how-it-works" element={<HowitWorks />} />
       {/* demo pages */}
       <Route path="/demos" element={<DummyPage someText="demo pages" />} />
       {/* reviews & pricing */}
