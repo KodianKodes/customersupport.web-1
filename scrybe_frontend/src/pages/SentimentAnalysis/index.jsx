@@ -11,7 +11,7 @@ import SentimentAside from "./components/SentimentAside";
 import { useState } from "react";
 
 function SentimentAnalysis() {
-  const [isMobileAsideOpen, setisMobileAsideOpen] = useState(false);
+  const [isMobileAsideOpen, setIsMobileAsideOpen] = useState(false);
   const positiveTags = [
     "brave",
     "good",
@@ -45,7 +45,8 @@ function SentimentAnalysis() {
   ];
 
   const openSentimentTab = () => {
-    setisMobileAsideOpen(true);
+    console.log("hey");
+    setIsMobileAsideOpen(true);
   };
 
   return (
@@ -54,9 +55,11 @@ function SentimentAnalysis() {
         <AudioCard />
       </div>
       <div className={styles.sentiment__tab__opener}>
-        Overall sentiment
-        <div className={styles.arrow__container} onClick={openSentimentTab}>
-          <img src={blueArrowIcon} alt="arrow icon" />
+        <div className={styles.opener__content}>
+          Overall sentiment
+          <div className={styles.arrow__container} onClick={openSentimentTab}>
+            <img src={blueArrowIcon} alt="arrow icon" />
+          </div>
         </div>
         {isMobileAsideOpen && <SentimentAside />}
       </div>
