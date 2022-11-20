@@ -23,6 +23,7 @@ import Industry from "./pages/indsutry/industry";
 import HowitWorks from "./pages/HowItWorks/HowItWorks";
 import UploadedRecordings from "./components/UploadRecordings";
 import Account from "./pages/Account";
+import Signin from "./pages/SignIn/SignIn";
 
 function App() {
   return (
@@ -50,8 +51,8 @@ function App() {
       <Route path="/help" element={<DummyPage someText="help and supprt" />} />
       {/* sign in */}
       <Route
-        path="/auth"
-        element={<DummyPage someText="sign-in, sign up, reset password" />}
+        path="/signin"
+        element={<Signin someText="sign-in, sign up, reset password" />}
       />
       {/* career page & legal */}
       <Route
