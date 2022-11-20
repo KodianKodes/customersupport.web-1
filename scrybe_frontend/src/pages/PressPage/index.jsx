@@ -129,20 +129,20 @@ const index = () => {
                     <p className={styles.three__head}>20+</p>
                     <p className={styles.three__text}>Active Users</p>
                   </div>
-                </div>
-                <div className={styles.three__flex}>
                   <div className={styles.three__each}>
+                    <p className={styles.three__head}>Get in touch</p>
+                    <p className={styles.three__text}>info@scrybe.co.za</p>
+                  </div>
+                </div>
+                <div className={styles.three__flexed}>
+                  <div className={styles.three__sep}>
                     <p className={styles.three__head}>200+</p>
                     <p className={styles.three__text}>Employees</p>
                   </div>
-                  <div className={styles.three__each}>
+                  <div className={styles.three__sep}>
                     <p className={styles.three__head}>Headquartered</p>
                     <p className={styles.three__text}>in Abuja Nigeria</p>
                   </div>
-                </div>
-                <div className={styles.three__sep}>
-                  <p className={styles.three__head}>Get in touch</p>
-                  <p className={styles.three__text}>info@scrybe.co.za</p>
                 </div>
               </div>
             </div>

@@ -114,6 +114,10 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
 
 .section__three {
 
+    .three__desktop {
+        display: none;
+    }
+
     .three__left {
         display: none;
     }
@@ -161,10 +165,6 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
         fill: solid;
         line-height: 1.2rem;
     }
-
-    // .three__sep .three__head {
-    //     margin-left: .2em;
-    // }
 
     .three__each .three__text, .three__sep .three__text {
         font-size: .6rem;
@@ -368,6 +368,15 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
 
         margin-top: 3em;
 
+        .three__right {
+            display: none;
+        }
+
+        .three__desktop {
+            display: block;
+            margin-top: .9em;
+        }
+
         .three__center {
             display: flex;
             justify-content: space-between;
@@ -380,7 +389,7 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
             width: 30%;
         }
 
-        .three__right {
+        .three__right, .three__desktop {
             width: 60%;
         }
 
@@ -399,16 +408,45 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
         }
 
         .three__bottom {
-            // width: 65%;
-            margin: 0 auto;
+            width: 100%;
+            margin: 0;
         }
 
         .three__bottom .three__flex {
             display: flex;
-            // justify-content: space-between;
-            // margin-bottom: 1em;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .three__each {
+            width: 30%;
+            border-bottom: 1px solid #ECECEC;
+        }
+
+        .three__flexed {
+            display: flex;
+            margin-left: 3em;
+        }
+
+        .three__sep +.three__sep {
+            margin-left: 7em;
+        }
+
+        .three__sep {
+            text-align: center;
+        }
+
+        .three__each .three__head, .three__sep .three__head {
+            font-size: 1rem;
+        }
+
+        .three__each .three__text, .three__sep .three__text {
+            font-size: .8rem;
+            padding-bottom: 1em;
         }
     }
+
+
 
     // Styling of the section four
 
