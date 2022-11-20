@@ -6,6 +6,7 @@
   flex-direction: column;
   gap: pix-rem(24);
   background-color: #f9f9f9;
+  box-shadow: -2px 0px 20px rgba(48, 48, 48, 0.205);
   cursor: auto;
 
   @include mediaQuery(768px) {
@@ -27,6 +28,12 @@
     color: #3f3f3f;
     margin-top: pix-rem(32);
     gap: 0.5em;
+    padding: pix-rem(16);
+
+    .back__content {
+      display: flex;
+      cursor: pointer;
+    }
   }
 
   .inner__container {

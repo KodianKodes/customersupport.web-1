@@ -41,8 +41,10 @@ function SentimentAside() {
   return (
     <aside className={styles.aside__container}>
       <div className={`${styles.back}`}>
-        <img src={arrowIcon} alt="back arrow" />
-        Overall Sentiment
+        <div className={styles.back__content}>
+          <img src={arrowIcon} alt="back arrow" />
+          <div className={styles.back__text}>Overall Sentiment</div>
+        </div>
       </div>
       <div
         className={`${styles.overall__sentiment} ${styles.inner__container}`}
