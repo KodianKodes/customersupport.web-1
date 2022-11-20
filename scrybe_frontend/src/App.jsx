@@ -1,4 +1,3 @@
-import React from "react";
 import "./App.scss";
 import { Routes, Route } from "react-router-dom";
 import SentimentAnalysis from "./pages/SentimentAnalysis";
