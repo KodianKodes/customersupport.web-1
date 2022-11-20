@@ -106,7 +106,6 @@ function App() {
       <Route path="faq" element={<FAQs />} />
       <Route path="faq" element={<TermsOfService />} />
     </Routes>
-
   );
 }
 
