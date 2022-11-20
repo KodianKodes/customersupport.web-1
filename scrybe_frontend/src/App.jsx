@@ -14,7 +14,11 @@ import Services from "./pages/services-page/Services";
 import Solutions from "./pages/solutions-page/Solutions";
 import DashboardOverview from "./pages/DashboardOverview";
 import HelpSupport from "./pages/HelpAndSupport/HelpSupport";
-import General from "./pages/HelpAndSupportGeneral/General";
+import General from "./components/HelpAndSupport/HelpAndSupportGeneral/General";
+import General1 from "./components/HelpAndSupport/general1/General1";
+import General2 from "./components/HelpAndSupport/general2/General2";
+import PromotedArticles from "./components/HelpAndSupport/promoted-articles/PromotedArticles";
+import PromotedArticle1 from "./components/HelpAndSupport/PromotedArticle1/PromotedArticle1";
 
 function App() {
   return (
@@ -111,7 +115,24 @@ function App() {
         <Route path="faq" element={<TermsOfService />} />
         {/* HelpAndSupport */}
         <Route path="/help-support" element={<HelpSupport />} />
-        <Route path="/help-support-general" element={<General />} />
+        <Route path="/help-support-general" element={<General />}>
+          <Route index element={<General1 />} />
+          <Route path="articles" element={<General2 />} />
+        </Route>
+        <Route
+          path="/help-support-general/promoted-articles"
+          element={<PromotedArticles />}
+        >
+          <Route index element={<PromotedArticle1 />} />
+          <Route path="*" element={<PromotedArticle1 />} />
+        </Route>
+        <Route
+          path="/help-support/promoted-articles"
+          element={<PromotedArticles />}
+        >
+          <Route index element={<PromotedArticle1 />} />
+          <Route path="*" element={<PromotedArticle1 />} />
+        </Route>
       </Routes>
     </>
   );

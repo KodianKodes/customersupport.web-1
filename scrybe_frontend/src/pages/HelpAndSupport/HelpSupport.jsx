@@ -7,13 +7,15 @@ import Header from "../../components/HelpAndSupport/header/Header";
 import Input from "../../components/HelpAndSupport/input/Input";
 import styles from "./HelpSupport.module.scss";
 
-function HelpSupport({ setDisplay }) {
+function HelpSupport() {
   return (
     <div className={styles.body}>
       <Header />
       <Input />
-      <Cards setDisplay={setDisplay} />
-      <Articles />
+      <Cards />
+      <div className={styles.article}>
+        <Articles />
+      </div>
       <Contact />
     </div>
   );

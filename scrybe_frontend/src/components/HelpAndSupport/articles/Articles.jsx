@@ -1,4 +1,5 @@
 /* eslint-disable react/react-in-jsx-scope */
+import { Link } from "react-router-dom";
 import styles from "./Articles.module.scss";
 import infoCircle from "../assets/info-circle.svg";
 
@@ -12,7 +13,9 @@ function Articles() {
 
       <div className={styles.articles_cont}>
         <div className={styles.articles_wrapper}>
-          <h3> Article: Transcription v Automated Transcription </h3>
+          <Link to="promoted-articles">
+            <h3> Article: Transcription v Automated Transcription </h3>
+          </Link>
           <h3>Guide: How to login and sign up </h3>
           <h3>Article: Placing a rush transcription Order</h3>
           <h3>Guide: Monitoring your employees data</h3>
