@@ -117,7 +117,7 @@ const index = () => {
                     <div className={styles.btm__icon}>
                       <img src={oneIcon} alt="Layout three section hero icon" />
                     </div>
-                    <div />
+                    <div className={styles.bars} />
                   </div>
                   <div className={styles.btm__right}>
                     <h4 className={styles.btm__head}>Service Offering</h4>
@@ -135,7 +135,7 @@ const index = () => {
                     <div className={styles.btm__icon}>
                       <img src={twoIcon} alt="Layout three section hero icon" />
                     </div>
-                    <div />
+                    <div className={styles.bars} />
                   </div>
                   <div className={styles.btm__right}>
                     <h4 className={styles.btm__head}>
@@ -158,7 +158,7 @@ const index = () => {
                         alt="Layout three section hero icon"
                       />
                     </div>
-                    <div />
+                    <div className={styles.bars} />
                   </div>
                   <div className={styles.btm__right}>
                     <h4 className={styles.btm__head}>Marketing Support</h4>
@@ -179,7 +179,6 @@ const index = () => {
                         alt="Layout three section hero icon"
                       />
                     </div>
-                    <div />
                   </div>
                   <div className={styles.btm__right}>
                     <h4 className={styles.btm__head}>Shared Revenue</h4>

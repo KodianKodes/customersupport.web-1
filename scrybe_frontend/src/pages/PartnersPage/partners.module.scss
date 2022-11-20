@@ -153,10 +153,21 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
 
 .btm__left {
   width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .btm__left .btm__icon {
   width: 2.5rem;
+}
+
+.bars {
+  width: 3rem;
+  height: 3rem;
+  border-left: 5px solid #006CFF;
+  margin-top: 1em;
+  margin-left: 2.75em;
 }
 
 .btm__right .btm__head {

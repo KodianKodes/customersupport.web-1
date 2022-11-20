@@ -1,15 +1,15 @@
 import React from "react";
 import "./App.scss";
-// import PartnerPage from "./pages/PartnersPage";
-import PressPage from "./pages/PressPage";
+import PartnerPage from "./pages/PartnersPage";
+// import PressPage from "./pages/PressPage";
 // import PressArticle from "./pages/PressArticle";
 // import scrybeLogo from "./assets/scrybe_logo_with_text.svg";
 
 function App() {
   return (
     <div className="App" data-testid="app-container">
-      {/* <PartnerPage /> */}
-      <PressPage />
+      <PartnerPage />
+      {/* <PressPage /> */}
       {/* <PressArticle /> */}
 
       {/* <div
