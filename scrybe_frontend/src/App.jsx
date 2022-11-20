@@ -21,11 +21,9 @@ import About from "./pages/AboutUs/About";
 import TryForFree from "./pages/TryForFree";
 import Industry from "./pages/indsutry/industry";
 import HowitWorks from "./pages/HowItWorks/HowItWorks";
-//new additions
-import PrivacyPolicy from "./pages/PrivacyPolicy";
-import Careers from "./pages/Careers";
-import JobVacancy from "./pages/Careers/Components/JobVacancy";
-import NotHiring from "./pages/Careers/Components/NotHiring";
+import UploadedRecordings from "./components/UploadRecordings";
+import Account from "./pages/Account";
+import Signin from "./pages/SignIn/SignIn";
 
 function App() {
   return (
@@ -53,8 +51,8 @@ function App() {
       <Route path="/help" element={<DummyPage someText="help and supprt" />} />
       {/* sign in */}
       <Route
-        path="/auth"
-        element={<DummyPage someText="sign-in, sign up, reset password" />}
+        path="/signin"
+        element={<Signin someText="sign-in, sign up, reset password" />}
       />
       {/* career page & legal */}
       <Route
@@ -84,7 +82,7 @@ function App() {
       {/* dashboard */}
       <Route path="/dashboard" element={<DashboardOverview />} />
       {/* accounts */}
-      <Route path="/accounts" element={<DummyPage someText="accounts" />} />
+      <Route path="/accounts" element={<Account />} />
       {/* industry */}
       <Route path="/industry" element={<Industry />} />
       {/* how it works */}
@@ -115,7 +113,7 @@ function App() {
       <Route path="/blog" element={<DummyPage someText="blog" />} />
       <Route path="/homeB" element={<PageB />} />
       <Route path="faq" element={<FAQs />} />
-      <Route path="faq" element={<TermsOfService />} />
+      <Route path="faq-terms-of-service" element={<TermsOfService />} />
       {/* HelpAndSupport */}
       <Route path="/help-support" element={<HelpSupport />} />
       <Route path="/help-support-general" element={<General />}>
@@ -136,8 +134,9 @@ function App() {
         <Route index element={<PromotedArticle1 />} />
         <Route path="*" element={<PromotedArticle1 />} />
       </Route>
+      {/* uploaded recordings */}
+      <Route path="/uploaded-recordings" element={<UploadedRecordings />} />
     </Routes>
-
   );
 }
 
