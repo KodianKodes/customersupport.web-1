@@ -1,0 +1,184 @@
+@mixin btn {
+    font-family: 'Kanit', sans-serif;
+    background: #006CFF;
+    padding: 15px 20px;
+    color: #fff;
+    border: 0;
+    border-radius: 3px;
+    font-weight: 400;
+    cursor: pointer;
+    display: inline-block;
+    width: 180px;
+    font-size: 18px;
+    position: relative;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+@mixin btnStates {
+    &:hover {
+        background: transparent;
+        border-color: #006CFF;
+        color: #006CFF;
+    }
+
+    &:active {
+        top: 2px;
+    }
+}
+
+@mixin btnTrans {
+    font-family: 'Kanit', sans-serif;
+    padding: 15px 20px;
+    background: transparent;
+    color: #006CFF;
+    border: 1px solid #006CFF;
+    border-radius: 3px;
+    font-weight: 400;
+    cursor: pointer;
+    width: 180px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+@mixin btnTransStates {
+    &:hover {
+        background: #006CFF;
+        border-color: #fff;
+        color: #fff;
+    }
+
+    &:active {
+        top: 3px;
+    }
+}
+
+@mixin container {
+    width: 90%;
+    margin: auto;
+    padding: 0;
+}
+
+@mixin flexItem($justifyContent, $direction, $gap) {
+    display: flex;
+    align-items: center;
+    flex-direction: $direction;
+    justify-content: $justifyContent;
+    gap: $gap;
+}
+
+@mixin pargraphs {
+    color: #3F3F3F;
+    font-size: 19px;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+@mixin  headText {
+    font-size: 72px;
+    font-weight: 600;
+    color: #3F3F3F;
+    margin-bottom: 20px;
+}
+
+.header-section {
+    padding: 4rem 0;
+    .container {
+        @include container;
+
+        .event-flex {
+            @include flexItem(space-between, row, auto);
+
+            .events {
+                width: 70%;
+                h1 {
+                    @include headText;
+                }
+    
+                p {
+                    @include pargraphs;
+                    margin-bottom: 20px;
+                    width: 70%
+                }
+    
+                button {
+                    @include btnTrans;
+    
+                    &:hover {
+                        @include btnTransStates;
+                    }
+                }
+            }
+    
+            button {
+                @include flexItem(space-between, row, 1rem);
+                font-family: 'Kanit', sans-serif;
+                padding: 15px 20px;
+                background: transparent;
+                color: #00A4FF;
+                border: 1px solid #00A4FF;
+                border-radius: 3px;
+                font-weight: 400;
+                cursor: pointer;
+                width: 180px;
+                font-size: 18px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.5rem;
+                position: relative;
+                transition: all 0.3s ease;
+            }
+        }
+    }
+
+    .comingsoon {
+        margin-top: 5rem;
+        .container {
+            @include container;
+            h1 {
+                @include headText;
+                font-size: 47px;
+            }
+
+            .coming-flex {
+                @include flexItem(flex-start, row, 5rem );
+                align-items: flex-start;
+                margin-top: 3rem;
+
+                .comin-img {
+                    width: 40%;
+
+                    img {
+                        width: 100%
+                    }
+                }
+
+                .comin-txt {
+                    p {
+                        @include pargraphs();
+                        font-weight: 400;
+                    }
+
+                    .line {
+                        border-bottom: 1px solid #3F3F3F;
+                        margin: 2rem 0;
+                    }
+
+                    button {
+                        margin-top: 2rem;
+                        @include btn();
+
+                        &:hover {
+                            @include btnStates;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

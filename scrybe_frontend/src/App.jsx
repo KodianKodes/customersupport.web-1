@@ -11,6 +11,7 @@ import TermsAndCondition from "./pages/TermsAndCondition/TermsOfService";
 import Services from "./pages/services-page/Services";
 import Solutions from "./pages/solutions-page/Solutions";
 import DashboardOverview from "./pages/DashboardOverview";
+import Events from "./pages/Events-page/Events";
 
 function App() {
   return (
@@ -59,7 +60,7 @@ function App() {
       {/* about us */}
       <Route path="/about-us" element={<DummyPage someText="about us" />} />
       {/* events */}
-      <Route path="/events" element={<DummyPage someText="events" />} />
+      <Route path="/events" element={<Events someText="events" />} />
       {/* agent report */}
       <Route
         path="/report"

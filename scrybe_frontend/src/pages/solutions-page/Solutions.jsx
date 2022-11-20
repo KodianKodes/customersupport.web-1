@@ -119,7 +119,7 @@ function Solutions() {
               <p>
                 Scrybe boosts your call center management efficiency by
                 automating the transcription and sentiment analysis process, so
-                you can focus more on what needs your attention: reevaluating
+                you can focus more on what needs your attention: re-evaluating
                 customer concerns. Could it get any easier? Set up a few rules
                 to customize and keep tabs on how human-like your bots sound
                 with just a few clicks.
@@ -218,7 +218,7 @@ function Solutions() {
           <h1>We are loved by Companies of all sizes</h1>
           <p>
             Companies of all sizes from Startup and Fortune 500 companies use
-            Scribe{" "}
+            Scrybe{" "}
           </p>
           <div className="logo-flex">
             <img src={microsoft} alt="microsoft-logo" />
