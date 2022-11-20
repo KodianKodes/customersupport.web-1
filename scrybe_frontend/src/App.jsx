@@ -1,4 +1,3 @@
-import React from "react";
 import "./App.scss";
 import { Routes, Route } from "react-router-dom";
 import SentimentAnalysis from "./pages/SentimentAnalysis";
@@ -7,7 +6,6 @@ import TranscribePage from "./pages/TranscribePage/TranscribePage";
 import { FAQs, TermsOfService } from "./pages";
 import LandingPage from "./pages/landing-page-a";
 import PageB from "./pages/Landing-page-b";
-import NavBar from "./components/navBar";
 import TermsAndCondition from "./pages/TermsAndCondition/TermsOfService";
 
 // import Services from "./pages/services-page/Services";
