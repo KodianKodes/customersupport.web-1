@@ -111,7 +111,7 @@ function App() {
       <Route path="/blog" element={<DummyPage someText="blog" />} />
       <Route path="/homeB" element={<PageB />} />
       <Route path="faq" element={<FAQs />} />
-      <Route path="faq" element={<TermsOfService />} />
+      <Route path="faq-terms-of-service" element={<TermsOfService />} />
       {/* HelpAndSupport */}
       <Route path="/help-support" element={<HelpSupport />} />
       <Route path="/help-support-general" element={<General />}>
