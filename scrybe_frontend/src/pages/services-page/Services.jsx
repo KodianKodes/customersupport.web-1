@@ -43,7 +43,7 @@ function Services() {
         <div className="container">
           <div className="wecan-flex">
             <div className="wecan-img">
-              <img src={weCan} alt="wecan" />
+              <img src={weCan} alt="wecan" className="we-img" />
             </div>
             <div className="wecan-txt">
               <h1>Here Is What We Can Do For You</h1>
@@ -73,7 +73,7 @@ function Services() {
                 </span>
                 <span>
                   <img src={check} alt="checkmark" />
-                  <p>Convert recorded calls into readable tex</p>
+                  <p>Convert recorded calls into readable text</p>
                 </span>
                 <span>
                   <img src={check} alt="checkmark" />
@@ -130,8 +130,7 @@ function Services() {
                 <span>
                   <img src={check} alt="checkmark" />
                   <p>
-                    Reports on customers’ engagement and call agent’s
-                    efficeiency.
+                    Reports on customer’s engagement and call agent’s efficiency
                   </p>
                 </span>
               </div>
