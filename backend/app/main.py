@@ -2,13 +2,14 @@ from fastapi import Depends, FastAPI, UploadFile, File, status, HTTPException
 from routers.sentiment import sentiment
 from routers.transcribe import transcribe_file
 import models
-from jwt import (
-    main_login
-)
-from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+# from jwt import (
+#     main_login
+# )
+# from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 
 from db import Base, engine, SessionLocal
 from sqlalchemy.orm import Session
+import crud, schema
 
 description = """
 Scrybe API helps you analyse sentiments in your customer support calls
@@ -22,9 +23,9 @@ tags_metadata = [
 ]
 
 # create the database.
-Base.metadata.create_all(engine)
+models.Base.metadata.create_all(engine)
 
-# database. 
+# database.
 def get_session():
     session = SessionLocal()
     try:
@@ -66,9 +67,45 @@ async def login(form_data: OAuth2PasswordRequestForm = Depends(), session: Sessi
     # return token once the user has been successfully authenticated, or it returns an error.
     return await main_login(form_data, session)
 
+# # create the endpoint
+# @app.post('/login', summary = "create access token for logged in user")
+# async def login(form_data: OAuth2PasswordRequestForm = Depends(), session: Session = Depends(get_session)):
+#     # return token once the user has been successfully authenticated, or it returns an error.
+#     return await main_login(form_data, session)
+
+# Dependency
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
+
+
+@app.post("/users/", response_model=schema.User)
+def create_user(user: schema.UserCreate, db: Session = Depends(get_db)):
+    db_user = crud.get_user_by_email(db, email=user.email)
+    if db_user:
+        raise HTTPException(status_code=400, detail="Email already registered")
+    return crud.create_user(db=db, user=user)
+
+
+@app.get("/users/", response_model=list[schema.User])
+def read_users(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+    users = crud.get_users(db, skip=skip, limit=limit)
+    return users
+
+
+@app.get("/users/{user_id}", response_model=schema.User)
+def read_user(user_id: int, db: Session = Depends(get_db)):
+    db_user = crud.get_user(db, user_id=user_id)
+    if db_user is None:
+        raise HTTPException(status_code=404, detail="User not found")
+    return db_user
+
 @app.get("/sentiment_analysis")
 async def get_sentiment_analysis_result():
     return{"Message": "This is the result of the analysis. Thank you for using our service",
-        "Trancript": transcript,
-        "Sentiment": sentiment
+        "Transcript": transcript,
+        "Sentiment Result": sentiment_result
     }

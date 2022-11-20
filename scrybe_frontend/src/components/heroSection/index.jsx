@@ -19,10 +19,7 @@ function Hero() {
             your customer support conversations{" "}
           </p>
           <div className={styles.CTAs}>
-            <a
-              href="https://www.w3schools.com/react/react_css.asp"
-              className={styles.ctaDemo}
-            >
+            <a href="/dashboard" className={styles.ctaDemo}>
               Request a Demo
             </a>
             <a href="/transcriptions" className={styles.ctaStarter}>
