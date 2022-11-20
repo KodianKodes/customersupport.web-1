@@ -20,6 +20,10 @@ import NotHiring from "./pages/Careers/Components/NotHiring";
 import NavBar from "./components/navBar";
 import Services from "./pages/services-page/Services";
 import Solutions from "./pages/solutions-page/Solutions";
+import SentimentAnalysis from "./pages/SentimentAnalysis";
+import { FAQs, TermsOfService } from "./pages";
+import TranscribePage from "./pages/TranscribePage/TranscribePage";
+import DashboardOverview from "./pages/DashboardOverview";
 
 
 function App() {
@@ -59,11 +63,11 @@ function App() {
         {/* career page & legal */}
         <Route
           path="/careers"
-          element={<Careers/>}
+          element={<Careers />}
         />
         <Route
           path="/privacy-policy"
-          element={<PrivacyPolicy/>}
+          element={<PrivacyPolicy />}
         />
         {/* solutions & services */}
         <Route
@@ -105,10 +109,7 @@ function App() {
           element={<DummyPage someText="leaderboard" />}
         />
         {/* terms and conditions */}
-        <Route
-          path="/terms"
-          element={<TermsAndCondition someText="terms and conditions" />}
-        />
+       
         {/* terms of service */}
         <Route
           path="/terms-of-service"
