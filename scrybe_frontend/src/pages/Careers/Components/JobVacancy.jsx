@@ -1,12 +1,19 @@
 import React from "react";
 import Banner from "./Banner.jsx";
 import "../Style/jobVacancy.scss";
+<<<<<<< HEAD
 import NavBar from "../../../components/navBar/index.jsx";
 import Footer from "../../../components/footer/index.jsx";
 function JobVacancy() {
   return (
     <div>
       <NavBar />
+=======
+
+function JobVacancy() {
+  return (
+    <div>
+>>>>>>> 4e048e5397d3fae2a1ab16be8a7ba287fd565044
       <Banner />
       <div className="vacancy-container">
         <div className="summary">
@@ -74,7 +81,10 @@ function JobVacancy() {
           </ul>
         </div>
       </div>
+<<<<<<< HEAD
       <Footer />
+=======
+>>>>>>> 4e048e5397d3fae2a1ab16be8a7ba287fd565044
     </div>
   );
 }
