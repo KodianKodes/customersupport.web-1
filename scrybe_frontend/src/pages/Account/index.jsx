@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import "../../assets/styles/account.scss";
-import profileImage from "../../assets/images/profile-image.png";
-import chevronLeft from "../../assets/icons/chevron-left.svg";
-import plus from "../../assets/icons/plus.svg";
+import accountStyles from "./account.module.scss";
+import profileImage from "./assets/images/profile-image.png";
+import chevronLeft from "./assets/icons/chevron-left.svg";
+import plus from "./assets/icons/plus.svg";
+import SideBar from "../../components/SideBar/Sidebar";
 
 function Account() {
   const [accountModalIsActive, setAccountModalIsActive] = useState(false);
@@ -15,11 +16,12 @@ function Account() {
       <div
         className={
           accountModalIsActive
-            ? "active account_add-agent__div"
-            : "account_add-agent__div"
+            ? `${accountStyles.active}
+            ${accountStyles.add_agent__div}`
+            : accountStyles.add_agent__div
         }
       >
-        <div className="account_add-agent-modal__div">
+        <div className={accountStyles.add_agent_modal__div}>
           <h2>Add new agent</h2>
           <p>Input the following information to add a new agent to your team</p>
           <form>
@@ -68,24 +70,25 @@ function Account() {
           </form>
         </div>
       </div>
-      <div className="account">
-        <section className="account_mobile-head__section">
+      <SideBar />
+      <div className={accountStyles.account}>
+        <section className={accountStyles.mobile_head__section}>
           <span>
             <img src={chevronLeft} alt="left arrow" />
           </span>
           <h1>Profile</h1>
         </section>
-        <h1 className="account_salutation">Hi Scryber</h1>
-        <div className="account_main-content__div">
-          <section className="account_profile__section">
+        <h1 className={accountStyles.salutation}>Hi Scryber</h1>
+        <div className={accountStyles.main_content__div}>
+          <section className={accountStyles.profile__section}>
             <img src={profileImage} alt="User's profile" />
             <div>
               <p>Jane Doe</p>
               <p>Administrator</p>
             </div>
           </section>
-          <section className="account_body__section">
-            <div className="account_personal-info__div">
+          <section className={accountStyles.body__section}>
+            <div className={accountStyles.personal_info__div}>
               <p>Personal Information</p>
               <div>
                 <div>
@@ -98,7 +101,7 @@ function Account() {
                 </div>
               </div>
             </div>
-            <div className="account_company-info__div">
+            <div className={accountStyles.company_info__div}>
               <p>Company Information</p>
               <div>
                 <div>
@@ -111,7 +114,7 @@ function Account() {
                 </div>
               </div>
             </div>
-            <div className="account_agents__div">
+            <div className={accountStyles.agents__div}>
               <span>
                 <p>Agents</p>
                 <button type="button" onClick={toggleAccountModal}>
@@ -167,19 +170,19 @@ function Account() {
                 </ul>
               </div>
             </div>
-            <div className="account_developer-tools__div">
+            <div className={accountStyles.developer_tools__div}>
               <p>Developer tools</p>
               <div>
                 <p>API Key</p>
                 <div>
                   <p>0123456789AC</p>
-                  <p>Refresh</p>
+                  <button type="button">Refresh</button>
                 </div>
               </div>
             </div>
           </section>
         </div>
-        <div className="account_plan-info__div">
+        <div className={accountStyles.plan_info__div}>
           <p>You are using the limited free plan.</p>
           <p>Go unlimited with Pro version</p>
         </div>
