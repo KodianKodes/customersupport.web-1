@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./SentimentAnalysis.module.scss";
 import arrowIcon from "./icons/arrow_back.svg";
 import blueArrowIcon from "./icons/blue_arrow.svg";
@@ -9,8 +8,10 @@ import shareIcon from "./icons/share.svg";
 import AnalysisCard from "./components/AnalysisCard";
 import AudioCard from "./components/AudioCard";
 import SentimentAside from "./components/SentimentAside";
+import { useState } from "react";
 
 function SentimentAnalysis() {
+  const [isMobileAsideOpen, setisMobileAsideOpen] = useState(false);
   const positiveTags = [
     "brave",
     "good",
@@ -43,7 +44,9 @@ function SentimentAnalysis() {
     "criticism",
   ];
 
-  const openSentimentTab = () => {};
+  const openSentimentTab = () => {
+    setisMobileAsideOpen(true);
+  };
 
   return (
     <div className={styles.page__container}>
@@ -55,7 +58,7 @@ function SentimentAnalysis() {
         <div className={styles.arrow__container} onClick={openSentimentTab}>
           <img src={blueArrowIcon} alt="arrow icon" />
         </div>
-        {<SentimentAside />}
+        {isMobileAsideOpen && <SentimentAside />}
       </div>
       <main className={styles.main__container}>
         <span className={styles.main__container__top}>
