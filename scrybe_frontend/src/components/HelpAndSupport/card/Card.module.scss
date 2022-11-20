@@ -12,17 +12,17 @@
 
 .icon {
     background-color: white;
-    img {
+    height: 50px;
+    width: 80px;
+    .img {
         height: 40px;
         width: 40px;
-        margin-right: 2rem;
-
+        margin-right: 1rem;
     }
 }
 
 .message {
     margin-left: 1rem;
-
     h1 {
         font-size: 17px;
         font-weight: 600;
@@ -42,10 +42,10 @@
     
     .icon {
         background-color: white;
-        img {
+        .img {
             height: 40px;
             width: 40px;
-            margin-right: 1.5rem;
+            margin-right: 1rem;
         }
     }
     
