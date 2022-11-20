@@ -13,6 +13,11 @@
         &__content {
                 width: min(100%, pix-rem(590));
                 margin-top: pix-rem(110);
+                @include media(1100px) {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                }
         }
         &__title {
                 font-size: pix-rem(32);
@@ -77,6 +82,10 @@
                 justify-content: space-between;
                 flex-wrap: wrap;
                 gap: pix-rem(16);
+                @include media(1100px) {
+                        flex-direction: column;
+                        align-items: center;
+                }
                 & > * {
                         flex: 1;
                         background-color: white;
@@ -94,7 +103,6 @@
                                         margin-top: pix-rem(28);
                                 }
                         }
-                        
                 }
         }
 }
@@ -142,7 +150,7 @@
                         &:nth-child(1) {
                                 flex: 2 1 0;
                                 background-color: transparent;
-                                border: pix-rem(1) solid #C5C5C5;
+                                border: pix-rem(1) solid #c5c5c5;
                                 padding-block: pix-rem(16);
                                 padding-inline: pix-rem(32);
                                 border-radius: pix-rem(4);
@@ -152,7 +160,7 @@
                                 max-width: pix-rem(136);
                                 padding-block: pix-rem(16);
                                 padding-inline: pix-rem(32);
-                                background-color: #006CFF;
+                                background-color: #006cff;
                                 color: white;
                                 border: none;
                                 border-radius: pix-rem(4);
@@ -164,5 +172,20 @@
                 text-align: center;
                 max-width: 24ch;
                 margin-inline: auto;
+        }
+}
+
+.customer {
+        padding-block: pix-rem(58);
+
+        &__h2 {
+                text-align: center;
+                margin-bottom: pix-rem(40);
+                font-size: pix-rem(36);
+                font-weight: 600;
+                color: #313131;
+                & > span {
+                        color: #0095e8;
+                }
         }
 }
