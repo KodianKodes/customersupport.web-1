@@ -3,6 +3,13 @@ import "./Events.scss";
 
 import filterIcon from "./assets/filter-icon.svg";
 import comingSoon from "./assets/comming-soon.png";
+import jim from "./assets/jim.svg";
+import angela from "./assets/angela.svg";
+import stanley from "./assets/stanley.svg";
+import kelly from "./assets/kelly.svg";
+import linkedin from "./assets/linkedin.svg";
+import twitter from "./assets/twitter.svg";
+import expect from "./assets/expect-icon.svg";
 
 const Events = () => {
   return (
@@ -48,6 +55,72 @@ const Events = () => {
       <div className="mission-section">
         <div className="container">
           <h1>Our Mission</h1>
+          <p>
+            We understand the challenges young people looking to be
+            professionals in their fields face- not being able to get the job
+            because of lack of experience and not being able to get the
+            experience because they can’t get the job. This career fest is
+            designed to demystify the confusions surrounding landing your first
+            job as a fresh graduate. We have put together an event that will
+            leave you confident, empowered and emboldened at the end of the day.
+          </p>
+
+          <h1>Meet Our Speakers</h1>
+
+          <div className="speaker-container">
+            <div className="speaker">
+              <img src={jim} alt="jim" />
+              <p>Jim Hampert</p>
+              <span>
+                <img src={linkedin} alt="linkedin" />
+                <img src={twitter} alt="twitter" />
+              </span>
+            </div>
+            <div className="speaker">
+              <img src={angela} alt="angela" />
+              <p>Angela Brume</p>
+              <span>
+                <img src={linkedin} alt="linkedin" />
+                <img src={twitter} alt="twitter" />
+              </span>
+            </div>
+            <div className="speaker">
+              <img src={stanley} alt="stanley" />
+              <p>Stanley Hudson</p>
+              <span>
+                <img src={linkedin} alt="linkedin" />
+                <img src={twitter} alt="twitter" />
+              </span>
+            </div>
+            <div className="speaker">
+              <img src={kelly} alt="kelly" />
+              <p>Kelly Kapoor</p>
+              <span>
+                <img src={linkedin} alt="linkedin" />
+                <img src={twitter} alt="twitter" />
+              </span>
+            </div>
+          </div>
+
+          <div className="expect-container">
+            <h2>What To Expect?</h2>
+            <div className="expect-talk">
+              <div className="expect">
+                <img src={expect} alt="expect" />
+                <p>Expert Talks </p>
+              </div>
+              <div className="expect">
+                <img src={expect} alt="expect" />
+                <p>Interactive Sessions</p>
+              </div>
+              <div className="expect">
+                <img src={expect} alt="expect" />
+                <p>Networking</p>
+              </div>
+            </div>
+
+            <button>Learn More</button>
+          </div>
         </div>
       </div>
     </div>

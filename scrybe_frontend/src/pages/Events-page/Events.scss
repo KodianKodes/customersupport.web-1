@@ -182,3 +182,98 @@
         }
     }
 }
+
+.mission-section {
+    margin-top: 5rem;
+    .container {
+        @include container;
+        text-align: center;
+
+        h1 {
+            @include headText;
+            font-size: 40px;
+            margin-bottom: 2rem;
+        }
+
+        p {
+            @include pargraphs;
+            width: 80%;
+            margin: auto;
+            margin-bottom: 3rem;
+        }
+
+        .speaker-container {
+            @include flexItem(space-between, row, 0);
+
+            .speaker {
+                width: 25%;
+
+                img {
+                    margin: auto;
+                }
+
+                p {
+                    background: #005584;
+                    padding: 3px 10px;
+                    width: 200px;
+                    text-align: center;
+                    color: #fff;
+                    font-size: 14px;
+                    border-radius: 3px;
+                    margin: 10px auto;
+                }
+
+                span {
+                    background: #fff;
+                    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.068));
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 200px;
+                    margin: auto;
+                    padding: 5px 10px;
+                    border-radius: 3px;
+
+                    img {
+                        width: 20px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+
+        .expect-container {
+            margin-top: 5rem;
+            h2 {
+                @include headText;
+                font-size: 30px;
+                margin-bottom: 3rem;
+            }
+            .expect-talk {
+                @include flexItem(space-between, row, 0);
+
+                .expect {
+                    width: 40%;
+                    padding: 2rem;
+
+                    img {
+                        margin: auto;
+                        width: 40px;
+                    }
+
+                    p {
+                        margin-top: 15px;
+                    }
+                }
+            }
+
+            button {
+                @include btn;
+
+                &:hover {
+                    @include btnStates();
+                }
+            }
+        }
+    }
+}
