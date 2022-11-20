@@ -17,10 +17,6 @@ import General1 from "./components/HelpAndSupport/general1/General1";
 import General2 from "./components/HelpAndSupport/general2/General2";
 import PromotedArticles from "./components/HelpAndSupport/promoted-articles/PromotedArticles";
 import PromotedArticle1 from "./components/HelpAndSupport/PromotedArticle1/PromotedArticle1";
-import About from "./pages/AboutUs/About";
-import TryForFree from "./pages/TryForFree";
-import Industry from "./pages/indsutry/industry";
-import HowitWorks from "./pages/HowItWorks/HowItWorks";
 import UploadedRecordings from "./components/UploadRecordings";
 import Account from "./pages/Account";
 import Signin from "./pages/SignIn/SignIn";
@@ -53,12 +49,14 @@ function App() {
       <Route path="/help" element={<DummyPage someText="help and supprt" />} />
       {/* sign in */}
       <Route
+
         path="/signin"
         element={<Signin someText="sign-in, sign up, reset password" />}
       />
       {/* career page & legal */}
       <Route path="/careers" element={<Careers />} />
       <Route path="/privacy" element={<PrivacyPolicy />} />
+
       {/* solutions & services */}
       <Route
         path="/services"
@@ -82,7 +80,9 @@ function App() {
       {/* dashboard */}
       <Route path="/dashboard" element={<DashboardOverview />} />
       {/* accounts */}
+
       <Route path="/accounts" element={<Account />} />
+
       {/* industry */}
       <Route path="/industry" element={<Industry />} />
       {/* how it works */}
@@ -136,6 +136,7 @@ function App() {
       </Route>
       {/* uploaded recordings */}
       <Route path="/uploaded-recordings" element={<UploadedRecordings />} />
+
     </Routes>
   );
 }
