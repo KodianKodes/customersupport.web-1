@@ -204,14 +204,12 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
     .four__cards {
         width: 60%;
         margin: 0 auto;
-        // text-align: center;
         position: relative;
     }
 
     .four__cards .card__container {
         margin-bottom: 1.1em;
         position: relative;
-        // flex: 0 1 48%;
     }
 
     .card__content {
@@ -544,10 +542,8 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
             .five__desktop .five__articles {
                 display: flex;
                 flex-direction: column;
-                // width: 100%;
                 flex: 0 1 22%;
                 margin-bottom: 1em;
-                // flex-basis: 22.5%;
             }
 
             .five__desktop .five__articles .each__icon {
