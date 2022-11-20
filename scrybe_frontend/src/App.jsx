@@ -24,6 +24,8 @@ import HowitWorks from "./pages/HowItWorks/HowItWorks";
 import UploadedRecordings from "./components/UploadRecordings";
 import Account from "./pages/Account";
 import Signin from "./pages/SignIn/SignIn";
+import Careers from "./pages/Careers";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 function App() {
   return (
@@ -55,10 +57,8 @@ function App() {
         element={<Signin someText="sign-in, sign up, reset password" />}
       />
       {/* career page & legal */}
-      <Route
-        path="/careers-and-legal"
-        element={<DummyPage someText="career page and legal" />}
-      />
+      <Route path="/careers" element={<Careers />} />
+      <Route path="/privacy" element={<PrivacyPolicy />} />
       {/* solutions & services */}
       <Route
         path="/services"

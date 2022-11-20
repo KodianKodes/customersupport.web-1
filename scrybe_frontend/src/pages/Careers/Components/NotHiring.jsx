@@ -15,7 +15,7 @@ function NotHiring() {
           </p>
         </div>
         <div className="subscribe">
-          <form action="#" onSubmit={(e) => e.preventDefault()}>
+          <form action="/" onSubmit={(e) => e.preventDefault()}>
             <input type="text" placeholder="Enter Email address" />
             <button>Subscribe</button>
           </form>

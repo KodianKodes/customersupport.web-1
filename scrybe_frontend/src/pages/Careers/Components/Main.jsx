@@ -72,7 +72,7 @@ function Main() {
               brilliant Product design interns to our workforce.
             </p>
             <div className="see-more-link">
-              <a href="#">See more</a>
+              <a href="/">See more</a>
             </div>
           </div>
           <div className="currently-hiring-grid mid-grid">
@@ -82,7 +82,7 @@ function Main() {
               brilliant DevOps interns to our community.
             </p>
             <div className="see-more-link">
-              <a href="#">See more</a>
+              <a href="/">See more</a>
             </div>
           </div>
           <div className="currently-hiring-grid">
@@ -92,7 +92,7 @@ function Main() {
               dedicated and brilliant FE developers.
             </p>
             <div className="see-more-link">
-              <a href="#">See more</a>
+              <a href="/">See more</a>
             </div>
           </div>
         </div>
