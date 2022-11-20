@@ -21,21 +21,20 @@ const Events = () => {
       <div className="header-section">
         <div className="container">
           <div className="event-flex">
-            <div className="events">
-              <h1>Events</h1>
-              <p>
-                Join our events either in person or virtually, any where and on
-                any device near you. Explore our upcoming events and save a
-                date. You’ll be glad you did!
-              </p>
-              <button>view calender</button>
-            </div>
+            <h1>Events</h1>
 
             <button>
               Filter Events
               <img src={filterIcon} alt="filter" />
             </button>
           </div>
+
+          <p>
+            Join our events either in person or virtually, any where and on any
+            device near you. Explore our upcoming events and save a date. You’ll
+            be glad you did!
+          </p>
+          <button>view calender</button>
         </div>
 
         <div className="comingsoon">

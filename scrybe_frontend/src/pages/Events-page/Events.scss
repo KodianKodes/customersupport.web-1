@@ -94,26 +94,11 @@
         .event-flex {
             @include flexItem(space-between, row, auto);
 
-            .events {
-                width: 70%;
                 h1 {
                     @include headText;
                 }
     
-                p {
-                    @include pargraphs;
-                    margin-bottom: 20px;
-                    width: 70%
-                }
-    
-                button {
-                    @include btnTrans;
-    
-                    &:hover {
-                        @include btnTransStates;
-                    }
-                }
-            }
+               
     
             button {
                 @include flexItem(space-between, row, 1rem);
@@ -135,6 +120,20 @@
                 transition: all 0.3s ease;
             }
         }
+
+        p {
+            @include pargraphs;
+            margin-bottom: 20px;
+            width: 50%
+        }
+
+        button {
+            @include btnTrans;
+
+            &:hover {
+                @include btnTransStates;
+            }
+        }
     }
 
     .comingsoon {
@@ -147,7 +146,10 @@
             }
 
             .coming-flex {
-                @include flexItem(flex-start, row, 5rem );
+                // @include flexItem(flex-start, row, 5rem );
+                display: flex;
+                flex-direction: row;
+                gap: 5rem;
                 align-items: flex-start;
                 margin-top: 3rem;
 
@@ -163,6 +165,7 @@
                     p {
                         @include pargraphs();
                         font-weight: 400;
+                        width: 100%;
                     }
 
                     .line {
@@ -389,6 +392,16 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 970px) {
+    .comingsoon {
+        .container {
+            .coming-flex {
+                @include flexItem(space-between, row-reverse, 2rem)
             }
         }
     }
