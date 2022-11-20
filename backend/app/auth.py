@@ -19,10 +19,7 @@ load_dotenv()
 JWT_ACCESS_SECRET_KEY = os.getenv("JWT_ACCESS_SECRET_KEY")
 ALGORITHM = "HS256"
 
-# database. 
-def get_session():
-    db: Session = Depends(main.get_session)
-    return db
+
 # Create an instance of the OAuth
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl = 'login')
 
