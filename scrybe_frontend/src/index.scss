@@ -1,9 +1,10 @@
 @use "./reset.scss";
 @use "./functions.scss" as *;
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;800&display=swap");
 
 :root {
   font-family: "Kanit", sans-serif;
+  font-size: 16px;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -11,7 +12,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-    // Colors
+  // Colors
   --gray-600: #3f3f3f;
   --gray-500: #454545;
   --gray-100: #c5c5c5;
@@ -33,24 +34,24 @@ section {
   margin: 0;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 8px;
   background: #ffffff;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background: var(--primary-blue);
   border-radius: 9px;
 }
 
-@media (max-width: 767.98px){
-  :root{
+@media (max-width: 767.98px) {
+  :root {
     font-size: 12px;
   }
 }
 
-@media (max-width: 387.98px){
-  :root{
+@media (max-width: 387.98px) {
+  :root {
     font-size: 8px;
   }
 }

@@ -132,7 +132,6 @@ function App() {
         <Route path="*" element={<PromotedArticle1 />} />
       </Route>
     </Routes>
-
   );
 }
 
