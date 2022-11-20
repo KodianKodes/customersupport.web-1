@@ -9,6 +9,15 @@
   box-shadow: -2px 0px 20px rgba(48, 48, 48, 0.205);
   cursor: auto;
 
+  @include keyframes(swipeLeft) {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: none;
+    }
+  }
+
   @include mediaQuery(768px) {
     position: fixed;
     top: 0;

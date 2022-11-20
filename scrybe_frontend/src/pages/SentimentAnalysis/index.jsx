@@ -55,9 +55,9 @@ function SentimentAnalysis() {
         <AudioCard />
       </div>
       <div className={styles.sentiment__tab__opener}>
-        <div className={styles.opener__content}>
+        <div className={styles.opener__content} onClick={openSentimentTab}>
           Overall sentiment
-          <div className={styles.arrow__container} onClick={openSentimentTab}>
+          <div className={styles.arrow__container}>
             <img src={blueArrowIcon} alt="arrow icon" />
           </div>
         </div>
