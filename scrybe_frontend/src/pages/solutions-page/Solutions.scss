@@ -91,7 +91,7 @@
     
                 h1 {
                     color: #005584;
-                    font-size: 40px;
+                    font-size: 3.3vw;
                     line-height: 1.5;
                     font-weight: 600;
                     margin-bottom: 20px;
@@ -202,26 +202,26 @@
                 h1 {
                     color: #005584;
                     margin: 0 0 20px 0;
-                    font-size: 30px;
+                    font-size: 2vw;
                     line-height: 1.6;
                 }
 
                 p {
                     color: #3F3F3F;
-                    font-size: 20px;
+                    font-size: 1.5vw;
                     line-height: 1.8;
                     margin-bottom: 8px;
                 }
 
                 h4 {
-                    font-size: 20px;
+                    font-size: 1.4vw;
                     font-weight: 600;
                     color: #006CFF;
                 }
             }
 
             .buss-img  {
-                width: 50%;
+                width: 45%;
 
                 img {
                     width: 100%;
@@ -243,13 +243,13 @@
                 h1 {
                     color: #005584;
                     margin: 0 0 20px 0;
-                    font-size: 30px;
+                    font-size: 2.2vw;
                     line-height: 1.6;
                 }
 
                 p {
                     color: #3F3F3F;
-                    font-size: 20px;
+                    font-size: 1.4vw;
                     line-height: 1.9;
                     margin-bottom: 8px;
 
@@ -260,7 +260,7 @@
                 }
 
                 h4 {
-                    font-size: 20px;
+                    font-size: 1.4vw;
                     font-weight: 600;
                     color: #006CFF;
                 }
@@ -274,7 +274,8 @@
                 }
 
                 .img {
-                    width: 90%
+                    width: 90%;
+                    margin: auto;
                 }
             }
         }
@@ -392,7 +393,7 @@
     }
 }
 
-@media (max-width: 1121px) {
+@media (max-width: 985px) {
     .content-section {
         .container {
             .flex-items {
@@ -405,6 +406,14 @@
 
                 .txt-item {
                     text-align: center;
+
+                    h1 {
+                        font-size: 40px;
+                    }
+
+                    p {
+                        font-size: 20px;
+                    }
 
                     .btns {
                         align-items: center;
@@ -456,9 +465,7 @@
             }
         }
     }
-}
 
-@media (max-width: 1376px) {
     .buss-section {
         .container {
 
@@ -469,6 +476,16 @@
                 .buss-txt, .buss-img {
                     width: 100%;
                     text-align: center;
+                }
+
+                .buss-txt {
+                    h1 {
+                        font-size: 30px
+                    }
+
+                    p , h4{
+                        font-size: 19px;
+                    }
                 }
             }
         }
@@ -484,10 +501,21 @@
                     width: 100%;
                     text-align: center;
                 }
+
+                .buss-txt {
+                    h1 {
+                        font-size: 30px
+                    }
+
+                    p , h4{
+                        font-size: 19px;
+                    }
+                }
             }
         }
     }
 }
+
 
 @media (max-width: 920px) {
     .why-scrybe {

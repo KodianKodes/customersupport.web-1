@@ -143,13 +143,9 @@ function Solutions() {
           </div>
         </div>
       </div>
-
       <div className="monitor-section">
         <div className="container">
-          <div className="monitor-flex">
-            <div className="buss-img">
-              <img src={dashboard} alt="dashboard" />
-            </div>
+          <div className="monitor-flex row-rev">
             <div className="buss-txt">
               <h1>
                 The need for precise analytics data is ever-growing; quickly
@@ -170,6 +166,10 @@ function Solutions() {
                 Find out how to use Scrybe to generate insightful customer
                 insight data. Try it for free.
               </h4>
+            </div>
+
+            <div className="buss-img">
+              <img src={dashboard} alt="dashboard" />
             </div>
           </div>
         </div>
