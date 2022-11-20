@@ -7,7 +7,7 @@ import { FAQs, TermsOfService } from "./pages";
 import LandingPage from "./pages/landing-page-a";
 import PageB from "./pages/Landing-page-b";
 import TermsAndCondition from "./pages/TermsAndCondition/TermsOfService";
-
+import History from "./pages/History/History";
 import Services from "./pages/services-page/Services";
 import Solutions from "./pages/solutions-page/Solutions";
 import DashboardOverview from "./pages/DashboardOverview";
@@ -33,7 +33,7 @@ function App() {
         element={<DummyPage someText="uploaded recordings" />}
       />
       {/* history */}
-      <Route path="/history" element={<DummyPage someText="history" />} />
+      <Route path="/history" element={<History />} />
       {/* help and support */}
       <Route path="/help" element={<DummyPage someText="help and supprt" />} />
       {/* sign in */}
