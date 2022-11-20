@@ -24,6 +24,12 @@
                 flex-wrap: wrap;
                 @include media(1220px) {
                         justify-content: center;
+<<<<<<< HEAD
+=======
+                        & > * {
+                                text-align: center;
+                        }
+>>>>>>> 5bfffbd873e08affdc8bc5edfc27fdf11e96a50b
                 }
 
                 .content {
@@ -50,6 +56,13 @@
                         display: flex;
                         gap: pix-rem(50);
                         margin-top: pix-rem(90);
+<<<<<<< HEAD
+=======
+                        @include media(1220px) {
+                                flex-direction: column-reverse;
+                                align-items: center;
+                        }
+>>>>>>> 5bfffbd873e08affdc8bc5edfc27fdf11e96a50b
 
                         .ctaDemo,
                         .ctaStarter {
