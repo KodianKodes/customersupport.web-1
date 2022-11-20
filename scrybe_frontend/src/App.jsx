@@ -15,7 +15,6 @@ import Solutions from "./pages/solutions-page/Solutions";
 function App() {
   return (
     <>
-      <NavBar />
       <Routes>
         {/* landing page */}
         <Route path="/" element={<LandingPage />} />

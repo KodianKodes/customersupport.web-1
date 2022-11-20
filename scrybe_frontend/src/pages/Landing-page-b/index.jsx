@@ -5,10 +5,12 @@ import OurClient from "../../components/our-client";
 import styles from "./pageB.module.scss";
 import imag3d from "./assets/Other 14.webp";
 import upload from "./assets/Group 1000000932.png";
+import NavBar from "../../components/navBar";
 
 function PageB() {
   return (
     <>
+      <NavBar />
       <Hero />
       <OurClient />
       <section>
