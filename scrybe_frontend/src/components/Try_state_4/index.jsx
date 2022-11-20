@@ -2,7 +2,7 @@
 // TODO disable eslint warning for this todo ;)
 import React from "react";
 import { Link } from "react-router-dom";
-import styles from "./try_state_4.module.css";
+import styles from "./try_state_4.module.scss";
 import RecordingName from "../../assets/recording-name-1.png";
 
 export default function TryFourth() {
@@ -13,7 +13,7 @@ export default function TryFourth() {
         <h2>Transcription and Sentiment Analysis</h2>
 
         <div className={styles.recordingName}>
-          <div>
+          <div className={styles.recordingImage}>
             <img src={RecordingName} alt="some" />
           </div>
           <div>

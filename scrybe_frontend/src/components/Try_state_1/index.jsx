@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-warning-comments
 // TODO disable eslint warning for this todo ;)
 import React from "react";
-import styles from "./try_state_1.module.css";
+import styles from "./try_state_1.module.scss";
 import RecordingLogo from "../../assets/Recording-logo.png";
 
 export default function TryState1() {
